@@ -1,0 +1,87 @@
+Conflicts and Dependencies: 
+[Interaction {firstRule = "01a1_chooseCategory", secondRule = "01a2_displayProducts", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "01a2_displayProducts", secondRule = "01a3_chooseProduct", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "01a2_displayProducts", secondRule = "01a4_displayItems", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "01a3_chooseProduct", secondRule = "01a4_displayItems", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "01a4_displayItems", secondRule = "01a6_02b6_displayChosenItem", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "01a2_displayProducts", secondRule = "01a1_chooseCategory", interactionType = DeleteForbid, nacInvolved = Just 0},Interaction {firstRule = "01a4_displayItems", secondRule = "01a3_chooseProduct", interactionType = DeleteForbid, nacInvolved = Just 0}]
+
+##################
+
+Creation and Deletion Relation: 
+fromList [(Edge 772,Rule "01a2_displayProducts"),(Edge 773,Rule "01a2_displayProducts"),(Edge 2331,Rule "01a2_displayProducts"),(Edge 4751,Rule "01a4_displayItems"),(Edge 4752,Rule "01a4_displayItems"),(Edge 7226,Rule "01a4_displayItems"),(Edge 9787,Rule "01a6_02b6_displayChosenItem"),(Edge 9788,Rule "01a6_02b6_displayChosenItem"),(Rule "01a1_chooseCategory",Edge 2331),(Rule "01a2_displayProducts",Edge 4751),(Rule "01a2_displayProducts",Edge 4752),(Rule "01a3_chooseProduct",Edge 7226),(Rule "01a4_displayItems",Edge 9787),(Rule "01a4_displayItems",Edge 9788),(Rule "01a6_02b6_displayChosenItem",Edge 15095),(Rule "01a6_02b6_displayChosenItem",Edge 15096),(Rule "01a6_02b6_displayChosenItem",Edge 15097)]
+
+------------------
+
+Conflicts and dependencies induced by NACs:
+ 
+[(Interaction {firstRule = "01a1_chooseCategory", secondRule = "01a1_chooseCategory", interactionType = ProduceForbid, nacInvolved = Just 0},Edge 2331),(Interaction {firstRule = "01a2_displayProducts", secondRule = "01a1_chooseCategory", interactionType = DeleteForbid, nacInvolved = Just 0},Edge 2331),(Interaction {firstRule = "01a3_chooseProduct", secondRule = "01a3_chooseProduct", interactionType = ProduceForbid, nacInvolved = Just 0},Edge 7226),(Interaction {firstRule = "01a4_displayItems", secondRule = "01a3_chooseProduct", interactionType = DeleteForbid, nacInvolved = Just 0},Edge 7226)]
+
+##################
+
+All Rules:
+fromList [Rule "01a1_chooseCategory",Rule "01a2_displayProducts",Rule "01a3_chooseProduct",Rule "01a4_displayItems",Rule "01a5_02b5_chooseItem",Rule "01a6_02b6_displayChosenItem"]
+
+Rules Relation: 
+fromList [(Rule "01a1_chooseCategory",Rule "01a2_displayProducts"),(Rule "01a1_chooseCategory",Rule "01a3_chooseProduct"),(Rule "01a1_chooseCategory",Rule "01a4_displayItems"),(Rule "01a1_chooseCategory",Rule "01a5_02b5_chooseItem"),(Rule "01a1_chooseCategory",Rule "01a6_02b6_displayChosenItem"),(Rule "01a2_displayProducts",Rule "01a3_chooseProduct"),(Rule "01a2_displayProducts",Rule "01a4_displayItems"),(Rule "01a2_displayProducts",Rule "01a5_02b5_chooseItem"),(Rule "01a2_displayProducts",Rule "01a6_02b6_displayChosenItem"),(Rule "01a3_chooseProduct",Rule "01a4_displayItems"),(Rule "01a3_chooseProduct",Rule "01a5_02b5_chooseItem"),(Rule "01a3_chooseProduct",Rule "01a6_02b6_displayChosenItem"),(Rule "01a4_displayItems",Rule "01a5_02b5_chooseItem"),(Rule "01a4_displayItems",Rule "01a6_02b6_displayChosenItem"),(Rule "01a5_02b5_chooseItem",Rule "01a6_02b6_displayChosenItem")]
+
+##################
+
+All Elements:
+fromList [Node 768,Node 769,Node 770,Edge 771,Edge 772,Edge 773,Edge 774,Edge 2331,Edge 4751,Edge 4752,Edge 7226,Edge 9787,Edge 9788,Edge 15095,Edge 15096,Edge 15097]
+
+Elements Relation: 
+fromList [(Edge 772,Edge 4751),(Edge 772,Edge 4752),(Edge 772,Edge 7226),(Edge 772,Edge 9787),(Edge 772,Edge 9788),(Edge 772,Edge 15095),(Edge 772,Edge 15096),(Edge 772,Edge 15097),(Edge 773,Edge 4751),(Edge 773,Edge 4752),(Edge 773,Edge 7226),(Edge 773,Edge 9787),(Edge 773,Edge 9788),(Edge 773,Edge 15095),(Edge 773,Edge 15096),(Edge 773,Edge 15097),(Edge 2331,Edge 4751),(Edge 2331,Edge 4752),(Edge 2331,Edge 7226),(Edge 2331,Edge 9787),(Edge 2331,Edge 9788),(Edge 2331,Edge 15095),(Edge 2331,Edge 15096),(Edge 2331,Edge 15097),(Edge 4751,Edge 9787),(Edge 4751,Edge 9788),(Edge 4751,Edge 15095),(Edge 4751,Edge 15096),(Edge 4751,Edge 15097),(Edge 4752,Edge 9787),(Edge 4752,Edge 9788),(Edge 4752,Edge 15095),(Edge 4752,Edge 15096),(Edge 4752,Edge 15097),(Edge 7226,Edge 9787),(Edge 7226,Edge 9788),(Edge 7226,Edge 15095),(Edge 7226,Edge 15096),(Edge 7226,Edge 15097),(Edge 9787,Edge 15095),(Edge 9787,Edge 15096),(Edge 9787,Edge 15097),(Edge 9788,Edge 15095),(Edge 9788,Edge 15096),(Edge 9788,Edge 15097)]
+
+##################
+
+Tesing Validity
+
+Are the origins and terminations of elements unique?
+>>> True
+
+------------------
+
+Is the initial graph valid? 
+>>> True
+
+
+Node mappings: 
+768 --> Just 768
+769 --> Just 769
+770 --> Just 770
+
+Edge mappings: 
+771 --> Just 771 (from: 768 to:769)
+772 --> Just 772 (from: 769 to:769)
+773 --> Just 773 (from: 769 to:770)
+774 --> Just 774 (from: 770 to:769)
+
+
+------------------
+
+Is the final graph valid? 
+>>> True
+
+
+Node mappings: 
+768 --> Just 768
+769 --> Just 769
+770 --> Just 770
+
+Edge mappings: 
+771 --> Just 771 (from: 768 to:769)
+774 --> Just 774 (from: 770 to:769)
+15095 --> Just 15095 (from: 769 to:769)
+15096 --> Just 15096 (from: 769 to:770)
+15097 --> Just 15097 (from: 769 to:770)
+
+
+------------------
+
+Is there a compatible concrete total order for rules?
+>>> Just [Rule "01a1_chooseCategory",Rule "01a2_displayProducts",Rule "01a3_chooseProduct",Rule "01a4_displayItems",Rule "01a5_02b5_chooseItem",Rule "01a6_02b6_displayChosenItem"]
+Is there a compatible concrete total order for elements?
+>>> Just [Node 768,Node 769,Node 770,Edge 771,Edge 772,Edge 773,Edge 774,Edge 2331,Edge 4751,Edge 4752,Edge 7226,Edge 9787,Edge 9788,Edge 15095,Edge 15096,Edge 15097]
+
+------------------
+
+Set of Restrictions:fromList []
+Is there a compatible concrete total order respecting NACs?
+>>> True
+Saved in results/uc_01_a.ggx
