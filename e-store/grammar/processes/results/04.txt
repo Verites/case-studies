@@ -1,0 +1,97 @@
+Conflicts and Dependencies: 
+[Interaction {firstRule = "04a4_displayUpdateConfirmationMsg", secondRule = "04a3_modifyAccountInf", interactionType = DeleteUse, nacInvolved = Nothing},Interaction {firstRule = "04a1_clickUpdateAccountLink", secondRule = "04a2_displayModAccountInfPage", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "04a2_displayModAccountInfPage", secondRule = "04a3_modifyAccountInf", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "04a2_displayModAccountInfPage", secondRule = "04a4_displayUpdateConfirmationMsg", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "04a3_modifyAccountInf", secondRule = "04a4_displayUpdateConfirmationMsg", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "04a2_displayModAccountInfPage", secondRule = "04a1_clickUpdateAccountLink", interactionType = DeleteForbid, nacInvolved = Just 0}]
+
+##################
+
+Creation and Deletion Relation: 
+fromList [(Node 4382,Rule "04a3_modifyAccountInf"),(Edge 602,Rule "04a2_displayModAccountInfPage"),(Edge 1831,Rule "04a2_displayModAccountInfPage"),(Edge 3755,Rule "04a4_displayUpdateConfirmationMsg"),(Edge 4413,Rule "04a3_modifyAccountInf"),(Edge 4414,Rule "04a3_modifyAccountInf"),(Edge 5739,Rule "04a4_displayUpdateConfirmationMsg"),(Rule "04a1_clickUpdateAccountLink",Edge 1831),(Rule "04a2_displayModAccountInfPage",Edge 3755),(Rule "04a3_modifyAccountInf",Edge 5739),(Rule "04a3_modifyAccountInf",Edge 5740),(Rule "04a4_displayUpdateConfirmationMsg",Edge 7791),(Rule "04a4_displayUpdateConfirmationMsg",Edge 7792)]
+
+------------------
+
+Conflicts and dependencies induced by NACs:
+ 
+[(Interaction {firstRule = "04a1_clickUpdateAccountLink", secondRule = "04a1_clickUpdateAccountLink", interactionType = ProduceForbid, nacInvolved = Just 0},Edge 1831),(Interaction {firstRule = "04a2_displayModAccountInfPage", secondRule = "04a1_clickUpdateAccountLink", interactionType = DeleteForbid, nacInvolved = Just 0},Edge 1831)]
+
+##################
+
+All Rules:
+fromList [Rule "04a1_clickUpdateAccountLink",Rule "04a2_displayModAccountInfPage",Rule "04a3_modifyAccountInf",Rule "04a4_displayUpdateConfirmationMsg"]
+
+Rules Relation: 
+fromList [(Rule "04a1_clickUpdateAccountLink",Rule "04a2_displayModAccountInfPage"),(Rule "04a1_clickUpdateAccountLink",Rule "04a3_modifyAccountInf"),(Rule "04a1_clickUpdateAccountLink",Rule "04a4_displayUpdateConfirmationMsg"),(Rule "04a2_displayModAccountInfPage",Rule "04a3_modifyAccountInf"),(Rule "04a2_displayModAccountInfPage",Rule "04a4_displayUpdateConfirmationMsg"),(Rule "04a3_modifyAccountInf",Rule "04a4_displayUpdateConfirmationMsg")]
+
+##################
+
+All Elements:
+fromList [Node 598,Node 599,Node 600,Node 601,Node 4381,Node 4382,Edge 602,Edge 603,Edge 604,Edge 605,Edge 606,Edge 1831,Edge 3755,Edge 4413,Edge 4414,Edge 5739,Edge 5740,Edge 7791,Edge 7792]
+
+Elements Relation: 
+fromList [(Node 4382,Edge 5739),(Node 4382,Edge 5740),(Node 4382,Edge 7791),(Node 4382,Edge 7792),(Edge 602,Edge 3755),(Edge 602,Edge 5739),(Edge 602,Edge 5740),(Edge 602,Edge 7791),(Edge 602,Edge 7792),(Edge 1831,Edge 3755),(Edge 1831,Edge 5739),(Edge 1831,Edge 5740),(Edge 1831,Edge 7791),(Edge 1831,Edge 7792),(Edge 3755,Edge 7791),(Edge 3755,Edge 7792),(Edge 4413,Edge 5739),(Edge 4413,Edge 5740),(Edge 4413,Edge 7791),(Edge 4413,Edge 7792),(Edge 4414,Edge 5739),(Edge 4414,Edge 5740),(Edge 4414,Edge 7791),(Edge 4414,Edge 7792),(Edge 5739,Edge 7791),(Edge 5739,Edge 7792)]
+
+##################
+
+Tesing Validity
+
+Are the origins and terminations of elements unique?
+>>> True
+
+------------------
+
+Is the initial graph valid? 
+>>> True
+
+
+Node mappings: 
+598 --> Just 598
+599 --> Just 599
+600 --> Just 600
+601 --> Just 601
+4381 --> Just 4381
+4382 --> Just 4382
+
+Edge mappings: 
+602 --> Just 602 (from: 598 to:598)
+603 --> Just 603 (from: 598 to:599)
+604 --> Just 604 (from: 600 to:599)
+605 --> Just 605 (from: 601 to:598)
+606 --> Just 606 (from: 600 to:598)
+4413 --> Just 4413 (from: 600 to:4381)
+4414 --> Just 4414 (from: 4382 to:598)
+
+
+------------------
+
+Is the final graph valid? 
+>>> True
+
+
+Node mappings: 
+598 --> Just 598
+599 --> Just 599
+600 --> Just 600
+601 --> Just 601
+4381 --> Just 4381
+
+Edge mappings: 
+603 --> Just 603 (from: 598 to:599)
+604 --> Just 604 (from: 600 to:599)
+605 --> Just 605 (from: 601 to:598)
+606 --> Just 606 (from: 600 to:598)
+5740 --> Just 5740 (from: 4381 to:598)
+7791 --> Just 7791 (from: 598 to:598)
+7792 --> Just 7792 (from: 598 to:598)
+
+
+------------------
+
+Is there a compatible concrete total order for rules?
+>>> Just [Rule "04a1_clickUpdateAccountLink",Rule "04a2_displayModAccountInfPage",Rule "04a3_modifyAccountInf",Rule "04a4_displayUpdateConfirmationMsg"]
+Is there a compatible concrete total order for elements?
+>>> Just [Node 598,Node 599,Node 600,Node 601,Node 4381,Node 4382,Edge 602,Edge 603,Edge 604,Edge 605,Edge 606,Edge 1831,Edge 3755,Edge 4413,Edge 4414,Edge 5739,Edge 5740,Edge 7791,Edge 7792]
+
+------------------
+
+Set of Restrictions:fromList []
+Is there a compatible concrete total order respecting NACs?
+>>> True
+Saved in results/uc_04.ggx
