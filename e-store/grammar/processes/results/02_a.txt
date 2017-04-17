@@ -1,0 +1,88 @@
+Conflicts and Dependencies: 
+[Interaction {firstRule = "02a1_enterSearchString", secondRule = "02a2_displayMatches", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "02a2_displayMatches", secondRule = "02a3_clickDesiredLink", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "02a2_displayMatches", secondRule = "02a4_displayItems", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "02a3_clickDesiredLink", secondRule = "02a4_displayItems", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "02a4_displayItems", secondRule = "01a6_02a6_displayChosenItem", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "02a2_displayMatches", secondRule = "02a1_enterSearchString", interactionType = DeleteForbid, nacInvolved = Just 0},Interaction {firstRule = "02a4_displayItems", secondRule = "02a3_clickDesiredLink", interactionType = DeleteForbid, nacInvolved = Just 0}]
+
+##################
+
+Creation and Deletion Relation: 
+fromList [(Node 910,Rule "02a2_displayMatches"),(Edge 913,Rule "02a1_enterSearchString"),(Edge 914,Rule "02a2_displayMatches"),(Edge 2752,Rule "02a2_displayMatches"),(Edge 5585,Rule "02a4_displayItems"),(Edge 8463,Rule "02a4_displayItems"),(Edge 11462,Rule "01a6_02a6_displayChosenItem"),(Edge 11463,Rule "01a6_02a6_displayChosenItem"),(Rule "01a6_02a6_displayChosenItem",Edge 16770),(Rule "01a6_02a6_displayChosenItem",Edge 16771),(Rule "01a6_02a6_displayChosenItem",Edge 16772),(Rule "02a1_enterSearchString",Edge 2752),(Rule "02a2_displayMatches",Edge 5585),(Rule "02a3_clickDesiredLink",Edge 8463),(Rule "02a4_displayItems",Edge 11462),(Rule "02a4_displayItems",Edge 11463)]
+
+------------------
+
+Conflicts and dependencies induced by NACs:
+ 
+[(Interaction {firstRule = "02a2_displayMatches", secondRule = "02a1_enterSearchString", interactionType = DeleteForbid, nacInvolved = Just 0},Edge 2752),(Interaction {firstRule = "02a3_clickDesiredLink", secondRule = "02a3_clickDesiredLink", interactionType = ProduceForbid, nacInvolved = Just 0},Edge 8463),(Interaction {firstRule = "02a4_displayItems", secondRule = "02a3_clickDesiredLink", interactionType = DeleteForbid, nacInvolved = Just 0},Edge 8463)]
+
+##################
+
+All Rules:
+fromList [Rule "01a5_02a5_chooseItem",Rule "01a6_02a6_displayChosenItem",Rule "02a1_enterSearchString",Rule "02a2_displayMatches",Rule "02a3_clickDesiredLink",Rule "02a4_displayItems"]
+
+Rules Relation: 
+fromList [(Rule "01a5_02a5_chooseItem",Rule "01a6_02a6_displayChosenItem"),(Rule "02a1_enterSearchString",Rule "01a5_02a5_chooseItem"),(Rule "02a1_enterSearchString",Rule "01a6_02a6_displayChosenItem"),(Rule "02a1_enterSearchString",Rule "02a2_displayMatches"),(Rule "02a1_enterSearchString",Rule "02a3_clickDesiredLink"),(Rule "02a1_enterSearchString",Rule "02a4_displayItems"),(Rule "02a2_displayMatches",Rule "01a5_02a5_chooseItem"),(Rule "02a2_displayMatches",Rule "01a6_02a6_displayChosenItem"),(Rule "02a2_displayMatches",Rule "02a3_clickDesiredLink"),(Rule "02a2_displayMatches",Rule "02a4_displayItems"),(Rule "02a3_clickDesiredLink",Rule "01a5_02a5_chooseItem"),(Rule "02a3_clickDesiredLink",Rule "01a6_02a6_displayChosenItem"),(Rule "02a3_clickDesiredLink",Rule "02a4_displayItems"),(Rule "02a4_displayItems",Rule "01a5_02a5_chooseItem"),(Rule "02a4_displayItems",Rule "01a6_02a6_displayChosenItem")]
+
+##################
+
+All Elements:
+fromList [Node 907,Node 908,Node 909,Node 910,Edge 911,Edge 912,Edge 913,Edge 914,Edge 2752,Edge 5585,Edge 8463,Edge 11462,Edge 11463,Edge 16770,Edge 16771,Edge 16772]
+
+Elements Relation: 
+fromList [(Node 910,Edge 5585),(Node 910,Edge 8463),(Node 910,Edge 11462),(Node 910,Edge 11463),(Node 910,Edge 16770),(Node 910,Edge 16771),(Node 910,Edge 16772),(Edge 913,Edge 2752),(Edge 913,Edge 5585),(Edge 913,Edge 8463),(Edge 913,Edge 11462),(Edge 913,Edge 11463),(Edge 913,Edge 16770),(Edge 913,Edge 16771),(Edge 913,Edge 16772),(Edge 914,Edge 5585),(Edge 914,Edge 8463),(Edge 914,Edge 11462),(Edge 914,Edge 11463),(Edge 914,Edge 16770),(Edge 914,Edge 16771),(Edge 914,Edge 16772),(Edge 2752,Edge 5585),(Edge 2752,Edge 8463),(Edge 2752,Edge 11462),(Edge 2752,Edge 11463),(Edge 2752,Edge 16770),(Edge 2752,Edge 16771),(Edge 2752,Edge 16772),(Edge 5585,Edge 11462),(Edge 5585,Edge 11463),(Edge 5585,Edge 16770),(Edge 5585,Edge 16771),(Edge 5585,Edge 16772),(Edge 8463,Edge 11462),(Edge 8463,Edge 11463),(Edge 8463,Edge 16770),(Edge 8463,Edge 16771),(Edge 8463,Edge 16772),(Edge 11462,Edge 16770),(Edge 11462,Edge 16771),(Edge 11462,Edge 16772),(Edge 11463,Edge 16770),(Edge 11463,Edge 16771),(Edge 11463,Edge 16772)]
+
+##################
+
+Tesing Validity
+
+Are the origins and terminations of elements unique?
+>>> True
+
+------------------
+
+Is the initial graph valid? 
+>>> True
+
+
+Node mappings: 
+907 --> Just 907
+908 --> Just 908
+909 --> Just 909
+910 --> Just 910
+
+Edge mappings: 
+911 --> Just 911 (from: 909 to:907)
+912 --> Just 912 (from: 908 to:907)
+913 --> Just 913 (from: 909 to:910)
+914 --> Just 914 (from: 907 to:907)
+
+
+------------------
+
+Is the final graph valid? 
+>>> True
+
+
+Node mappings: 
+907 --> Just 907
+908 --> Just 908
+909 --> Just 909
+
+Edge mappings: 
+911 --> Just 911 (from: 909 to:907)
+912 --> Just 912 (from: 908 to:907)
+16770 --> Just 16770 (from: 907 to:907)
+16771 --> Just 16771 (from: 907 to:909)
+16772 --> Just 16772 (from: 907 to:909)
+
+
+------------------
+
+Is there a compatible concrete total order for rules?
+>>> Just [Rule "02a1_enterSearchString",Rule "02a2_displayMatches",Rule "02a3_clickDesiredLink",Rule "02a4_displayItems",Rule "01a5_02a5_chooseItem",Rule "01a6_02a6_displayChosenItem"]
+Is there a compatible concrete total order for elements?
+>>> Just [Node 907,Node 908,Node 909,Node 910,Edge 911,Edge 912,Edge 913,Edge 914,Edge 2752,Edge 5585,Edge 8463,Edge 11462,Edge 11463,Edge 16770,Edge 16771,Edge 16772]
+
+------------------
+
+Set of Restrictions:fromList []
+Is there a compatible concrete total order respecting NACs?
+>>> True
+Saved in results/uc_02_a.ggx
