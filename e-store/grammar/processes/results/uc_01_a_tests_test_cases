@@ -1,0 +1,22 @@
+Rules involved: {
+fromList [Rule "01a1_chooseCategory",Rule "01a2_displayProducts",Rule "01a3_chooseProduct",Rule "01a4_displayItems",Rule "01a5_02b5_chooseItem",Rule "01a6_02b6_displayChosenItem"]
+}
+Concrete Rules Relation: {
+[(Rule "01a1_chooseCategory" < Rule "01a2_displayProducts"),(Rule "01a1_chooseCategory" < Rule "01a3_chooseProduct"),(Rule "01a1_chooseCategory" < Rule "01a4_displayItems"),(Rule "01a1_chooseCategory" < Rule "01a5_02b5_chooseItem"),(Rule "01a1_chooseCategory" < Rule "01a6_02b6_displayChosenItem"),(Rule "01a2_displayProducts" < Rule "01a3_chooseProduct"),(Rule "01a2_displayProducts" < Rule "01a4_displayItems"),(Rule "01a2_displayProducts" < Rule "01a5_02b5_chooseItem"),(Rule "01a2_displayProducts" < Rule "01a6_02b6_displayChosenItem"),(Rule "01a3_chooseProduct" < Rule "01a4_displayItems"),(Rule "01a3_chooseProduct" < Rule "01a5_02b5_chooseItem"),(Rule "01a3_chooseProduct" < Rule "01a6_02b6_displayChosenItem"),(Rule "01a4_displayItems" < Rule "01a5_02b5_chooseItem"),(Rule "01a4_displayItems" < Rule "01a6_02b6_displayChosenItem"),(Rule "01a5_02b5_chooseItem" < Rule "01a6_02b6_displayChosenItem")]
+}
+Elements involved: {
+fromList [Node 768,Node 769,Node 770,Edge 771,Edge 772,Edge 773,Edge 774,Edge 2331,Edge 4751,Edge 4752,Edge 7226,Edge 9787,Edge 9788,Edge 15095,Edge 15096,Edge 15097]
+}
+Elements Relation: {
+[(Edge 772 < Edge 4751),(Edge 772 < Edge 4752),(Edge 772 < Edge 7226),(Edge 772 < Edge 9787),(Edge 772 < Edge 9788),(Edge 772 < Edge 15095),(Edge 772 < Edge 15096),(Edge 772 < Edge 15097),(Edge 773 < Edge 4751),(Edge 773 < Edge 4752),(Edge 773 < Edge 7226),(Edge 773 < Edge 9787),(Edge 773 < Edge 9788),(Edge 773 < Edge 15095),(Edge 773 < Edge 15096),(Edge 773 < Edge 15097),(Edge 2331 < Edge 4751),(Edge 2331 < Edge 4752),(Edge 2331 < Edge 7226),(Edge 2331 < Edge 9787),(Edge 2331 < Edge 9788),(Edge 2331 < Edge 15095),(Edge 2331 < Edge 15096),(Edge 2331 < Edge 15097),(Edge 4751 < Edge 9787),(Edge 4751 < Edge 9788),(Edge 4751 < Edge 15095),(Edge 4751 < Edge 15096),(Edge 4751 < Edge 15097),(Edge 4752 < Edge 9787),(Edge 4752 < Edge 9788),(Edge 4752 < Edge 15095),(Edge 4752 < Edge 15096),(Edge 4752 < Edge 15097),(Edge 7226 < Edge 9787),(Edge 7226 < Edge 9788),(Edge 7226 < Edge 15095),(Edge 7226 < Edge 15096),(Edge 7226 < Edge 15097),(Edge 9787 < Edge 15095),(Edge 9787 < Edge 15096),(Edge 9787 < Edge 15097),(Edge 9788 < Edge 15095),(Edge 9788 < Edge 15096),(Edge 9788 < Edge 15097)]
+}
+
+
+Rules Ordering: {Just [Rule "01a1_chooseCategory",Rule "01a2_displayProducts",Rule "01a3_chooseProduct",Rule "01a4_displayItems",Rule "01a5_02b5_chooseItem",Rule "01a6_02b6_displayChosenItem"]
+}
+Element Ordering: {Just [Node 768,Node 769,Node 770,Edge 771,Edge 772,Edge 773,Edge 774,Edge 2331,Edge 4751,Edge 4752,Edge 7226,Edge 9787,Edge 9788,Edge 15095,Edge 15096,Edge 15097]
+}
+
+Set of Abstract Restrictions: {
+[]
+}
