@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document version="1.0">
+  <GraphTransformationSystem name="GraGra" ID="I1" directed="true" parallel="true">
+    <TaggedValue Tag="AttrHandler" TagValue="Java Expr">
+      <TaggedValue Tag="Package" TagValue="java.lang"/>
+      <TaggedValue Tag="Package" TagValue="java.util"/>
+    </TaggedValue>
+    <TaggedValue Tag="CSP" TagValue="true"/>
+    <TaggedValue Tag="dangling" TagValue="true"/>
+    <TaggedValue Tag="identification" TagValue="true"/>
+    <TaggedValue Tag="NACs" TagValue="true"/>
+    <TaggedValue Tag="PACs" TagValue="true"/>
+    <TaggedValue Tag="GACs" TagValue="true"/>
+    <TaggedValue Tag="breakAllLayer" TagValue="true"/>
+    <TaggedValue Tag="showGraphAfterStep" TagValue="true"/>
+    <TaggedValue Tag="TypeGraphLevel" TagValue="ENABLED"/>
+    <Types>
+      <NodeType ID="N692" abstract="false" name="GUI-692%:CIRCLE:java.awt.Color[r=255,g=0,b=0]:FILLED:[NODE]:"/>
+      <NodeType ID="N693" abstract="false" name="username-693%:RECT:java.awt.Color[r=0,g=0,b=0]:FILLED:[NODE]:"/>
+      <NodeType ID="N694" abstract="false" name="User-694%:CIRCLE:java.awt.Color[r=0,g=0,b=255]:[NODE]:"/>
+      <NodeType ID="N695" abstract="false" name="System-695%:RECT:java.awt.Color[r=0,g=0,b=255]:FILLED:[NODE]:"/>
+      <NodeType ID="N6556" abstract="false" name="e-Mail-6556%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <EdgeType ID="E696" abstract="false" name="Page_AccountInformation-696%:DASH_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E697" abstract="false" name="s-logs-u-697%:SOLID_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E698" abstract="false" name="u-knows-un-698%:SOLID_LINE:java.awt.Color[r=0,g=0,b=255]:[EDGE]:"/>
+      <EdgeType ID="E699" abstract="false" name="session-699%:SOLID_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E700" abstract="false" name="u-uses-g-700%:DASH_LINE:java.awt.Color[r=0,g=0,b=255]:[EDGE]:"/>
+      <EdgeType ID="E2113" abstract="false" name="in-cancelAccountLink-2113%:DOT_LINE:java.awt.Color[r=0,g=0,b=255]:[EDGE]:"/>
+      <EdgeType ID="E4328" abstract="false" name="msg_AccountDeleted-4328%:DOT_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E6597" abstract="false" name="Page_SignIn-6597%:DASH_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E6598" abstract="false" name="sends-6598%:SOLID_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E6599" abstract="false" name="receives-6599%:SOLID_LINE:java.awt.Color[r=0,g=0,b=255]:[EDGE]:"/>
+      <EdgeType ID="E6600" abstract="false" name="msg_Cancellation-6600%:DOT_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
+      <Graph ID="TypeGraph" kind="TG" name="TypeGraph">
+        <Node ID="TypeGraph_n692" type="N692">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n693" type="N693">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n694" type="N694">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n695" type="N695">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n6556" type="N6556">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="TypeGraph_e696" source="TypeGraph_n692" target="TypeGraph_n692" type="E696">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e697" source="TypeGraph_n692" target="TypeGraph_n693" type="E697">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e698" source="TypeGraph_n694" target="TypeGraph_n693" type="E698">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e699" source="TypeGraph_n695" target="TypeGraph_n692" type="E699">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e700" source="TypeGraph_n694" target="TypeGraph_n692" type="E700">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e2113" source="TypeGraph_n694" target="TypeGraph_n692" type="E2113">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e4328" source="TypeGraph_n692" target="TypeGraph_n692" type="E4328">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e6597" source="TypeGraph_n692" target="TypeGraph_n692" type="E6597">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e6598" source="TypeGraph_n695" target="TypeGraph_n6556" type="E6598">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e6599" source="TypeGraph_n694" target="TypeGraph_n6556" type="E6599">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e6600" source="TypeGraph_n6556" target="TypeGraph_n6556" type="E6600">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+    </Types>
+    <Graph ID="graph_Init" kind="HOST" name="Init">
+      <Node ID="graph_Init_N692" type="N692">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N693" type="N693">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N694" type="N694">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N695" type="N695">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Edge ID="graph_Init_E696" source="graph_Init_N692" target="graph_Init_N692" type="E696">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E697" source="graph_Init_N692" target="graph_Init_N693" type="E697">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E698" source="graph_Init_N694" target="graph_Init_N693" type="E698">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E699" source="graph_Init_N695" target="graph_Init_N692" type="E699">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E700" source="graph_Init_N694" target="graph_Init_N692" type="E700">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+    </Graph>
+    <Graph ID="graph_final" kind="HOST" name="final">
+      <Node ID="graph_final_N692" type="N692">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N694" type="N694">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N695" type="N695">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N6556" type="N6556">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Edge ID="graph_final_E699" source="graph_final_N695" target="graph_final_N692" type="E699">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_final_E700" source="graph_final_N694" target="graph_final_N692" type="E700">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_final_E6597" source="graph_final_N692" target="graph_final_N692" type="E6597">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_final_E6598" source="graph_final_N695" target="graph_final_N6556" type="E6598">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_final_E6599" source="graph_final_N694" target="graph_final_N6556" type="E6599">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_final_E6600" source="graph_final_N6556" target="graph_final_N6556" type="E6600">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+    </Graph>
+    <Rule ID="05a1_clickCancelAccount" formula="true" name="05a1_clickCancelAccount">
+      <Graph ID="LeftOf_05a1_clickCancelAccount" kind="LHS" name="LeftOf_05a1_clickCancelAccount">
+        <Node ID="LeftOf_05a1_clickCancelAccount_N692" type="N692">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_05a1_clickCancelAccount_N693" type="N693">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_05a1_clickCancelAccount_N694" type="N694">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_05a1_clickCancelAccount_N695" type="N695">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="LeftOf_05a1_clickCancelAccount_E696" source="LeftOf_05a1_clickCancelAccount_N692" target="LeftOf_05a1_clickCancelAccount_N692" type="E696">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_05a1_clickCancelAccount_E697" source="LeftOf_05a1_clickCancelAccount_N692" target="LeftOf_05a1_clickCancelAccount_N693" type="E697">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_05a1_clickCancelAccount_E698" source="LeftOf_05a1_clickCancelAccount_N694" target="LeftOf_05a1_clickCancelAccount_N693" type="E698">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_05a1_clickCancelAccount_E699" source="LeftOf_05a1_clickCancelAccount_N695" target="LeftOf_05a1_clickCancelAccount_N692" type="E699">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_05a1_clickCancelAccount_E700" source="LeftOf_05a1_clickCancelAccount_N694" target="LeftOf_05a1_clickCancelAccount_N692" type="E700">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Graph ID="RightOf_05a1_clickCancelAccount" kind="RHS" name="RightOf_05a1_clickCancelAccount">
+        <Node ID="RightOf_05a1_clickCancelAccount_N692" type="N692">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_05a1_clickCancelAccount_N693" type="N693">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_05a1_clickCancelAccount_N694" type="N694">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_05a1_clickCancelAccount_N695" type="N695">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="RightOf_05a1_clickCancelAccount_E696" source="RightOf_05a1_clickCancelAccount_N692" target="RightOf_05a1_clickCancelAccount_N692" type="E696">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_05a1_clickCancelAccount_E697" source="RightOf_05a1_clickCancelAccount_N692" target="RightOf_05a1_clickCancelAccount_N693" type="E697">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_05a1_clickCancelAccount_E698" source="RightOf_05a1_clickCancelAccount_N694" target="RightOf_05a1_clickCancelAccount_N693" type="E698">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_05a1_clickCancelAccount_E699" source="RightOf_05a1_clickCancelAccount_N695" target="RightOf_05a1_clickCancelAccount_N692" type="E699">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_05a1_clickCancelAccount_E700" source="RightOf_05a1_clickCancelAccount_N694" target="RightOf_05a1_clickCancelAccount_N692" type="E700">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_05a1_clickCancelAccount_E2113" source="RightOf_05a1_clickCancelAccount_N694" target="RightOf_05a1_clickCancelAccount_N692" type="E2113">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Morphism name="05a1_clickCancelAccount">
+        <Mapping image="RightOf_05a1_clickCancelAccount_N692" orig="LeftOf_05a1_clickCancelAccount_N692"/>
+        <Mapping image="RightOf_05a1_clickCancelAccount_N693" orig="LeftOf_05a1_clickCancelAccount_N693"/>
+        <Mapping image="RightOf_05a1_clickCancelAccount_N694" orig="LeftOf_05a1_clickCancelAccount_N694"/>
+        <Mapping image="RightOf_05a1_clickCancelAccount_N695" orig="LeftOf_05a1_clickCancelAccount_N695"/>
+        <Mapping image="RightOf_05a1_clickCancelAccount_E696" orig="LeftOf_05a1_clickCancelAccount_E696"/>
+        <Mapping image="RightOf_05a1_clickCancelAccount_E697" orig="LeftOf_05a1_clickCancelAccount_E697"/>
+        <Mapping image="RightOf_05a1_clickCancelAccount_E698" orig="LeftOf_05a1_clickCancelAccount_E698"/>
+        <Mapping image="RightOf_05a1_clickCancelAccount_E699" orig="LeftOf_05a1_clickCancelAccount_E699"/>
+        <Mapping image="RightOf_05a1_clickCancelAccount_E700" orig="LeftOf_05a1_clickCancelAccount_E700"/>
+      </Morphism>
+      <ApplCondition/>
+    </Rule>
+    <Rule ID="05a2_logOut" formula="true" name="05a2_logOut">
+      <Graph ID="LeftOf_05a2_logOut" kind="LHS" name="LeftOf_05a2_logOut">
+        <Node ID="LeftOf_05a2_logOut_N692" type="N692">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_05a2_logOut_N693" type="N693">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_05a2_logOut_N694" type="N694">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_05a2_logOut_N695" type="N695">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="LeftOf_05a2_logOut_E696" source="LeftOf_05a2_logOut_N692" target="LeftOf_05a2_logOut_N692" type="E696">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_05a2_logOut_E697" source="LeftOf_05a2_logOut_N692" target="LeftOf_05a2_logOut_N693" type="E697">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_05a2_logOut_E698" source="LeftOf_05a2_logOut_N694" target="LeftOf_05a2_logOut_N693" type="E698">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_05a2_logOut_E699" source="LeftOf_05a2_logOut_N695" target="LeftOf_05a2_logOut_N692" type="E699">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_05a2_logOut_E700" source="LeftOf_05a2_logOut_N694" target="LeftOf_05a2_logOut_N692" type="E700">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_05a2_logOut_E2113" source="LeftOf_05a2_logOut_N694" target="LeftOf_05a2_logOut_N692" type="E2113">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Graph ID="RightOf_05a2_logOut" kind="RHS" name="RightOf_05a2_logOut">
+        <Node ID="RightOf_05a2_logOut_N692" type="N692">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_05a2_logOut_N694" type="N694">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_05a2_logOut_N695" type="N695">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="RightOf_05a2_logOut_E696" source="RightOf_05a2_logOut_N692" target="RightOf_05a2_logOut_N692" type="E696">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_05a2_logOut_E699" source="RightOf_05a2_logOut_N695" target="RightOf_05a2_logOut_N692" type="E699">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_05a2_logOut_E700" source="RightOf_05a2_logOut_N694" target="RightOf_05a2_logOut_N692" type="E700">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_05a2_logOut_E4328" source="RightOf_05a2_logOut_N692" target="RightOf_05a2_logOut_N692" type="E4328">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Morphism name="05a2_logOut">
+        <Mapping image="RightOf_05a2_logOut_N692" orig="LeftOf_05a2_logOut_N692"/>
+        <Mapping image="RightOf_05a2_logOut_N694" orig="LeftOf_05a2_logOut_N694"/>
+        <Mapping image="RightOf_05a2_logOut_N695" orig="LeftOf_05a2_logOut_N695"/>
+        <Mapping image="RightOf_05a2_logOut_E696" orig="LeftOf_05a2_logOut_E696"/>
+        <Mapping image="RightOf_05a2_logOut_E699" orig="LeftOf_05a2_logOut_E699"/>
+        <Mapping image="RightOf_05a2_logOut_E700" orig="LeftOf_05a2_logOut_E700"/>
+      </Morphism>
+      <ApplCondition/>
+    </Rule>
+    <Rule ID="05a3_sendCancellationMail" formula="true" name="05a3_sendCancellationMail">
+      <Graph ID="LeftOf_05a3_sendCancellationMail" kind="LHS" name="LeftOf_05a3_sendCancellationMail">
+        <Node ID="LeftOf_05a3_sendCancellationMail_N692" type="N692">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_05a3_sendCancellationMail_N694" type="N694">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_05a3_sendCancellationMail_N695" type="N695">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="LeftOf_05a3_sendCancellationMail_E696" source="LeftOf_05a3_sendCancellationMail_N692" target="LeftOf_05a3_sendCancellationMail_N692" type="E696">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_05a3_sendCancellationMail_E699" source="LeftOf_05a3_sendCancellationMail_N695" target="LeftOf_05a3_sendCancellationMail_N692" type="E699">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_05a3_sendCancellationMail_E700" source="LeftOf_05a3_sendCancellationMail_N694" target="LeftOf_05a3_sendCancellationMail_N692" type="E700">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_05a3_sendCancellationMail_E4328" source="LeftOf_05a3_sendCancellationMail_N692" target="LeftOf_05a3_sendCancellationMail_N692" type="E4328">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Graph ID="RightOf_05a3_sendCancellationMail" kind="RHS" name="RightOf_05a3_sendCancellationMail">
+        <Node ID="RightOf_05a3_sendCancellationMail_N692" type="N692">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_05a3_sendCancellationMail_N694" type="N694">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_05a3_sendCancellationMail_N695" type="N695">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_05a3_sendCancellationMail_N6556" type="N6556">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="RightOf_05a3_sendCancellationMail_E699" source="RightOf_05a3_sendCancellationMail_N695" target="RightOf_05a3_sendCancellationMail_N692" type="E699">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_05a3_sendCancellationMail_E700" source="RightOf_05a3_sendCancellationMail_N694" target="RightOf_05a3_sendCancellationMail_N692" type="E700">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_05a3_sendCancellationMail_E6597" source="RightOf_05a3_sendCancellationMail_N692" target="RightOf_05a3_sendCancellationMail_N692" type="E6597">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_05a3_sendCancellationMail_E6598" source="RightOf_05a3_sendCancellationMail_N695" target="RightOf_05a3_sendCancellationMail_N6556" type="E6598">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_05a3_sendCancellationMail_E6599" source="RightOf_05a3_sendCancellationMail_N694" target="RightOf_05a3_sendCancellationMail_N6556" type="E6599">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_05a3_sendCancellationMail_E6600" source="RightOf_05a3_sendCancellationMail_N6556" target="RightOf_05a3_sendCancellationMail_N6556" type="E6600">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Morphism name="05a3_sendCancellationMail">
+        <Mapping image="RightOf_05a3_sendCancellationMail_N692" orig="LeftOf_05a3_sendCancellationMail_N692"/>
+        <Mapping image="RightOf_05a3_sendCancellationMail_N694" orig="LeftOf_05a3_sendCancellationMail_N694"/>
+        <Mapping image="RightOf_05a3_sendCancellationMail_N695" orig="LeftOf_05a3_sendCancellationMail_N695"/>
+        <Mapping image="RightOf_05a3_sendCancellationMail_E699" orig="LeftOf_05a3_sendCancellationMail_E699"/>
+        <Mapping image="RightOf_05a3_sendCancellationMail_E700" orig="LeftOf_05a3_sendCancellationMail_E700"/>
+      </Morphism>
+      <ApplCondition/>
+    </Rule>
+  </GraphTransformationSystem>
+</Document>
+

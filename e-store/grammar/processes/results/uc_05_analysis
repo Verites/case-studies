@@ -1,0 +1,9 @@
+Conflicts and Dependencies: {
+[Interaction {firstRule = "05a3_sendCancellationMail", secondRule = "05a1_clickCancelAccount", interactionType = DeleteUse, nacInvolved = Nothing},Interaction {firstRule = "05a3_sendCancellationMail", secondRule = "05a2_logOut", interactionType = DeleteUse, nacInvolved = Nothing},Interaction {firstRule = "05a1_clickCancelAccount", secondRule = "05a2_logOut", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "05a2_logOut", secondRule = "05a3_sendCancellationMail", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "05a2_logOut", secondRule = "05a1_clickCancelAccount", interactionType = DeleteForbid, nacInvolved = Just 0}]
+}
+Creation and Deletion Relation: {
+fromList [(Node 693,Rule "05a2_logOut"),(Edge 696,Rule "05a3_sendCancellationMail"),(Edge 697,Rule "05a2_logOut"),(Edge 698,Rule "05a2_logOut"),(Edge 2113,Rule "05a2_logOut"),(Edge 4328,Rule "05a3_sendCancellationMail"),(Rule "05a1_clickCancelAccount",Edge 2113),(Rule "05a2_logOut",Edge 4328),(Rule "05a3_sendCancellationMail",Node 6556),(Rule "05a3_sendCancellationMail",Edge 6597),(Rule "05a3_sendCancellationMail",Edge 6598),(Rule "05a3_sendCancellationMail",Edge 6599),(Rule "05a3_sendCancellationMail",Edge 6600)]
+}
+Conflicts and dependencies induced by NACs: 
+{[(Interaction {firstRule = "05a2_logOut", secondRule = "05a1_clickCancelAccount", interactionType = DeleteForbid, nacInvolved = Just 0},Edge 2113)]
+}

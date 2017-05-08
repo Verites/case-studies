@@ -1,0 +1,22 @@
+Rules involved: {
+fromList [Rule "05a1_clickCancelAccount",Rule "05a2_logOut",Rule "05a3_sendCancellationMail"]
+}
+Concrete Rules Relation: {
+[(Rule "05a1_clickCancelAccount" < Rule "05a2_logOut"),(Rule "05a1_clickCancelAccount" < Rule "05a3_sendCancellationMail"),(Rule "05a2_logOut" < Rule "05a3_sendCancellationMail")]
+}
+Elements involved: {
+fromList [Node 692,Node 693,Node 694,Node 695,Node 6556,Edge 696,Edge 697,Edge 698,Edge 699,Edge 700,Edge 2113,Edge 4328,Edge 6597,Edge 6598,Edge 6599,Edge 6600]
+}
+Elements Relation: {
+[(Node 693 < Node 6556),(Node 693 < Edge 4328),(Node 693 < Edge 6597),(Node 693 < Edge 6598),(Node 693 < Edge 6599),(Node 693 < Edge 6600),(Edge 696 < Node 6556),(Edge 696 < Edge 6597),(Edge 696 < Edge 6598),(Edge 696 < Edge 6599),(Edge 696 < Edge 6600),(Edge 697 < Node 6556),(Edge 697 < Edge 4328),(Edge 697 < Edge 6597),(Edge 697 < Edge 6598),(Edge 697 < Edge 6599),(Edge 697 < Edge 6600),(Edge 698 < Node 6556),(Edge 698 < Edge 4328),(Edge 698 < Edge 6597),(Edge 698 < Edge 6598),(Edge 698 < Edge 6599),(Edge 698 < Edge 6600),(Edge 2113 < Node 6556),(Edge 2113 < Edge 4328),(Edge 2113 < Edge 6597),(Edge 2113 < Edge 6598),(Edge 2113 < Edge 6599),(Edge 2113 < Edge 6600),(Edge 4328 < Node 6556),(Edge 4328 < Edge 6597),(Edge 4328 < Edge 6598),(Edge 4328 < Edge 6599),(Edge 4328 < Edge 6600)]
+}
+
+
+Rules Ordering: {Just [Rule "05a1_clickCancelAccount",Rule "05a2_logOut",Rule "05a3_sendCancellationMail"]
+}
+Element Ordering: {Just [Node 692,Node 693,Node 694,Node 695,Edge 696,Edge 697,Edge 698,Edge 699,Edge 700,Edge 2113,Edge 4328,Node 6556,Edge 6597,Edge 6598,Edge 6599,Edge 6600]
+}
+
+Set of Abstract Restrictions: {
+[]
+}
