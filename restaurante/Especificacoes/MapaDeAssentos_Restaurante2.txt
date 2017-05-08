@@ -1,0 +1,35 @@
+# total de Setores
+6
+# Nome do setor, numero de mesas, configuração de cada mesa
+Fundos
+6
+4
+4
+2
+2
+4
+4
+Ante-Sala
+3
+4
+4
+8
+Reservado
+1
+10
+Corredor
+4
+5
+2
+4
+4
+Superior
+8
+2
+2
+2
+4
+4
+4
+4
+
