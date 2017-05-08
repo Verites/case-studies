@@ -1,0 +1,22 @@
+Rules involved: {
+fromList [Rule "04a1_clickUpdateAccountLink",Rule "04a2_displayModAccountInfPage",Rule "04a3_modifyAccountInf",Rule "04a4_displayUpdateConfirmationMsg"]
+}
+Concrete Rules Relation: {
+[(Rule "04a1_clickUpdateAccountLink" < Rule "04a2_displayModAccountInfPage"),(Rule "04a1_clickUpdateAccountLink" < Rule "04a3_modifyAccountInf"),(Rule "04a1_clickUpdateAccountLink" < Rule "04a4_displayUpdateConfirmationMsg"),(Rule "04a2_displayModAccountInfPage" < Rule "04a3_modifyAccountInf"),(Rule "04a2_displayModAccountInfPage" < Rule "04a4_displayUpdateConfirmationMsg"),(Rule "04a3_modifyAccountInf" < Rule "04a4_displayUpdateConfirmationMsg")]
+}
+Elements involved: {
+fromList [Node 598,Node 599,Node 600,Node 601,Node 4381,Node 4382,Edge 602,Edge 603,Edge 604,Edge 605,Edge 606,Edge 1831,Edge 3755,Edge 4413,Edge 4414,Edge 5739,Edge 5740,Edge 7791,Edge 7792]
+}
+Elements Relation: {
+[(Node 4382 < Edge 5739),(Node 4382 < Edge 5740),(Node 4382 < Edge 7791),(Node 4382 < Edge 7792),(Edge 602 < Edge 3755),(Edge 602 < Edge 5739),(Edge 602 < Edge 5740),(Edge 602 < Edge 7791),(Edge 602 < Edge 7792),(Edge 1831 < Edge 3755),(Edge 1831 < Edge 5739),(Edge 1831 < Edge 5740),(Edge 1831 < Edge 7791),(Edge 1831 < Edge 7792),(Edge 3755 < Edge 7791),(Edge 3755 < Edge 7792),(Edge 4413 < Edge 5739),(Edge 4413 < Edge 5740),(Edge 4413 < Edge 7791),(Edge 4413 < Edge 7792),(Edge 4414 < Edge 5739),(Edge 4414 < Edge 5740),(Edge 4414 < Edge 7791),(Edge 4414 < Edge 7792),(Edge 5739 < Edge 7791),(Edge 5739 < Edge 7792)]
+}
+
+
+Rules Ordering: {Just [Rule "04a1_clickUpdateAccountLink",Rule "04a2_displayModAccountInfPage",Rule "04a3_modifyAccountInf",Rule "04a4_displayUpdateConfirmationMsg"]
+}
+Element Ordering: {Just [Node 598,Node 599,Node 600,Node 601,Node 4381,Node 4382,Edge 602,Edge 603,Edge 604,Edge 605,Edge 606,Edge 1831,Edge 3755,Edge 4413,Edge 4414,Edge 5739,Edge 5740,Edge 7791,Edge 7792]
+}
+
+Set of Abstract Restrictions: {
+[]
+}

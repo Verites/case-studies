@@ -1,0 +1,22 @@
+Rules involved: {
+fromList [Rule "02a1_enterSearchString",Rule "02b2_displayMatchesNotFoundMsg"]
+}
+Concrete Rules Relation: {
+[(Rule "02a1_enterSearchString" < Rule "02b2_displayMatchesNotFoundMsg")]
+}
+Elements involved: {
+fromList [Node 907,Node 908,Node 909,Node 910,Edge 911,Edge 912,Edge 913,Edge 914,Edge 2752,Edge 5705]
+}
+Elements Relation: {
+[(Node 910 < Edge 5705),(Edge 913 < Edge 2752),(Edge 913 < Edge 5705),(Edge 2752 < Edge 5705)]
+}
+
+
+Rules Ordering: {Just [Rule "02a1_enterSearchString",Rule "02b2_displayMatchesNotFoundMsg"]
+}
+Element Ordering: {Just [Node 907,Node 908,Node 909,Node 910,Edge 911,Edge 912,Edge 913,Edge 914,Edge 2752,Edge 5705]
+}
+
+Set of Abstract Restrictions: {
+[]
+}

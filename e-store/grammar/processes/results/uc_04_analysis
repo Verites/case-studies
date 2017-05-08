@@ -1,0 +1,9 @@
+Conflicts and Dependencies: {
+[Interaction {firstRule = "04a4_displayUpdateConfirmationMsg", secondRule = "04a3_modifyAccountInf", interactionType = DeleteUse, nacInvolved = Nothing},Interaction {firstRule = "04a1_clickUpdateAccountLink", secondRule = "04a2_displayModAccountInfPage", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "04a2_displayModAccountInfPage", secondRule = "04a3_modifyAccountInf", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "04a2_displayModAccountInfPage", secondRule = "04a4_displayUpdateConfirmationMsg", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "04a3_modifyAccountInf", secondRule = "04a4_displayUpdateConfirmationMsg", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "04a2_displayModAccountInfPage", secondRule = "04a1_clickUpdateAccountLink", interactionType = DeleteForbid, nacInvolved = Just 0}]
+}
+Creation and Deletion Relation: {
+fromList [(Node 4382,Rule "04a3_modifyAccountInf"),(Edge 602,Rule "04a2_displayModAccountInfPage"),(Edge 1831,Rule "04a2_displayModAccountInfPage"),(Edge 3755,Rule "04a4_displayUpdateConfirmationMsg"),(Edge 4413,Rule "04a3_modifyAccountInf"),(Edge 4414,Rule "04a3_modifyAccountInf"),(Edge 5739,Rule "04a4_displayUpdateConfirmationMsg"),(Rule "04a1_clickUpdateAccountLink",Edge 1831),(Rule "04a2_displayModAccountInfPage",Edge 3755),(Rule "04a3_modifyAccountInf",Edge 5739),(Rule "04a3_modifyAccountInf",Edge 5740),(Rule "04a4_displayUpdateConfirmationMsg",Edge 7791),(Rule "04a4_displayUpdateConfirmationMsg",Edge 7792)]
+}
+Conflicts and dependencies induced by NACs: 
+{[(Interaction {firstRule = "04a2_displayModAccountInfPage", secondRule = "04a1_clickUpdateAccountLink", interactionType = DeleteForbid, nacInvolved = Just 0},Edge 1831)]
+}

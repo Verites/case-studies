@@ -1,0 +1,9 @@
+Conflicts and Dependencies: {
+[Interaction {firstRule = "02a1_enterSearchString", secondRule = "02b2_displayMatchesNotFoundMsg", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "02b2_displayMatchesNotFoundMsg", secondRule = "02a1_enterSearchString", interactionType = DeleteForbid, nacInvolved = Just 0}]
+}
+Creation and Deletion Relation: {
+fromList [(Node 910,Rule "02b2_displayMatchesNotFoundMsg"),(Edge 913,Rule "02a1_enterSearchString"),(Edge 2752,Rule "02b2_displayMatchesNotFoundMsg"),(Rule "02a1_enterSearchString",Edge 2752),(Rule "02b2_displayMatchesNotFoundMsg",Edge 5705)]
+}
+Conflicts and dependencies induced by NACs: 
+{[(Interaction {firstRule = "02b2_displayMatchesNotFoundMsg", secondRule = "02a1_enterSearchString", interactionType = DeleteForbid, nacInvolved = Just 0},Edge 2752)]
+}
