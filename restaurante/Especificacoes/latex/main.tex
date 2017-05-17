@@ -16,6 +16,9 @@
 \titleformat{\chapter}{\normalfont\huge\bf}{\thechapter.}{20pt}{\huge\bf}
 \titlespacing*{\chapter}{0pt}{-20pt}{20pt}
 
+\usepackage{todonotes}
+\newcommand{\tinytodo}[2][]{\todo[caption={#2}, size=\footnotesize, #1]{\renewcommand{\baselinestretch}{0.5}\selectfont#2\par}}
+
 \author{Erika Cóta}
 \title{Restaurant}
 
@@ -23,6 +26,7 @@
 
 \maketitle
 \pagestyle{plain}
+
 \chapter{Employee login}
 
 \begin{description}[style=multiline,leftmargin=4cm]
@@ -84,7 +88,7 @@
 -
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Accommodate a client}
+\chapter{Accommodate a client}\footnote{Future: create wait list for tables}
 
 \begin{description}[style=multiline,leftmargin=4cm]
   \item[Priority:] 1
@@ -100,11 +104,11 @@
 \begin{enumerate}
 \item System displays receptionist's menu
 \item Receptionist selects ``accommodate client'' option
-\item System asks for client's booking
-\item \label{accommodate:nobooking}Receptionist informs that this client has no booking
+\item System asks for client's reservation
+\item \label{accommodate:noreservation}Receptionist informs that this client has no reservation
 \item \label{accommodate:asknumber}System asks for number of people
 \item Receptionist informs a number $n$ of people
-\item System selects free tables with at least $n$ seats\footnote{at this moment, the system includes in the search any booked table whose client more than 30 minutes late and that fits the search. The table is automatically tagged as not booked}
+\item System selects free tables with at least $n$ seats\footnote{at this moment, the system includes in the search any reserved table whose client more than 30 minutes late and that fits the search. The table is automatically tagged as not reserved}
 \item System displays selected tables
 \item Receptionist selects a table
 \item \label{accomodate:tag} System tags table as occupied and waiting for service
@@ -121,20 +125,20 @@
 \item [3a] Receptionist cancels selected option
 \item [3b] System displays receptionist's menu
 \\
-\item [4a] Receptionist informs that this client has a booking
-\item [4b] System displays a list of valid bookings, ordered by client's name and booking time
+\item [4a] Receptionist informs that this client has a reservation
+\item [4b] System displays a list of valid reservations, ordered by client's name and reservation time
 \\
-\item [4ca1] Receptionist finds client's booking
+\item [4ca1] Receptionist finds client's reservation
 \item [4ca2] Receptionist selects client's table
 \item [4ca3] Continues at step~\ref{accomodate:tag} in the main scenario
 \\
-\item [4cb1] Receptionist does not find client's booking
-\item [4cb2] Continues at step~\ref{accommodate:nobooking} in the main scenario
+\item [4cb1] Receptionist does not find client's reservation
+\item [4cb2] Continues at step~\ref{accommodate:noreservation} in the main scenario
 \\
 \item [5a] Receptionist cancels selected option
 \item [5b] System displays receptionist's menu
 \\
-\item [6a1] Informed number of people is invalid\footnote{not a number or $n \leq 0$ or $n$ is greater than the capacity of the biggest table}
+\item [6a1] Informed number of people is invalid\footnote{not a number; or $n \leq 0$; or $n$ is greater than the capacity of the biggest table}
 \item [6a2] System displays corresponding error message
 \item [6a3] Continues at step~\ref{accommodate:asknumber}
 \\
@@ -145,5 +149,122 @@
 \item [8b] System displays receptionist's menu
 \\
 \end{enumerate}
+
+\chapter{Reserving a table}
+
+\begin{description}[style=multiline,leftmargin=4cm]
+  \item[Priority:] 1
+  \item[Pre-conditions:] Receptionist is logged in
+  \item[Post-conditions:] -
+  \item[Primary Actor:] Receptionist
+  \item[Other Actions:] -
+  \item[Trigger:] -
+\end{description}
+
+\section{Main Scenario}
+
+\begin{enumerate}
+\item System displays receptionist's menu
+\item Receptionist selects ``reserve table'' option
+\item System asks for date, hour and number of guests for the reservation
+\item Receptionist informs date $D$, hour $H$ and number $N$ of desired guests
+\item System selects tables that have at least $N$ seats which are also free at the day $D$ and hour $H$
+\item System displays selected tables
+\item Receptionist selects a table
+\item System displays reservation and asks for confirmation
+\item Receptionist confirms reservation
+\item System tags the table as reserved at day $D$ and hour $H$
+\item System displays receptionist's menu
+\end{enumerate}
+
+\section{Extensions}
+
+-
+
+\section{Alternatives}\footnote{Future: option to display other tables at near times when no available ones are found}
+
+\begin{enumerate}
+\item [3a] Receptionist cancels selected option
+\item [3b] System displays receptionist's menu
+\\
+\item [5a] There are no tables available for $N$ guests at the day $D$ and hour $H$
+\item [5b] System informs receptionist that there are no available tables
+\item [5c] System asks for a new number $N$ of guests\tinytodo{go to?}
+\\
+\item [6a] Receptionist cancels selected option
+\item [6b] System displays receptionist's menu
+\\
+\item [9a] Receptionist does not confirm reservation
+\item [9b] System displays selected tables\tinytodo{go to?}
+\end{enumerate}
+
+\chapter{Cancel a reservation}
+
+\begin{description}[style=multiline,leftmargin=4cm]
+  \item[Priority:] -
+  \item[Pre-conditions:] Receptionist is logged in\\
+                         There must be a reserved table
+  \item[Post-conditions:] -
+  \item[Primary Actor:] Receptionist
+  \item[Other Actions:] -
+  \item[Trigger:] -
+\end{description}
+
+\section{Main Scenario}
+
+\begin{enumerate}
+\item System displays receptionist's menu
+\item Receptionist selects ``cancel reservation'' option
+\item System displays a list of reservations, ordered by date and hour and reservation
+\item Receptionist selects an item of the list
+\item 
+\end{enumerate}
+
+\section{Extensions}
+
+-
+
+\section{Alternatives}
+
+\begin{enumerate}
+  \item [3a]
+  \item [3b]
+  \item [3c]
+\end{enumerate}
+\iffalse
+
+\chapter{Employee login}
+
+\begin{description}[style=multiline,leftmargin=4cm]
+  \item[Priority:] 
+  \item[Pre-conditions:] 
+  \item[Post-conditions:] 
+  \item[Primary Actor:] 
+  \item[Other Actions:] 
+  \item[Trigger:] 
+\end{description}
+
+\section{Main Scenario}
+
+\begin{enumerate}
+\item 
+\item 
+\item 
+\item 
+\end{enumerate}
+
+\section{Extensions}
+
+-
+
+\section{Alternatives}
+
+\begin{enumerate}
+  \item [3a]
+  \item [3b]
+  \item [3c]
+\end{enumerate}
+
+\fi
 
 \end{document}
