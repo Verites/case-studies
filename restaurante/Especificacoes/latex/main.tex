@@ -1,0 +1,82 @@
+\documentclass[a4paper,11pt,oneside]{book}
+\setcounter{subsection}{0}
+\usepackage{enumitem}
+
+\usepackage{chngcntr}
+
+\counterwithin{subsection}{section}
+\renewcommand\thesection{\arabic{section}}
+
+\usepackage{titlesec}
+\usepackage{emptypage}
+
+\titleformat{\chapter}{\normalfont\huge\bf}{\thechapter.}{20pt}{\huge\bf}
+
+
+\author{Erika Cota}
+\title{Restaurant}
+
+\begin{document}
+
+\maketitle
+
+\chapter{Access system}
+
+\begin{description}[style=multiline,leftmargin=4cm]
+  \item[Priority:] 1
+  \item[Pre-conditions:] -
+  \item[Post-conditions:] Employee is logged
+  \item[Primary Actor:] Employee
+  \item[Other Actions:] -
+  \item[Trigger:] -
+\end{description}
+
+\section{Main Scenario}
+
+\begin{enumerate}
+\item System displays login screen
+\item Employee enters his/her identification code
+\item System validates code
+\item System displays employee menu
+\end{enumerate}
+
+\section{Extensions}
+
+\section{Alternatives}
+
+\begin{enumerate}
+  \item [3a] System does not validate code
+  \item [3b] System returns to login screen
+\end{enumerate}
+
+\pagebreak
+
+\chapter{Access system}
+
+\begin{description}[style=multiline,leftmargin=4cm]
+  \item[Priority:] 1
+  \item[Pre-conditions:] -
+  \item[Post-conditions:] Employee is logged
+  \item[Primary Actor:] Employee
+  \item[Other Actions:] -
+  \item[Trigger:] -
+\end{description}
+
+\section{Main Scenario}
+
+\begin{enumerate}
+\item System displays login screen
+\item Employee enters his/her identification code
+\item System validates code
+\item System displays employee menu
+\end{enumerate}
+
+\section{Extensions}
+
+\section{Alternatives}
+
+\begin{enumerate}
+  \item [3a] System does not validate code
+  \item [3b] System returns to login screen
+\end{enumerate}
+\end{document}
