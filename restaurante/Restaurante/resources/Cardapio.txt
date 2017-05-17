@@ -1,0 +1,50 @@
+#Cardapio
+# 
+# código, nome, custo, valor de venda, tempo de preparo (minutos), ingredientes
+
+#Entradas
+1. Linguiça com cebola - 13,00 - 17,00 - 10 - 1 cebola, 2 linguiças, 2 pães
+2. Jiló com queijo - 9,00 - 12,00 - 12 - 5 jilós, 50g de queijo canastra, 2 pães
+3. Camarões Médios de Cativeiro - 20,00 - 26,00 - 13 - 6 camarões médios, 1 molho de folhas verdes
+4. Camembert Empanado, Mix de Folhas e Coulie de Amora - 15,00 - 20,00 - 10 - 50g de queijo camembert, 1 molho de folhas mix, 50g de amoras
+5. Carpaccio de Filé Mignon com Azeite e Grana Padano - 25,00 - 32,50 - 8 - 100g de filé mignon, 30g de queijo grana padano, 100g de crostine, 1 molho de rúcula 
+
+#Saladas
+6. Salada Caprese - 15,00 - 20,00 - 9 - 1 tomate italiano, 2 mozarela de búfala, 1 molho de manjericão, 30g de queijo grana padano, 2 molhos de folhas mix
+7. Salada de Folhas, Queijos e Figos Secos - 13,00 - 17,00 - 8 - 1 molho de alface mimosa, 1 molho de rúcula, 30g de queijo grana padano, 10g de nozes, 20g de figos secos, 1 mozarela de búfala
+8. Salada de Rúculas Novas - 10,00 - 13,00 - 8 - 2 molhos de rúcula, 1 porção de confit de cebola roxa, 30g de queijo brie, 10g de nozes 
+
+#Sopas
+9. Chinesa - 10,00 - 13,00 - 15 - 100g de missô, 100g de pernil suíno, 50g de champignon, 1 cenoura, 1 molho de acelga, 100g de macarrão
+10. Finlandesa - 8,00 - 11,00 - 11 - 1 porção de couve-flor, 1 batata, 1 cenoura, 50g de ervilha, 100g de vagem, 100ml de creme de mesa
+11. Sopa de cenoura - 5,00 - 6,5 - 5 - 250ml de caldo de cenoura 
+12. Sopa de Batata Salsa - 7,00 - 10,00 - 10 - 2 batatas salsa, 250ml de caldo de carne
+ 
+#Pratos Principais
+13. Costelinha da Sinhá - 55,00 - 71,50 - 20 - 200g de costela de porco, 100g de arroz, 100g de feijão, 1 mandioca, 1 molho de couve
+14. Mexidão Metido a Besta - 60,00 - 78,00 - 13 - 150g de arroz, 150g de feijão, 200g de filet mignon
+15. Lombo Assado da Panela - 45,00 - 58,5 - 20 - 200g de lombo de porco, 150g de arroz, 150g de feijão, 50g de farinha de mandioca, 1 molho de couve, 2 batatas
+16. Frango Jeca - 40,00 - 52,00 - 17 - 2 sobrecoxas de frango, 100ml de creme de leite, 100g de milho verde
+17. Frango com Quiabo - 50,00 - 65,00 - 14 - 2 sobrecoxas de frango, 2 coxinhas de asa, 150g de arroz, 150g de feijão, 100g de fubá de milho, 1 porção de quiabo, 1 molho de couve, 1 chuchu
+18. Filé Grelhado com Penne Rigatte e Molho de queijo - 48,00 - 63,00 - 10 - 150g de filé mignon, 200g de penne, 100g de queijo gruyere, 100ml de nata, 50g de queijo grana padano
+19. Entrecot Premium com Batatas Perfumadas - 58,00 - 75,5 - 12 - 350g de filé da costela, 3 batatas
+20. Carreteiro de Perdiz com Arroz Negro e Manteiga de Foie Gras - 70,00 - 91,00 - 17 - 150g de arroz negro, 1 perdiz, 1 linguiça calabresa, 100ml de cachaça, 50g de manteiga de foie gras 
+21. Robalo Oliva e Ervas - 60,00 - 78,00 - 15 - 1 filé de robalo, 2 cenouras, 3 batatas doces
+
+#Sobremesas 
+22. Doce de abóbora com coco - 8,00 - 10,5 - 6 - 1 abóbora, 100g de coco, 50g de açúcar
+23. Torta da Tia Vilica  - 15,00 - 65,00 - 10 - 50g de margarina, 80g de açúcar, 100ml de creme de leite, 20ml de leite condensado, 100g de biscoito maizena, 50g de chocolate
+24. Petit Gateau de Chocolate - 10,00 - 13 - 7 - 100g de chocolate, 50g de farinha de trigo, 100ml de sorvete de creme
+25. Torta Tiramissu - 12,00 - 16,00 - 8 - 200g de biscoito champagne, 100ml de café, 100g de queijo mascarpone, 50g de cacau
+26. Sorvete de Creme com Calda de Chocolate - 8,00 - 11,00 - 2 - 100ml de sorvete de creme, 50g de chocolate amargo, 30g de castanha
+
+#Bebidas
+27. Limonada refrescante - 4,50 - 9,00 - 4 - 3 limões, 50ml de leite
+28. Suco de abacaxi com gengibre - 4,00 - 8,00 - 5 - 1 abacaxi, 30g de gengibre
+29. Água com gás - 2,00 - 3,50
+30. Água tônica - 3,00 - 5,00
+31. Cerveja - 4,50 - 7,00
+32. Refrigerante - 2,00 - 5,00
+33. Vinho tinto - 5,00 - 10,00
+34. Vinho branco - 5,00 - 10,00
+35. Espumante - 8,00 - 15,00

@@ -1,0 +1,8 @@
+#Salários
+# Cargo, valor fixo, porcentagem
+#
+Atendente, 150, 1%
+Garçom, 200, 7%
+Cozinheiro, 350, 5%
+Auxiliar de cozinha, 100, 3%
+Gerente, 300, 3%
