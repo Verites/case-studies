@@ -9,23 +9,26 @@
 
 \usepackage{titlesec}
 \usepackage{emptypage}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=3cm}
 
 \titleformat{\chapter}{\normalfont\huge\bf}{\thechapter.}{20pt}{\huge\bf}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
 
-
-\author{Erika Cota}
+\author{Erika Cóta}
 \title{Restaurant}
 
 \begin{document}
 
 \maketitle
-
-\chapter{Access system}
+\pagestyle{plain}
+\chapter{Employee login}
 
 \begin{description}[style=multiline,leftmargin=4cm]
   \item[Priority:] 1
-  \item[Pre-conditions:] -
-  \item[Post-conditions:] Employee is logged
+  \item[Pre-conditions:] Employee is not logged in
+  \item[Post-conditions:] Employee is logged in
   \item[Primary Actor:] Employee
   \item[Other Actions:] -
   \item[Trigger:] -
@@ -37,26 +40,28 @@
 \item System displays login screen
 \item Employee enters his/her identification code
 \item System validates code
-\item System displays employee menu
+\item System displays employee's menu
 \end{enumerate}
 
 \section{Extensions}
+
+-
 
 \section{Alternatives}
 
 \begin{enumerate}
   \item [3a] System does not validate code
-  \item [3b] System returns to login screen
+  \item [3b] System displays login error message
+  \item [3c] System returns to login screen
 \end{enumerate}
 
-\pagebreak
-
-\chapter{Access system}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Employee logout}
 
 \begin{description}[style=multiline,leftmargin=4cm]
   \item[Priority:] 1
-  \item[Pre-conditions:] -
-  \item[Post-conditions:] Employee is logged
+  \item[Pre-conditions:] Employee is logged in
+  \item[Post-conditions:] Employee is not logged in
   \item[Primary Actor:] Employee
   \item[Other Actions:] -
   \item[Trigger:] -
@@ -65,18 +70,80 @@
 \section{Main Scenario}
 
 \begin{enumerate}
+\item System displays employee's menu
+\item Employee selects log out option
 \item System displays login screen
-\item Employee enters his/her identification code
-\item System validates code
-\item System displays employee menu
 \end{enumerate}
 
 \section{Extensions}
 
+-
+
+\section{Alternatives}
+
+-
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Accommodate a client}
+
+\begin{description}[style=multiline,leftmargin=4cm]
+  \item[Priority:] 1
+  \item[Pre-conditions:] Receptionist is logged
+  \item[Post-conditions:] -
+  \item[Primary Actor:] Receptionist
+  \item[Other Actions:] -
+  \item[Trigger:] -
+\end{description}
+
+\section{Main Scenario}
+
+\begin{enumerate}
+\item System displays receptionist's menu
+\item Receptionist selects ``accommodate client'' option
+\item System asks for client's booking
+\item \label{accommodate:nobooking}Receptionist informs that this client has no booking
+\item \label{accommodate:asknumber}System asks for number of people
+\item Receptionist informs a number $n$ of people
+\item System selects free tables with at least $n$ seats\footnote{at this moment, the system includes in the search any booked table whose client more than 30 minutes late and that fits the search. The table is automatically tagged as not booked}
+\item System displays selected tables
+\item Receptionist selects a table
+\item \label{accomodate:tag} System tags table as occupied and waiting for service
+\item System informs the sector waiter(s) that the table is waiting for service
+\end{enumerate}
+
+\section{Extensions}
+
+-
+
 \section{Alternatives}
 
 \begin{enumerate}
-  \item [3a] System does not validate code
-  \item [3b] System returns to login screen
+\item [3a] Receptionist cancels selected option
+\item [3b] System displays receptionist's menu
+\\
+\item [4a] Receptionist informs that this client has a booking
+\item [4b] System displays a list of valid bookings, ordered by client's name and booking time
+\\
+\item [4ca1] Receptionist finds client's booking
+\item [4ca2] Receptionist selects client's table
+\item [4ca3] Continues at step~\ref{accomodate:tag} in the main scenario
+\\
+\item [4cb1] Receptionist does not find client's booking
+\item [4cb2] Continues at step~\ref{accommodate:nobooking} in the main scenario
+\\
+\item [5a] Receptionist cancels selected option
+\item [5b] System displays receptionist's menu
+\\
+\item [6a1] Informed number of people is invalid\footnote{not a number or $n \leq 0$ or $n$ is greater than the capacity of the biggest table}
+\item [6a2] System displays corresponding error message
+\item [6a3] Continues at step~\ref{accommodate:asknumber}
+\\
+\item [6b1] System informs receptionist that there are no tables available
+\item [6b2] System displays receptionist's menu
+\\
+\item [8a] Receptionist cancels selected option
+\item [8b] System displays receptionist's menu
+\\
 \end{enumerate}
+
 \end{document}
