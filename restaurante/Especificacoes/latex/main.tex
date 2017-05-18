@@ -19,6 +19,17 @@
 \usepackage{todonotes}
 \newcommand{\tinytodo}[2][]{\todo[caption={#2}, size=\footnotesize, #1]{\renewcommand{\baselinestretch}{0.5}\selectfont#2\par}}
 
+\newcommand{\cancel}[1]{#1 cancels selected option}
+\newcommand{\menu}[1]{System displays #1's menu}
+\newcommand{\error}[1]{System displays #1 error message}
+\newcommand{\goto}[1]{Continues at Step~\ref{#1}}
+
+
+\makeatletter
+\newcommand{\customlabel}[2]{#2\def\@currentlabel{#2}\label{#1}}
+\makeatother
+
+
 \author{Erika Cóta}
 \title{Restaurant}
 
@@ -43,8 +54,8 @@
 \begin{enumerate}
 \item System displays login screen
 \item Employee enters his/her identification code
-\item System validates code
-\item System displays employee's menu
+\item System validates code\tinytodo{and logs user in?}
+\item \menu{employee}\tinytodo{post-condition?}
 \end{enumerate}
 
 \section{Extensions}
@@ -55,11 +66,13 @@
 
 \begin{enumerate}
   \item [3a] System does not validate code
-  \item [3b] System displays login error message
+  \item [3b] \error{login}
   \item [3c] System returns to login screen
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Employee logout}
 
 \begin{description}[style=multiline,leftmargin=4cm]
@@ -74,9 +87,9 @@
 \section{Main Scenario}
 
 \begin{enumerate}
-\item System displays employee's menu
+\item \menu{employee}
 \item Employee selects log out option
-\item System displays login screen
+\item System displays login screen\tinytodo{System logs user out and\ldots ?}\tinytodo{post-condition?}
 \end{enumerate}
 
 \section{Extensions}
@@ -88,6 +101,8 @@
 -
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Accommodate a client}\footnote{Future: create wait list for tables}
 
 \begin{description}[style=multiline,leftmargin=4cm]
@@ -102,7 +117,7 @@
 \section{Main Scenario}
 
 \begin{enumerate}
-\item System displays receptionist's menu
+\item \menu{receptionist} \tinytodo{Pre-condition?}
 \item Receptionist selects ``accommodate client'' option
 \item System asks for client's reservation
 \item \label{accommodate:noreservation}Receptionist informs that this client has no reservation
@@ -112,7 +127,7 @@
 \item System displays selected tables
 \item Receptionist selects a table
 \item \label{accomodate:tag} System tags table as occupied and waiting for service
-\item System informs the sector waiter(s) that the table is waiting for service
+\item System informs the sector waiter(s) that the table is waiting for service\tinytodo{maybe return to menu?}
 \end{enumerate}
 
 \section{Extensions}
@@ -122,8 +137,8 @@
 \section{Alternatives}
 
 \begin{enumerate}
-\item [3a] Receptionist cancels selected option
-\item [3b] System displays receptionist's menu
+\item [3a] \cancel{Receptionist}
+\item [3b] \menu{receptionist}
 \\
 \item [4a] Receptionist informs that this client has a reservation
 \item [4b] System displays a list of valid reservations, ordered by client's name and reservation time
@@ -135,20 +150,23 @@
 \item [4cb1] Receptionist does not find client's reservation
 \item [4cb2] Continues at step~\ref{accommodate:noreservation} in the main scenario
 \\
-\item [5a] Receptionist cancels selected option
-\item [5b] System displays receptionist's menu
+\item [5a] \cancel{Receptionist}
+\item [5b] \menu{receptionist}
 \\
 \item [6a1] Informed number of people is invalid\footnote{not a number; or $n \leq 0$; or $n$ is greater than the capacity of the biggest table}
 \item [6a2] System displays corresponding error message
 \item [6a3] Continues at step~\ref{accommodate:asknumber}
 \\
 \item [6b1] System informs receptionist that there are no tables available
-\item [6b2] System displays receptionist's menu
+\item [6b2] \menu{receptionist}
 \\
-\item [8a] Receptionist cancels selected option
-\item [8b] System displays receptionist's menu
+\item [8a] \cancel{Receptionist}
+\item [8b] \menu{receptionist}
 \\
 \end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Reserving a table}
 
@@ -164,7 +182,7 @@
 \section{Main Scenario}
 
 \begin{enumerate}
-\item System displays receptionist's menu
+  \item \menu{receptionist}\tinytodo{pre-condition?}
 \item Receptionist selects ``reserve table'' option
 \item System asks for date, hour and number of guests for the reservation
 \item Receptionist informs date $D$, hour $H$ and number $N$ of desired guests
@@ -173,8 +191,8 @@
 \item Receptionist selects a table
 \item System displays reservation and asks for confirmation
 \item Receptionist confirms reservation
-\item System tags the table as reserved at day $D$ and hour $H$
-\item System displays receptionist's menu
+\item System tags the table as reserved at day $D$ and hour $H$\tinytodo{post?}
+\item \menu{receptionist}\tinytodo{post?}
 \end{enumerate}
 
 \section{Extensions}
@@ -184,19 +202,22 @@
 \section{Alternatives}\footnote{Future: option to display other tables at near times when no available ones are found}
 
 \begin{enumerate}
-\item [3a] Receptionist cancels selected option
-\item [3b] System displays receptionist's menu
+\item [3a] \cancel{Receptionist}
+\item [3b] \menu{receptionist}
 \\
 \item [5a] There are no tables available for $N$ guests at the day $D$ and hour $H$
 \item [5b] System informs receptionist that there are no available tables
 \item [5c] System asks for a new number $N$ of guests\tinytodo{go to?}
 \\
-\item [6a] Receptionist cancels selected option
-\item [6b] System displays receptionist's menu
+\item [6a] \cancel{Receptionist}
+\item [6b] \menu{receptionist}
 \\
 \item [9a] Receptionist does not confirm reservation
 \item [9b] System displays selected tables\tinytodo{go to?}
 \end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Cancel a reservation}
 
@@ -213,11 +234,14 @@
 \section{Main Scenario}
 
 \begin{enumerate}
-\item System displays receptionist's menu
+\item \menu{receptionist}\tinytodo{pre?}
 \item Receptionist selects ``cancel reservation'' option
-\item System displays a list of reservations, ordered by date and hour and reservation
+\item System displays a list of reservations, ordered by date and hour of reservation
 \item Receptionist selects an item of the list
-\item 
+\item System verifies that date and hour of the reservation are after the 30 minutes before the date and hour of cancellation. System asks for confirmation of cancellation
+\item Receptionist confirms cancellation
+\item System cancels reservation and tags the table as free
+\item System displays a successful cancellation message and \tinytodo{split?} then displays receptionist's menu
 \end{enumerate}
 
 \section{Extensions}
@@ -227,13 +251,97 @@
 \section{Alternatives}
 
 \begin{enumerate}
-  \item [3a]
-  \item [3b]
-  \item [3c]
+  \item [3a1] There are no tables tagged as reserved in the system
+  \item [3a2] System tells receptionist that there are no reserved tables
+  \item [3a3] \menu{receptionist}
+    \\
+  \item [4a1] \cancel{Receptionist}
+  \item [4a2] \menu{receptionist}
+    \\
+  \item [5a1] Date and time of reservation are before the 30 minutes before date and time of cancellation
+  \item [5a2] System cancels reservation and tags table as free
+  \item [5a3] \menu{receptionist}
+    \\
+  \item [6a1] Receptionist does not confirm cancellation
+  \item [6b1] \menu{receptionist}
 \end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Serve a table}
+
+\begin{description}[style=multiline,leftmargin=4cm]
+  \item[Priority:] 1
+  \item[Pre-conditions:] Waiter is logged in\\
+                         There is at least one client at a table waiting for service\tinytodo{the related use case only talks about a table waiting for service}
+  \item[Post-conditions:] -
+  \item[Primary Actor:] Waiter
+  \item[Other Actions:] -
+  \item[Trigger:] -
+\end{description}
+
+\section{Main Scenario}
+
+\begin{enumerate}
+  \item \menu{waiter}\tinytodo{precondition?}
+  \item Waiter selects ``serve table'' option
+  \item \label{serve:ask-number}Systems asks waiter for the table number
+  \item \label{serve:inform-number} Waiter informs the number of the table to be served
+  \item System verifies that there is an open order for this table and recovers it
+  \item System displays the open order and the options ``insert item'', ``remove item'' and ``close order''
+  \item \label{serve:insert} Waiter selects ``insert item'' option
+  \item System asks for the item code in the carte\footnote{using carte to refer to the menu of the restaurant without mistaking it for the menus of the system}
+  \item Waiter informs the correct code
+  \item System verifies that the item\footnote{or all of its ingredients} is available in the inventory
+  \item System displays a description of the item corresponding to the informed code and ask for confirmation
+  \item Waiter confirms item inclusion
+  \item \label{serve:include} System includes the item as a pending request for the order and updates inventory
+  \item Steps~\ref{serve:insert} to~\ref{serve:include} and/or~\ref{serve:remove} to \ref{serve:exclude} are repeated until the waiter selects the ``close order'' option
+  \item Waiter selects ``close order`` option
+  \item System verifies that the order has pending requests
+  \item System displays (starters, main course, dessert, beverages) the items in the pending requests that were not sent to kitchen for waiter revision and asks for the items confirmation
+  \item Waiter confirms order update \tinytodo{review this, if the order was already existent we should not confirm a ``new'' order}
+  \item System sends the requests to the kitchen and tags it as ``Sent''
+  \item \menu{waiter}
+\end{enumerate}
+
+\section{Extensions}
+
+-
+
+\section{Alternatives}
+
+\begin{enumerate}
+  \item [3a1] \cancel{Waiter}
+  \item [3a2] \menu{waiter}
+    \\
+  \item [\ref{serve:inform-number}a1] The number of the table is invalid
+  \item [\ref{serve:inform-number}a2] System displays message showing the reason why the table is invalid\footnote{Maybe the waiter wasn't associated to table by the manager}
+  \item [\ref{serve:inform-number}a3] \goto{serve:ask-number}
+    \\
+  \item [5b1] b
+    \\
+  \item [\customlabel{serve:remove}{7a}]Waiter selects ``remove item'' option
+    \begin{enumerate}
+      \item [\ref{serve:remove}a1]
+      \item [\ref{serve:remove}a2]
+      \item [\ref{serve:remove}a3]
+      \item [\ref{serve:remove}a4]
+      \item [\customlabel{serve:exclude}{\ref{serve:remove}a5}]
+    \end{enumerate}
+
+  \item [b] t
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \iffalse
 
-\chapter{Employee login}
+\chapter{}
 
 \begin{description}[style=multiline,leftmargin=4cm]
   \item[Priority:] 
@@ -247,9 +355,6 @@
 \section{Main Scenario}
 
 \begin{enumerate}
-\item 
-\item 
-\item 
 \item 
 \end{enumerate}
 
