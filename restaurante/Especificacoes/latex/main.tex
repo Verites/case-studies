@@ -18,6 +18,9 @@
 
 \usepackage{todonotes}
 \newcommand{\tinytodo}[2][]{\todo[caption={#2}, size=\footnotesize, #1]{\renewcommand{\baselinestretch}{0.5}\selectfont#2\par}}
+\newcommand{\precond}{\tinytodo{pre-condition?}}
+\newcommand{\postcond}{\tinytodo{post-condition?}}
+
 
 \newcommand{\cancel}[1]{#1 cancels selected option}
 \newcommand{\menu}[1]{System displays #1's menu}
@@ -284,24 +287,24 @@
 \section{Main Scenario}
 
 \begin{enumerate}
-  \item \menu{waiter}\tinytodo{precondition?}
+  \item \menu{waiter}\precond
   \item Waiter selects ``serve table'' option
-  \item \label{serve:ask-number}Systems asks waiter for the table number
+  \item \label{serve:ask-number} Systems asks waiter for the table number
   \item \label{serve:inform-number} Waiter informs the number of the table to be served
-  \item System verifies that there is an open order for this table and recovers it
-  \item System displays the open order and the options ``insert item'', ``remove item'' and ``close order''
+  \item \label{serve:verify-number} System verifies that there is an open order for this table and recovers it
+  \item \label{serve:options} System displays the open order and the options ``insert item'', ``remove item'' and ``close order''
   \item \label{serve:insert} Waiter selects ``insert item'' option
-  \item System asks for the item code in the carte\footnote{using carte to refer to the menu of the restaurant without mistaking it for the menus of the system}
-  \item Waiter informs the correct code
-  \item System verifies that the item\footnote{or all of its ingredients} is available in the inventory
+  \item \label{serve:ask-item}System asks for the item code in the carte\footnote{using carte to refer to the menu of the restaurant without mistaking it for the menus of the system}
+  \item \label{serve:insert-code} Waiter informs the correct code
+  \item \label{serve:verify-item} System verifies that the item\footnote{or all of its ingredients} is available in the inventory
   \item System displays a description of the item corresponding to the informed code and ask for confirmation
-  \item Waiter confirms item inclusion
+  \item \label{serve:confirm-item} Waiter confirms item inclusion
   \item \label{serve:include} System includes the item as a pending request for the order and updates inventory
   \item Steps~\ref{serve:insert} to~\ref{serve:include} and/or~\ref{serve:remove} to \ref{serve:exclude} are repeated until the waiter selects the ``close order'' option
   \item Waiter selects ``close order`` option
-  \item System verifies that the order has pending requests
+  \item \label{serve:verify-order} System verifies that the order has pending requests
   \item System displays (starters, main course, dessert, beverages) the items in the pending requests that were not sent to kitchen for waiter revision and asks for the items confirmation
-  \item Waiter confirms order update \tinytodo{review this, if the order was already existent we should not confirm a ``new'' order}
+  \item \label{serve:confirm-order} Waiter confirms order update \tinytodo{review this, if the order was already existent we should not confirm a ``new'' order}
   \item System sends the requests to the kitchen and tags it as ``Sent''
   \item \menu{waiter}
 \end{enumerate}
@@ -313,25 +316,63 @@
 \section{Alternatives}
 
 \begin{enumerate}
-  \item [3a1] \cancel{Waiter}
-  \item [3a2] \menu{waiter}
+  \item [\ref{serve:ask-number}a1] \cancel{Waiter}
+  \item [\ref{serve:ask-number}a2] \menu{waiter}
     \\
   \item [\ref{serve:inform-number}a1] The number of the table is invalid
   \item [\ref{serve:inform-number}a2] System displays message showing the reason why the table is invalid\footnote{Maybe the waiter wasn't associated to table by the manager}
   \item [\ref{serve:inform-number}a3] \goto{serve:ask-number}
     \\
-  \item [5b1] b
+  \item [\ref{serve:verify-number}b1] System verifies that there is no open order for this table
+  \item [\ref{serve:verify-number}b2] System opens an order for this table
+  \item [\ref{serve:verify-number}b3] \goto{serve:options}
     \\
-  \item [\customlabel{serve:remove}{7a}]Waiter selects ``remove item'' option
+  \item [\customlabel{serve:remove}{\ref{serve:insert}a}]Waiter selects ``remove item'' option
     \begin{enumerate}
-      \item [\ref{serve:remove}a1]
-      \item [\ref{serve:remove}a2]
-      \item [\ref{serve:remove}a3]
-      \item [\ref{serve:remove}a4]
-      \item [\customlabel{serve:exclude}{\ref{serve:remove}a5}]
+      \item [\ref{serve:remove}a1] System displays a list of items in the order
+      \item [\ref{serve:remove}a2] Waiter selects item to be excluded
+      \item [\ref{serve:remove}a3] System asks for confirmation
+      \item [\customlabel{serve:exclude:confirm}{\ref{serve:remove}a4}] Waiter confirms exclusion
+        \begin{enumerate}
+          \item [\ref{serve:exclude:confirm}a] Waiter does not confirm inclusion
+          \item [\ref{serve:exclude:confirm}b] \goto{serve:options}
+        \end{enumerate}
+      \item [\ref{serve:remove}a5] System excludes item from the order and updates inventory
+      \item [\customlabel{serve:exclude}{\ref{serve:remove}a6}] \goto{serve:options}
+    \end{enumerate}
+    \begin{enumerate}
+      \item [\ref{serve:remove}b1] \cancel{Waiter}
+      \item [\ref{serve:remove}b2] \goto{serve:options}
+    \end{enumerate}
+    \begin{enumerate}
+      \item [\ref{serve:remove}c1] System verifies that the order does not have pending requests
+      \item [\ref{serve:remove}c2] System displays corresponding error message
+      \item [\ref{serve:remove}c3] \goto{serve:options}
     \end{enumerate}
 
-  \item [b] t
+  \item [\ref{serve:insert}b1] \cancel{Waiter}
+  \item [\ref{serve:insert}b2] \menu{waiter}
+    \\
+  \item [\ref{serve:ask-item}a1] \cancel{Waiter}
+  \item [\ref{serve:ask-item}a2] \menu{waiter}
+    \\
+  \item [\ref{serve:insert-code}a1] Waiter informs an invalid code
+  \item [\ref{serve:insert-code}a2] System displays a corresponding error message
+  \item [\ref{serve:insert-code}a3] \goto{serve:ask-item}
+    \\
+  \item [\ref{serve:verify-item}a1] System verifies that the item\footnote{or one of its ingredients} is not available at the inventory
+  \item [\ref{serve:verify-item}a2] System display message that item is not available
+  \item [\ref{serve:verify-item}a3] \goto{serve:ask-item}
+    \\
+  \item [\ref{serve:confirm-item}a1] Waiter does not confirm item inclusion
+  \item [\ref{serve:confirm-item}a2] \goto{serve:options}
+    \\
+  \item [\ref{serve:verify-order}a1] System verifies that order does not have pending requests
+  \item [\ref{serve:verify-order}a2] System displays a corresponding error message
+  \item [\ref{serve:verify-order}a3] \goto{serve:options}
+    \\
+  \item [\ref{serve:confirm-order}a1] Waiter does not confirm order update
+  \item [\ref{serve:confirm-order}a2] \goto{serve:options}
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
