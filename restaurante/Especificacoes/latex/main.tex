@@ -1,37 +1,31 @@
 \documentclass[a4paper,11pt,oneside]{book}
-\setcounter{subsection}{0}
+
 \usepackage{enumitem}
-
 \usepackage{chngcntr}
-
-\counterwithin{subsection}{section}
-\renewcommand\thesection{\arabic{section}}
-
 \usepackage{titlesec}
 \usepackage{emptypage}
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \geometry{margin=3cm}
-
-\titleformat{\chapter}{\normalfont\huge\bf}{\thechapter.}{20pt}{\huge\bf}
-\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
-
 \usepackage{todonotes}
+
+\renewcommand\thesection{\arabic{section}}
 \newcommand{\tinytodo}[2][]{\todo[caption={#2}, size=\footnotesize, #1]{\renewcommand{\baselinestretch}{0.5}\selectfont#2\par}}
 \newcommand{\precond}{\tinytodo{pre-condition?}}
 \newcommand{\postcond}{\tinytodo{post-condition?}}
-
-
 \newcommand{\cancel}[1]{#1 cancels selected option}
+\newcommand{\loginScreen}{System displays login screen}
 \newcommand{\menu}[1]{System displays #1's menu}
 \newcommand{\error}[1]{System displays #1 error message}
 \newcommand{\goto}[1]{Continues at Step~\ref{#1}}
-
-
 \makeatletter
 \newcommand{\customlabel}[2]{#2\def\@currentlabel{#2}\label{#1}}
 \makeatother
 
+\setcounter{subsection}{0}
+\counterwithin{subsection}{section}
+\titleformat{\chapter}{\normalfont\huge\bf}{\thechapter.}{20pt}{\huge\bf}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
 
 \author{Érika Cota}
 \title{Restaurant}
@@ -45,8 +39,10 @@
 
 \begin{description}[style=multiline,leftmargin=4cm]
   \item[Priority:] 1
-  \item[Pre-conditions:] Employee is not logged in
-  \item[Post-conditions:] Employee is logged in
+  \item[Pre-conditions:] Employee is not logged in\\
+    \loginScreen
+  \item[Post-conditions:] Employee is logged in\\
+                          \menu{employee}
   \item[Primary Actor:] Employee
   \item[Other Actions:] -
   \item[Trigger:] -
@@ -55,10 +51,9 @@
 \section{Main Scenario}
 
 \begin{enumerate}
-\item System displays login screen
 \item Employee enters his/her identification code
-\item System validates code\tinytodo{and logs user in?}
-\item \menu{employee}\tinytodo{post-condition?}
+\item \label{login:validate}System validates code and logs user in
+\item \menu{employee}
 \end{enumerate}
 
 \section{Extensions}
@@ -68,9 +63,9 @@
 \section{Alternatives}
 
 \begin{enumerate}
-  \item [3a] System does not validate code
-  \item [3b] \error{login}
-  \item [3c] System returns to login screen
+  \item [\ref{login:validate}a] System does not validate code
+  \item [\ref{login:validate}b] \error{login}
+  \item [\ref{login:validate}c] System returns to login screen
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -81,7 +76,9 @@
 \begin{description}[style=multiline,leftmargin=4cm]
   \item[Priority:] 1
   \item[Pre-conditions:] Employee is logged in
-  \item[Post-conditions:] Employee is not logged in
+    \\ \menu{employee}
+  \item[Post-conditions:] Employee is not logged in\\
+                          System displays login screen
   \item[Primary Actor:] Employee
   \item[Other Actions:] -
   \item[Trigger:] -
@@ -90,9 +87,8 @@
 \section{Main Scenario}
 
 \begin{enumerate}
-\item \menu{employee}
 \item Employee selects log out option
-\item System displays login screen\tinytodo{System logs user out and\ldots ?}\tinytodo{post-condition?}
+\item System logs user out and displays login screen
 \end{enumerate}
 
 \section{Extensions}
@@ -110,8 +106,11 @@
 
 \begin{description}[style=multiline,leftmargin=4cm]
   \item[Priority:] 1
-  \item[Pre-conditions:] Receptionist is logged
-  \item[Post-conditions:] -
+  \item[Pre-conditions:] Receptionist is logged\\
+    \menu{receptionist}
+  \item[Post-conditions:] There is a table occupied and waiting for service\\
+    Sector waiter was notified\\
+    \menu{receptionist}
   \item[Primary Actor:] Receptionist
   \item[Other Actions:] -
   \item[Trigger:] -
@@ -120,17 +119,17 @@
 \section{Main Scenario}
 
 \begin{enumerate}
-\item \menu{receptionist} \tinytodo{Pre-condition?}
 \item Receptionist selects ``accommodate client'' option
-\item System asks for client's reservation
+\item \label{accommodate:ask-reservation}System asks for client's reservation
 \item \label{accommodate:noreservation}Receptionist informs that this client has no reservation
 \item \label{accommodate:asknumber}System asks for number of people
-\item Receptionist informs a number $n$ of people
+\item \label{accommodate:inform-number}Receptionist informs a number $n$ of people
 \item System selects free tables with at least $n$ seats\footnote{at this moment, the system includes in the search any reserved table whose client more than 30 minutes late and that fits the search. The table is automatically tagged as not reserved}
 \item System displays selected tables
-\item Receptionist selects a table
+\item \label{accomodate:select-table}Receptionist selects a table
 \item \label{accomodate:tag} System tags table as occupied and waiting for service
-\item System informs the sector waiter(s) that the table is waiting for service\tinytodo{maybe return to menu?}
+\item System informs the sector waiter(s) that the table is waiting for service
+\item \menu{receptionist}
 \end{enumerate}
 
 \section{Extensions}
@@ -140,31 +139,31 @@
 \section{Alternatives}
 
 \begin{enumerate}
-\item [3a] \cancel{Receptionist}
-\item [3b] \menu{receptionist}
+\item [\ref{accommodate:ask-reservation}a] \cancel{Receptionist}
+\item [\ref{accommodate:ask-reservation}b] \menu{receptionist}
 \\
-\item [4a] Receptionist informs that this client has a reservation
-\item [4b] System displays a list of valid reservations, ordered by client's name and reservation time
+\item [\ref{accommodate:noreservation}a] Receptionist informs that this client has a reservation
+\item [\ref{accommodate:noreservation}b] System displays a list of valid reservations, ordered by client's name and reservation time
 \\
-\item [4ca1] Receptionist finds client's reservation
-\item [4ca2] Receptionist selects client's table
-\item [4ca3] Continues at step~\ref{accomodate:tag} in the main scenario
+\item [\ref{accommodate:noreservation}ca1] Receptionist finds client's reservation
+\item [\ref{accommodate:noreservation}ca2] Receptionist selects client's table
+\item [\ref{accommodate:noreservation}ca3] Continues at step~\ref{accomodate:tag} in the main scenario
 \\
-\item [4cb1] Receptionist does not find client's reservation
-\item [4cb2] Continues at step~\ref{accommodate:noreservation} in the main scenario
+\item [\ref{accommodate:noreservation}cb1] Receptionist does not find client's reservation
+\item [\ref{accommodate:noreservation}cb2] Continues at step~\ref{accommodate:noreservation} in the main scenario
 \\
-\item [5a] \cancel{Receptionist}
-\item [5b] \menu{receptionist}
+\item [\ref{accommodate:asknumber}a] \cancel{Receptionist}
+\item [\ref{accommodate:asknumber}b] \menu{receptionist}
 \\
-\item [6a1] Informed number of people is invalid\footnote{not a number; or $n \leq 0$; or $n$ is greater than the capacity of the biggest table}
-\item [6a2] System displays corresponding error message
-\item [6a3] Continues at step~\ref{accommodate:asknumber}
+\item [\ref{accommodate:inform-number}a1] Informed number of people is invalid\footnote{not a number; or $n \leq 0$; or $n$ is greater than the capacity of the biggest table}
+\item [\ref{accommodate:inform-number}a2] System displays corresponding error message
+\item [\ref{accommodate:inform-number}a3] Continues at step~\ref{accommodate:asknumber}
 \\
-\item [6b1] System informs receptionist that there are no tables available
-\item [6b2] \menu{receptionist}
+\item [\ref{accommodate:inform-number}b1] System informs receptionist that there are no tables available
+\item [\ref{accommodate:inform-number}b2] \menu{receptionist}
 \\
-\item [8a] \cancel{Receptionist}
-\item [8b] \menu{receptionist}
+\item [\ref{accomodate:select-table}a] \cancel{Receptionist}
+\item [\ref{accomodate:select-table}b] \menu{receptionist}
 \\
 \end{enumerate}
 
@@ -175,8 +174,10 @@
 
 \begin{description}[style=multiline,leftmargin=4cm]
   \item[Priority:] 1
-  \item[Pre-conditions:] Receptionist is logged in
-  \item[Post-conditions:] -
+  \item[Pre-conditions:] Receptionist is logged in\\
+    \menu{receptionist}\\
+  \item[Post-conditions:] Table is tagged as reserved\\
+    \menu{receptionist}
   \item[Primary Actor:] Receptionist
   \item[Other Actions:] -
   \item[Trigger:] -
@@ -185,17 +186,16 @@
 \section{Main Scenario}
 
 \begin{enumerate}
-  \item \menu{receptionist}\tinytodo{pre-condition?}
 \item Receptionist selects ``reserve table'' option
-\item System asks for date, hour and number of guests for the reservation
+\item \label{reserve:ask-date}System asks for date, hour and number of guests for the reservation
 \item Receptionist informs date $D$, hour $H$ and number $N$ of desired guests
-\item System selects tables that have at least $N$ seats which are also free at the day $D$ and hour $H$
-\item System displays selected tables
+\item \label{reserve:select-tables}System selects tables that have at least $N$ seats which are also free at the day $D$ and hour $H$
+\item \label{reserve:display-selected}System displays selected tables
 \item Receptionist selects a table
 \item System displays reservation and asks for confirmation
-\item Receptionist confirms reservation
-\item System tags the table as reserved at day $D$ and hour $H$\tinytodo{post?}
-\item \menu{receptionist}\tinytodo{post?}
+\item \label{reserve:confirm} Receptionist confirms reservation
+\item System tags the table as reserved at day $D$ and hour $H$
+\item \menu{receptionist}
 \end{enumerate}
 
 \section{Extensions}
@@ -205,18 +205,19 @@
 \section{Alternatives}\footnote{Future: option to display other tables at near times when no available ones are found}
 
 \begin{enumerate}
-\item [3a] \cancel{Receptionist}
-\item [3b] \menu{receptionist}
+\item [\ref{reserve:ask-date}a] \cancel{Receptionist}
+\item [\ref{reserve:ask-date}b] \menu{receptionist}
 \\
-\item [5a] There are no tables available for $N$ guests at the day $D$ and hour $H$
-\item [5b] System informs receptionist that there are no available tables
-\item [5c] System asks for a new number $N$ of guests\tinytodo{go to?}
+\item [\ref{reserve:select-tables}a] There are no tables available for $N$ guests at the day $D$ and hour $H$
+\item [\ref{reserve:select-tables}b] System informs receptionist that there are no available tables
+\item [\ref{reserve:select-tables}c] System asks for a new number $N$ of guests
+\item [\ref{reserve:select-tables}d] \goto{reserve:select-tables}
 \\
-\item [6a] \cancel{Receptionist}
-\item [6b] \menu{receptionist}
+\item [\ref{reserve:display-selected}a] \cancel{Receptionist}
+\item [\ref{reserve:display-selected}b] \menu{receptionist}
 \\
-\item [9a] Receptionist does not confirm reservation
-\item [9b] System displays selected tables\tinytodo{go to?}
+\item [\ref{reserve:confirm}a] Receptionist does not confirm reservation
+\item [\ref{reserve:confirm}b] \goto{reserve:display-selected}
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -376,6 +377,35 @@
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{}
+
+\begin{description}[style=multiline,leftmargin=4cm]
+  \item[Priority:] 
+  \item[Pre-conditions:] 
+  \item[Post-conditions:] 
+  \item[Primary Actor:] 
+  \item[Other Actions:] 
+  \item[Trigger:] 
+\end{description}
+
+\section{Main Scenario}
+
+\begin{enumerate}
+\item 
+\end{enumerate}
+
+\section{Extensions}
+
+-
+
+\section{Alternatives}
+
+\begin{enumerate}
+  \item [3a]
+  \item [3b]
+  \item [3c]
+\end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
