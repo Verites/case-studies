@@ -228,8 +228,10 @@
 \begin{description}[style=multiline,leftmargin=4cm]
   \item[Priority:] -
   \item[Pre-conditions:] Receptionist is logged in\\
-                         There must be a reserved table
-  \item[Post-conditions:] -
+                         There is a reserved table\\
+                         \menu{receptionist}
+  \item[Post-conditions:] Table is no longer reserved\\
+                         \menu{receptionist}
   \item[Primary Actor:] Receptionist
   \item[Other Actions:] -
   \item[Trigger:] -
@@ -238,14 +240,14 @@
 \section{Main Scenario}
 
 \begin{enumerate}
-\item \menu{receptionist}\tinytodo{pre?}
 \item Receptionist selects ``cancel reservation'' option
-\item System displays a list of reservations, ordered by date and hour of reservation
-\item Receptionist selects an item of the list
-\item System verifies that date and hour of the reservation are after the 30 minutes before the date and hour of cancellation. System asks for confirmation of cancellation
-\item Receptionist confirms cancellation
+\item \label{cancel-reserve:display-list}System displays a list of reservations, ordered by date and hour of reservation
+\item \label{cancel-reserve:select}Receptionist selects an item of the list
+\item \label{cancel-reserve:verify}System verifies that date and hour of the reservation are after the 30 minutes before the date and hour of cancellation. System asks for confirmation of cancellation
+\item \label{cancel-reserve:confirm}Receptionist confirms cancellation
 \item System cancels reservation and tags the table as free
-\item System displays a successful cancellation message and \tinytodo{split?} then displays receptionist's menu
+\item System displays a successful cancellation message
+\item \menu{receptionist}
 \end{enumerate}
 
 \section{Extensions}
@@ -255,19 +257,19 @@
 \section{Alternatives}
 
 \begin{enumerate}
-  \item [3a1] There are no tables tagged as reserved in the system
-  \item [3a2] System tells receptionist that there are no reserved tables
-  \item [3a3] \menu{receptionist}
+  \item [\ref{cancel-reserve:display-list}a1] There are no tables tagged as reserved in the system
+  \item [\ref{cancel-reserve:display-list}a2] System tells receptionist that there are no reserved tables
+  \item [\ref{cancel-reserve:display-list}a3] \menu{receptionist}
     \\
-  \item [4a1] \cancel{Receptionist}
-  \item [4a2] \menu{receptionist}
+  \item [\ref{cancel-reserve:select}a1] \cancel{Receptionist}
+  \item [\ref{cancel-reserve:select}a2] \menu{receptionist}
     \\
-  \item [5a1] Date and time of reservation are before the 30 minutes before date and time of cancellation
-  \item [5a2] System cancels reservation and tags table as free
-  \item [5a3] \menu{receptionist}
+  \item [\ref{cancel-reserve:verify}a1] Date and time of reservation are before the 30 minutes before date and time of cancellation
+  \item [\ref{cancel-reserve:verify}a2] System cancels reservation and tags table as free
+  \item [\ref{cancel-reserve:verify}a3] \menu{receptionist}
     \\
-  \item [6a1] Receptionist does not confirm cancellation
-  \item [6b1] \menu{receptionist}
+  \item [\ref{cancel-reserve:confirm}a1] Receptionist does not confirm cancellation
+  \item [\ref{cancel-reserve:confirm}b1] \menu{receptionist}
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -278,8 +280,10 @@
 \begin{description}[style=multiline,leftmargin=4cm]
   \item[Priority:] 1
   \item[Pre-conditions:] Waiter is logged in\\
-                         There is at least one client at a table waiting for service\tinytodo{the related use case only talks about a table waiting for service}
-  \item[Post-conditions:] -
+                         There is an occupied table waiting for service\\
+                         \menu{waiter}
+  \item[Post-conditions:] An order was sent to kitchen\\
+    \menu{waiter}
   \item[Primary Actor:] Waiter
   \item[Other Actions:] -
   \item[Trigger:] -
@@ -288,7 +292,6 @@
 \section{Main Scenario}
 
 \begin{enumerate}
-  \item \menu{waiter}\precond
   \item Waiter selects ``serve table'' option
   \item \label{serve:ask-number} Systems asks waiter for the table number
   \item \label{serve:inform-number} Waiter informs the number of the table to be served
@@ -305,7 +308,7 @@
   \item Waiter selects ``close order`` option
   \item \label{serve:verify-order} System verifies that the order has pending requests
   \item System displays (starters, main course, dessert, beverages) the items in the pending requests that were not sent to kitchen for waiter revision and asks for the items confirmation
-  \item \label{serve:confirm-order} Waiter confirms order update \tinytodo{review this, if the order was already existent we should not confirm a ``new'' order}
+  \item \label{serve:confirm-order} Waiter confirms order update \tinytodo{review: when is the order created?}
   \item System sends the requests to the kitchen and tags it as ``Sent''
   \item \menu{waiter}
 \end{enumerate}
@@ -378,11 +381,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{}
+\chapter{Close a table}
 
 \begin{description}[style=multiline,leftmargin=4cm]
-  \item[Priority:] 
-  \item[Pre-conditions:] 
+  \item[Priority:] 1
+  \item[Pre-conditions:] Waiter is logged in\\
+    There is a table with a send order\\
+    \menu{waiter}
   \item[Post-conditions:] 
   \item[Primary Actor:] 
   \item[Other Actions:] 
