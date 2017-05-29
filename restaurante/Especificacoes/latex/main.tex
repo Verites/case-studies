@@ -386,9 +386,12 @@
 \begin{description}[style=multiline,leftmargin=4cm]
   \item[Priority:] 1
   \item[Pre-conditions:] Waiter is logged in\\
-    There is a table with a send order\\
+    There is a table with a sent order\\
     \menu{waiter}
-  \item[Post-conditions:] 
+  \item[Post-conditions:] Table is tagged as free and waiting for cleaning\\
+    Payment was realized\\
+    \tinytodo{payment related stuff}\\
+    \menu{waiter}
   \item[Primary Actor:] 
   \item[Other Actions:] 
   \item[Trigger:] 
@@ -397,7 +400,18 @@
 \section{Main Scenario}
 
 \begin{enumerate}
-\item 
+  \item \label{close-table:select}Waiter selects ``close table'' option
+  \item \label{close-table:ask-number}System asks for the number of the table
+  \item \label{close-table:inform-number}Waiter informs the number of the table being served
+  \item \label{close-table:verify-order}System verifies that there is an order for this table and recovers it
+\item System displays all items ordered and processed \tinytodo{why processed?} on the table together with the total value of the order. It also displays separately the service tax (10\%).
+\item \label{close-table:ask-confirmation-service}System asks for confirmation of service tax payment
+\item \label{close-table:confirm-service} Waiter confirms service tax
+\item \label{close-table:ask-confirmation-pay}System asks for order payment confirmation
+\item \label{close-table:confirm-pay} Waiter confirms order payment
+\item Systems updates the shift earnings with the order value. System updates the waiter earnings and adds the rest of the payment in a funding for kitchen helpers
+\item System tags table as free and waiting for cleaning and finishes any order associated with the table
+\item \menu{waiter}
 \end{enumerate}
 
 \section{Extensions}
@@ -407,9 +421,30 @@
 \section{Alternatives}
 
 \begin{enumerate}
-  \item [3a]
-  \item [3b]
-  \item [3c]
+  \item [\ref{close-table:ask-number}a] \cancel{Waiter}
+  \item [\ref{close-table:ask-number}b] \menu{waiter}
+    \\
+  \item [\ref{close-table:inform-number}a] The number informed is invalid
+  \item [\ref{close-table:inform-number}a] System informs that the number of the table informed is invalid
+  \item [\ref{close-table:inform-number}a] \menu{waiter}
+    \\
+  \item [\ref{close-table:verify-order}a] System verifies that there is no order for the informed table
+  \item [\ref{close-table:verify-order}b] System informs error accordingly
+  \item [\ref{close-table:verify-order}c] \goto{close-table:ask-number}
+    \\
+  \item [\ref{close-table:ask-confirmation-service}a] \cancel{Waiter}
+  \item [\ref{close-table:ask-confirmation-service}b] \goto{close-table:ask-number}
+    \\
+  \item [\ref{close-table:confirm-service}a1] Waiter does not confirm service tax
+  \item [\ref{close-table:confirm-service}a2] System sets tax service to zero and updates the total value of the order, displaying the new value
+  \item [\ref{close-table:confirm-service}a3] \goto{close-table:ask-confirmation-pay}
+    \\
+  \item [\ref{close-table:confirm-service}b1] \cancel{Waiter}
+  \item [\ref{close-table:confirm-service}b2] \goto{close-table:ask-number}
+    \\
+  \item [\ref{close-table:confirm-pay}a] Waiter does not confirm order payment
+  \item [\ref{close-table:confirm-pay}b] \menu{waiter}
+
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
