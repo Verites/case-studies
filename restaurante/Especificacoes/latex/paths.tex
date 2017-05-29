@@ -1,0 +1,63 @@
+\documentclass[a4paper,11pt,oneside]{book}
+
+\usepackage{enumitem}
+\usepackage{chngcntr}
+\usepackage{titlesec}
+\usepackage{emptypage}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=3cm}
+\usepackage{todonotes}
+
+\renewcommand\thesection{\arabic{section}}
+\newcommand{\tinytodo}[2][]{\todo[caption={#2}, size=\footnotesize, #1]{\renewcommand{\baselinestretch}{0.5}\selectfont#2\par}}
+\newcommand{\precond}{\tinytodo{pre-condition?}}
+\newcommand{\postcond}{\tinytodo{post-condition?}}
+\newcommand{\cancel}[1]{#1 cancels selected option}
+\newcommand{\loginScreen}{System displays login screen}
+\newcommand{\menu}[1]{System displays #1's menu}
+\newcommand{\error}[1]{System displays #1 error message}
+\newcommand{\goto}[1]{Continues at Step~\ref{#1}}
+\makeatletter
+\newcommand{\customlabel}[2]{#2\def\@currentlabel{#2}\label{#1}}
+\makeatother
+
+\setcounter{subsection}{0}
+\counterwithin{subsection}{section}
+\titleformat{\chapter}{\normalfont\huge\bf}{\thechapter.}{20pt}{\huge\bf}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+
+\author{Érika Cota}
+\title{Restaurant}
+
+\begin{document}
+
+\maketitle
+\pagestyle{plain}
+
+\chapter*{Restaurant}
+
+\section{Login}
+
+\subsection{successful login}
+\subsection{failing login}
+
+\section{Logout}
+\subsection{successful logout}
+
+\section{Accommodate Client}
+
+\subsection{successful accommodation without reservation}
+\subsection{failing accommodation without reservation}
+\subsection{successful accommodation with reservation}
+\subsection{cancelled accommodation}
+
+\section{Reserving a table}
+
+\section{Cancel a reservation}
+
+\section{Serve a table}
+
+\section{Close a table}
+
+\end{document}
