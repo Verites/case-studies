@@ -1,613 +1,691 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Document version="1.0">
-  <GraphTransformationSystem name="GraGra" ID="I1" directed="true" parallel="true">
-    <TaggedValue Tag="AttrHandler" TagValue="Java Expr">
-      <TaggedValue Tag="Package" TagValue="java.lang"/>
-      <TaggedValue Tag="Package" TagValue="java.util"/>
-    </TaggedValue>
-    <TaggedValue Tag="CSP" TagValue="true"/>
-    <TaggedValue Tag="dangling" TagValue="true"/>
-    <TaggedValue Tag="identification" TagValue="true"/>
-    <TaggedValue Tag="NACs" TagValue="true"/>
-    <TaggedValue Tag="PACs" TagValue="true"/>
-    <TaggedValue Tag="GACs" TagValue="true"/>
-    <TaggedValue Tag="breakAllLayer" TagValue="true"/>
-    <TaggedValue Tag="showGraphAfterStep" TagValue="true"/>
-    <TaggedValue Tag="TypeGraphLevel" TagValue="ENABLED"/>
-    <Types>
-      <NodeType ID="N768" abstract="false" name="System-768%:RECT:java.awt.Color[r=0,g=0,b=255]:FILLED:[NODE]:"/>
-      <NodeType ID="N769" abstract="false" name="GUI-769%:CIRCLE:java.awt.Color[r=255,g=0,b=0]:FILLED:[NODE]:"/>
-      <NodeType ID="N770" abstract="false" name="User-770%:CIRCLE:java.awt.Color[r=0,g=0,b=255]:[NODE]:"/>
-      <EdgeType ID="E771" abstract="false" name="session-771%:SOLID_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
-      <EdgeType ID="E772" abstract="false" name="Page_Main-772%:DASH_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
-      <EdgeType ID="E773" abstract="false" name="out-Categories-773%:SOLID_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
-      <EdgeType ID="E774" abstract="false" name="u-uses-g-774%:DASH_LINE:java.awt.Color[r=0,g=0,b=255]:[EDGE]:"/>
-      <EdgeType ID="E2331" abstract="false" name="in-clickChooseCategorie-2331%:DOT_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
-      <EdgeType ID="E4751" abstract="false" name="Page_Category-4751%:DASH_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
-      <EdgeType ID="E4752" abstract="false" name="out-Products-4752%:SOLID_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
-      <EdgeType ID="E7226" abstract="false" name="in-clickChooseProduct-7226%:DOT_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
-      <EdgeType ID="E9787" abstract="false" name="Page_Product-9787%:DASH_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
-      <EdgeType ID="E9788" abstract="false" name="out-Items-9788%:SOLID_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
-      <EdgeType ID="E15095" abstract="false" name="Page_Item-15095%:DASH_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
-      <EdgeType ID="E15096" abstract="false" name="out-addToChartLink-15096%:DOT_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
-      <EdgeType ID="E15097" abstract="false" name="out-ItemDescription-15097%:DOT_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
-      <Graph ID="TypeGraph" kind="TG" name="TypeGraph">
-        <Node ID="TypeGraph_n768" type="N768">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="TypeGraph_n769" type="N769">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="TypeGraph_n770" type="N770">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Edge ID="TypeGraph_e771" source="TypeGraph_n768" target="TypeGraph_n769" type="E771">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="TypeGraph_e772" source="TypeGraph_n769" target="TypeGraph_n769" type="E772">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="TypeGraph_e773" source="TypeGraph_n769" target="TypeGraph_n770" type="E773">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="TypeGraph_e774" source="TypeGraph_n770" target="TypeGraph_n769" type="E774">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="TypeGraph_e2331" source="TypeGraph_n770" target="TypeGraph_n769" type="E2331">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="TypeGraph_e4751" source="TypeGraph_n769" target="TypeGraph_n769" type="E4751">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="TypeGraph_e4752" source="TypeGraph_n769" target="TypeGraph_n770" type="E4752">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="TypeGraph_e7226" source="TypeGraph_n770" target="TypeGraph_n769" type="E7226">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="TypeGraph_e9787" source="TypeGraph_n769" target="TypeGraph_n769" type="E9787">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="TypeGraph_e9788" source="TypeGraph_n769" target="TypeGraph_n770" type="E9788">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="TypeGraph_e15095" source="TypeGraph_n769" target="TypeGraph_n769" type="E15095">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="TypeGraph_e15096" source="TypeGraph_n769" target="TypeGraph_n770" type="E15096">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="TypeGraph_e15097" source="TypeGraph_n769" target="TypeGraph_n770" type="E15097">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-      </Graph>
-    </Types>
-    <Graph ID="graph_Init" kind="HOST" name="Init">
-      <Node ID="graph_Init_N768" type="N768">
-        <NodeLayout X="50" Y="50"/>
-        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-      </Node>
-      <Node ID="graph_Init_N769" type="N769">
-        <NodeLayout X="50" Y="50"/>
-        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-      </Node>
-      <Node ID="graph_Init_N770" type="N770">
-        <NodeLayout X="50" Y="50"/>
-        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-      </Node>
-      <Edge ID="graph_Init_E771" source="graph_Init_N768" target="graph_Init_N769" type="E771">
-        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-        <additionalLayout aktlength="200" force="10" preflength="200"/>
-      </Edge>
-      <Edge ID="graph_Init_E772" source="graph_Init_N769" target="graph_Init_N769" type="E772">
-        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-        <additionalLayout aktlength="200" force="10" preflength="200"/>
-      </Edge>
-      <Edge ID="graph_Init_E773" source="graph_Init_N769" target="graph_Init_N770" type="E773">
-        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-        <additionalLayout aktlength="200" force="10" preflength="200"/>
-      </Edge>
-      <Edge ID="graph_Init_E774" source="graph_Init_N770" target="graph_Init_N769" type="E774">
-        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-        <additionalLayout aktlength="200" force="10" preflength="200"/>
-      </Edge>
-    </Graph>
-    <Graph ID="graph_final" kind="HOST" name="final">
-      <Node ID="graph_final_N768" type="N768">
-        <NodeLayout X="50" Y="50"/>
-        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-      </Node>
-      <Node ID="graph_final_N769" type="N769">
-        <NodeLayout X="50" Y="50"/>
-        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-      </Node>
-      <Node ID="graph_final_N770" type="N770">
-        <NodeLayout X="50" Y="50"/>
-        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-      </Node>
-      <Edge ID="graph_final_E771" source="graph_final_N768" target="graph_final_N769" type="E771">
-        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-        <additionalLayout aktlength="200" force="10" preflength="200"/>
-      </Edge>
-      <Edge ID="graph_final_E774" source="graph_final_N770" target="graph_final_N769" type="E774">
-        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-        <additionalLayout aktlength="200" force="10" preflength="200"/>
-      </Edge>
-      <Edge ID="graph_final_E15095" source="graph_final_N769" target="graph_final_N769" type="E15095">
-        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-        <additionalLayout aktlength="200" force="10" preflength="200"/>
-      </Edge>
-      <Edge ID="graph_final_E15096" source="graph_final_N769" target="graph_final_N770" type="E15096">
-        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-        <additionalLayout aktlength="200" force="10" preflength="200"/>
-      </Edge>
-      <Edge ID="graph_final_E15097" source="graph_final_N769" target="graph_final_N770" type="E15097">
-        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-        <additionalLayout aktlength="200" force="10" preflength="200"/>
-      </Edge>
-    </Graph>
-    <Rule ID="01a1_chooseCategory" formula="true" name="01a1_chooseCategory">
-      <Graph ID="LeftOf_01a1_chooseCategory" kind="LHS" name="LeftOf_01a1_chooseCategory">
-        <Node ID="LeftOf_01a1_chooseCategory_N768" type="N768">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="LeftOf_01a1_chooseCategory_N769" type="N769">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="LeftOf_01a1_chooseCategory_N770" type="N770">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Edge ID="LeftOf_01a1_chooseCategory_E771" source="LeftOf_01a1_chooseCategory_N768" target="LeftOf_01a1_chooseCategory_N769" type="E771">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a1_chooseCategory_E772" source="LeftOf_01a1_chooseCategory_N769" target="LeftOf_01a1_chooseCategory_N769" type="E772">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a1_chooseCategory_E773" source="LeftOf_01a1_chooseCategory_N769" target="LeftOf_01a1_chooseCategory_N770" type="E773">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a1_chooseCategory_E774" source="LeftOf_01a1_chooseCategory_N770" target="LeftOf_01a1_chooseCategory_N769" type="E774">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-      </Graph>
-      <Graph ID="RightOf_01a1_chooseCategory" kind="RHS" name="RightOf_01a1_chooseCategory">
-        <Node ID="RightOf_01a1_chooseCategory_N768" type="N768">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="RightOf_01a1_chooseCategory_N769" type="N769">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="RightOf_01a1_chooseCategory_N770" type="N770">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Edge ID="RightOf_01a1_chooseCategory_E771" source="RightOf_01a1_chooseCategory_N768" target="RightOf_01a1_chooseCategory_N769" type="E771">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a1_chooseCategory_E773" source="RightOf_01a1_chooseCategory_N769" target="RightOf_01a1_chooseCategory_N770" type="E773">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a1_chooseCategory_E2331" source="RightOf_01a1_chooseCategory_N770" target="RightOf_01a1_chooseCategory_N769" type="E2331">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a1_chooseCategory_E772" source="RightOf_01a1_chooseCategory_N769" target="RightOf_01a1_chooseCategory_N769" type="E772">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a1_chooseCategory_E774" source="RightOf_01a1_chooseCategory_N770" target="RightOf_01a1_chooseCategory_N769" type="E774">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-      </Graph>
-      <Morphism name="01a1_chooseCategory">
-        <Mapping image="RightOf_01a1_chooseCategory_N768" orig="LeftOf_01a1_chooseCategory_N768"/>
-        <Mapping image="RightOf_01a1_chooseCategory_N769" orig="LeftOf_01a1_chooseCategory_N769"/>
-        <Mapping image="RightOf_01a1_chooseCategory_N770" orig="LeftOf_01a1_chooseCategory_N770"/>
-        <Mapping image="RightOf_01a1_chooseCategory_E771" orig="LeftOf_01a1_chooseCategory_E771"/>
-        <Mapping image="RightOf_01a1_chooseCategory_E772" orig="LeftOf_01a1_chooseCategory_E772"/>
-        <Mapping image="RightOf_01a1_chooseCategory_E773" orig="LeftOf_01a1_chooseCategory_E773"/>
-        <Mapping image="RightOf_01a1_chooseCategory_E774" orig="LeftOf_01a1_chooseCategory_E774"/>
-      </Morphism>
-      <ApplCondition/>
-    </Rule>
-    <Rule ID="01a2_displayProducts" formula="true" name="01a2_displayProducts">
-      <Graph ID="LeftOf_01a2_displayProducts" kind="LHS" name="LeftOf_01a2_displayProducts">
-        <Node ID="LeftOf_01a2_displayProducts_N768" type="N768">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="LeftOf_01a2_displayProducts_N769" type="N769">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="LeftOf_01a2_displayProducts_N770" type="N770">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Edge ID="LeftOf_01a2_displayProducts_E771" source="LeftOf_01a2_displayProducts_N768" target="LeftOf_01a2_displayProducts_N769" type="E771">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a2_displayProducts_E773" source="LeftOf_01a2_displayProducts_N769" target="LeftOf_01a2_displayProducts_N770" type="E773">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a2_displayProducts_E2331" source="LeftOf_01a2_displayProducts_N770" target="LeftOf_01a2_displayProducts_N769" type="E2331">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a2_displayProducts_E772" source="LeftOf_01a2_displayProducts_N769" target="LeftOf_01a2_displayProducts_N769" type="E772">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a2_displayProducts_E774" source="LeftOf_01a2_displayProducts_N770" target="LeftOf_01a2_displayProducts_N769" type="E774">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-      </Graph>
-      <Graph ID="RightOf_01a2_displayProducts" kind="RHS" name="RightOf_01a2_displayProducts">
-        <Node ID="RightOf_01a2_displayProducts_N768" type="N768">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="RightOf_01a2_displayProducts_N769" type="N769">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="RightOf_01a2_displayProducts_N770" type="N770">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Edge ID="RightOf_01a2_displayProducts_E771" source="RightOf_01a2_displayProducts_N768" target="RightOf_01a2_displayProducts_N769" type="E771">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a2_displayProducts_E4751" source="RightOf_01a2_displayProducts_N769" target="RightOf_01a2_displayProducts_N769" type="E4751">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a2_displayProducts_E4752" source="RightOf_01a2_displayProducts_N769" target="RightOf_01a2_displayProducts_N770" type="E4752">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a2_displayProducts_E774" source="RightOf_01a2_displayProducts_N770" target="RightOf_01a2_displayProducts_N769" type="E774">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-      </Graph>
-      <Morphism name="01a2_displayProducts">
-        <Mapping image="RightOf_01a2_displayProducts_N768" orig="LeftOf_01a2_displayProducts_N768"/>
-        <Mapping image="RightOf_01a2_displayProducts_N769" orig="LeftOf_01a2_displayProducts_N769"/>
-        <Mapping image="RightOf_01a2_displayProducts_N770" orig="LeftOf_01a2_displayProducts_N770"/>
-        <Mapping image="RightOf_01a2_displayProducts_E771" orig="LeftOf_01a2_displayProducts_E771"/>
-        <Mapping image="RightOf_01a2_displayProducts_E774" orig="LeftOf_01a2_displayProducts_E774"/>
-      </Morphism>
-      <ApplCondition/>
-    </Rule>
-    <Rule ID="01a3_chooseProduct" formula="true" name="01a3_chooseProduct">
-      <Graph ID="LeftOf_01a3_chooseProduct" kind="LHS" name="LeftOf_01a3_chooseProduct">
-        <Node ID="LeftOf_01a3_chooseProduct_N768" type="N768">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="LeftOf_01a3_chooseProduct_N769" type="N769">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="LeftOf_01a3_chooseProduct_N770" type="N770">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Edge ID="LeftOf_01a3_chooseProduct_E771" source="LeftOf_01a3_chooseProduct_N768" target="LeftOf_01a3_chooseProduct_N769" type="E771">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a3_chooseProduct_E4751" source="LeftOf_01a3_chooseProduct_N769" target="LeftOf_01a3_chooseProduct_N769" type="E4751">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a3_chooseProduct_E4752" source="LeftOf_01a3_chooseProduct_N769" target="LeftOf_01a3_chooseProduct_N770" type="E4752">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a3_chooseProduct_E774" source="LeftOf_01a3_chooseProduct_N770" target="LeftOf_01a3_chooseProduct_N769" type="E774">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-      </Graph>
-      <Graph ID="RightOf_01a3_chooseProduct" kind="RHS" name="RightOf_01a3_chooseProduct">
-        <Node ID="RightOf_01a3_chooseProduct_N768" type="N768">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="RightOf_01a3_chooseProduct_N769" type="N769">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="RightOf_01a3_chooseProduct_N770" type="N770">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Edge ID="RightOf_01a3_chooseProduct_E771" source="RightOf_01a3_chooseProduct_N768" target="RightOf_01a3_chooseProduct_N769" type="E771">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a3_chooseProduct_E4751" source="RightOf_01a3_chooseProduct_N769" target="RightOf_01a3_chooseProduct_N769" type="E4751">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a3_chooseProduct_E7226" source="RightOf_01a3_chooseProduct_N770" target="RightOf_01a3_chooseProduct_N769" type="E7226">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a3_chooseProduct_E4752" source="RightOf_01a3_chooseProduct_N769" target="RightOf_01a3_chooseProduct_N770" type="E4752">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a3_chooseProduct_E774" source="RightOf_01a3_chooseProduct_N770" target="RightOf_01a3_chooseProduct_N769" type="E774">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-      </Graph>
-      <Morphism name="01a3_chooseProduct">
-        <Mapping image="RightOf_01a3_chooseProduct_N768" orig="LeftOf_01a3_chooseProduct_N768"/>
-        <Mapping image="RightOf_01a3_chooseProduct_N769" orig="LeftOf_01a3_chooseProduct_N769"/>
-        <Mapping image="RightOf_01a3_chooseProduct_N770" orig="LeftOf_01a3_chooseProduct_N770"/>
-        <Mapping image="RightOf_01a3_chooseProduct_E771" orig="LeftOf_01a3_chooseProduct_E771"/>
-        <Mapping image="RightOf_01a3_chooseProduct_E4751" orig="LeftOf_01a3_chooseProduct_E4751"/>
-        <Mapping image="RightOf_01a3_chooseProduct_E4752" orig="LeftOf_01a3_chooseProduct_E4752"/>
-        <Mapping image="RightOf_01a3_chooseProduct_E774" orig="LeftOf_01a3_chooseProduct_E774"/>
-      </Morphism>
-      <ApplCondition/>
-    </Rule>
-    <Rule ID="01a4_displayItems" formula="true" name="01a4_displayItems">
-      <Graph ID="LeftOf_01a4_displayItems" kind="LHS" name="LeftOf_01a4_displayItems">
-        <Node ID="LeftOf_01a4_displayItems_N768" type="N768">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="LeftOf_01a4_displayItems_N769" type="N769">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="LeftOf_01a4_displayItems_N770" type="N770">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Edge ID="LeftOf_01a4_displayItems_E771" source="LeftOf_01a4_displayItems_N768" target="LeftOf_01a4_displayItems_N769" type="E771">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a4_displayItems_E4751" source="LeftOf_01a4_displayItems_N769" target="LeftOf_01a4_displayItems_N769" type="E4751">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a4_displayItems_E7226" source="LeftOf_01a4_displayItems_N770" target="LeftOf_01a4_displayItems_N769" type="E7226">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a4_displayItems_E4752" source="LeftOf_01a4_displayItems_N769" target="LeftOf_01a4_displayItems_N770" type="E4752">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a4_displayItems_E774" source="LeftOf_01a4_displayItems_N770" target="LeftOf_01a4_displayItems_N769" type="E774">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-      </Graph>
-      <Graph ID="RightOf_01a4_displayItems" kind="RHS" name="RightOf_01a4_displayItems">
-        <Node ID="RightOf_01a4_displayItems_N768" type="N768">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="RightOf_01a4_displayItems_N769" type="N769">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="RightOf_01a4_displayItems_N770" type="N770">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Edge ID="RightOf_01a4_displayItems_E771" source="RightOf_01a4_displayItems_N768" target="RightOf_01a4_displayItems_N769" type="E771">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a4_displayItems_E9787" source="RightOf_01a4_displayItems_N769" target="RightOf_01a4_displayItems_N769" type="E9787">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a4_displayItems_E9788" source="RightOf_01a4_displayItems_N769" target="RightOf_01a4_displayItems_N770" type="E9788">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a4_displayItems_E774" source="RightOf_01a4_displayItems_N770" target="RightOf_01a4_displayItems_N769" type="E774">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-      </Graph>
-      <Morphism name="01a4_displayItems">
-        <Mapping image="RightOf_01a4_displayItems_N768" orig="LeftOf_01a4_displayItems_N768"/>
-        <Mapping image="RightOf_01a4_displayItems_N769" orig="LeftOf_01a4_displayItems_N769"/>
-        <Mapping image="RightOf_01a4_displayItems_N770" orig="LeftOf_01a4_displayItems_N770"/>
-        <Mapping image="RightOf_01a4_displayItems_E771" orig="LeftOf_01a4_displayItems_E771"/>
-        <Mapping image="RightOf_01a4_displayItems_E774" orig="LeftOf_01a4_displayItems_E774"/>
-      </Morphism>
-      <ApplCondition/>
-    </Rule>
-    <Rule ID="01a5_02b5_chooseItem" formula="true" name="01a5_02b5_chooseItem">
-      <Graph ID="LeftOf_01a5_02b5_chooseItem" kind="LHS" name="LeftOf_01a5_02b5_chooseItem">
-        <Node ID="LeftOf_01a5_02b5_chooseItem_N768" type="N768">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="LeftOf_01a5_02b5_chooseItem_N769" type="N769">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="LeftOf_01a5_02b5_chooseItem_N770" type="N770">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Edge ID="LeftOf_01a5_02b5_chooseItem_E771" source="LeftOf_01a5_02b5_chooseItem_N768" target="LeftOf_01a5_02b5_chooseItem_N769" type="E771">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a5_02b5_chooseItem_E9787" source="LeftOf_01a5_02b5_chooseItem_N769" target="LeftOf_01a5_02b5_chooseItem_N769" type="E9787">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a5_02b5_chooseItem_E9788" source="LeftOf_01a5_02b5_chooseItem_N769" target="LeftOf_01a5_02b5_chooseItem_N770" type="E9788">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a5_02b5_chooseItem_E774" source="LeftOf_01a5_02b5_chooseItem_N770" target="LeftOf_01a5_02b5_chooseItem_N769" type="E774">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-      </Graph>
-      <Graph ID="RightOf_01a5_02b5_chooseItem" kind="RHS" name="RightOf_01a5_02b5_chooseItem">
-        <Node ID="RightOf_01a5_02b5_chooseItem_N768" type="N768">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="RightOf_01a5_02b5_chooseItem_N769" type="N769">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="RightOf_01a5_02b5_chooseItem_N770" type="N770">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Edge ID="RightOf_01a5_02b5_chooseItem_E771" source="RightOf_01a5_02b5_chooseItem_N768" target="RightOf_01a5_02b5_chooseItem_N769" type="E771">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a5_02b5_chooseItem_E9787" source="RightOf_01a5_02b5_chooseItem_N769" target="RightOf_01a5_02b5_chooseItem_N769" type="E9787">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a5_02b5_chooseItem_E9788" source="RightOf_01a5_02b5_chooseItem_N769" target="RightOf_01a5_02b5_chooseItem_N770" type="E9788">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a5_02b5_chooseItem_E774" source="RightOf_01a5_02b5_chooseItem_N770" target="RightOf_01a5_02b5_chooseItem_N769" type="E774">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-      </Graph>
-      <Morphism name="01a5_02b5_chooseItem">
-        <Mapping image="RightOf_01a5_02b5_chooseItem_N768" orig="LeftOf_01a5_02b5_chooseItem_N768"/>
-        <Mapping image="RightOf_01a5_02b5_chooseItem_N769" orig="LeftOf_01a5_02b5_chooseItem_N769"/>
-        <Mapping image="RightOf_01a5_02b5_chooseItem_N770" orig="LeftOf_01a5_02b5_chooseItem_N770"/>
-        <Mapping image="RightOf_01a5_02b5_chooseItem_E771" orig="LeftOf_01a5_02b5_chooseItem_E771"/>
-        <Mapping image="RightOf_01a5_02b5_chooseItem_E9787" orig="LeftOf_01a5_02b5_chooseItem_E9787"/>
-        <Mapping image="RightOf_01a5_02b5_chooseItem_E9788" orig="LeftOf_01a5_02b5_chooseItem_E9788"/>
-        <Mapping image="RightOf_01a5_02b5_chooseItem_E774" orig="LeftOf_01a5_02b5_chooseItem_E774"/>
-      </Morphism>
-      <ApplCondition/>
-    </Rule>
-    <Rule ID="01a6_02b6_displayChosenItem" formula="true" name="01a6_02b6_displayChosenItem">
-      <Graph ID="LeftOf_01a6_02b6_displayChosenItem" kind="LHS" name="LeftOf_01a6_02b6_displayChosenItem">
-        <Node ID="LeftOf_01a6_02b6_displayChosenItem_N768" type="N768">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="LeftOf_01a6_02b6_displayChosenItem_N769" type="N769">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="LeftOf_01a6_02b6_displayChosenItem_N770" type="N770">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Edge ID="LeftOf_01a6_02b6_displayChosenItem_E771" source="LeftOf_01a6_02b6_displayChosenItem_N768" target="LeftOf_01a6_02b6_displayChosenItem_N769" type="E771">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a6_02b6_displayChosenItem_E9787" source="LeftOf_01a6_02b6_displayChosenItem_N769" target="LeftOf_01a6_02b6_displayChosenItem_N769" type="E9787">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a6_02b6_displayChosenItem_E9788" source="LeftOf_01a6_02b6_displayChosenItem_N769" target="LeftOf_01a6_02b6_displayChosenItem_N770" type="E9788">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="LeftOf_01a6_02b6_displayChosenItem_E774" source="LeftOf_01a6_02b6_displayChosenItem_N770" target="LeftOf_01a6_02b6_displayChosenItem_N769" type="E774">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-      </Graph>
-      <Graph ID="RightOf_01a6_02b6_displayChosenItem" kind="RHS" name="RightOf_01a6_02b6_displayChosenItem">
-        <Node ID="RightOf_01a6_02b6_displayChosenItem_N768" type="N768">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="RightOf_01a6_02b6_displayChosenItem_N769" type="N769">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Node ID="RightOf_01a6_02b6_displayChosenItem_N770" type="N770">
-          <NodeLayout X="50" Y="50"/>
-          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
-        </Node>
-        <Edge ID="RightOf_01a6_02b6_displayChosenItem_E771" source="RightOf_01a6_02b6_displayChosenItem_N768" target="RightOf_01a6_02b6_displayChosenItem_N769" type="E771">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a6_02b6_displayChosenItem_E15095" source="RightOf_01a6_02b6_displayChosenItem_N769" target="RightOf_01a6_02b6_displayChosenItem_N769" type="E15095">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a6_02b6_displayChosenItem_E15096" source="RightOf_01a6_02b6_displayChosenItem_N769" target="RightOf_01a6_02b6_displayChosenItem_N770" type="E15096">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a6_02b6_displayChosenItem_E15097" source="RightOf_01a6_02b6_displayChosenItem_N769" target="RightOf_01a6_02b6_displayChosenItem_N770" type="E15097">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-        <Edge ID="RightOf_01a6_02b6_displayChosenItem_E774" source="RightOf_01a6_02b6_displayChosenItem_N770" target="RightOf_01a6_02b6_displayChosenItem_N769" type="E774">
-          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
-          <additionalLayout aktlength="200" force="10" preflength="200"/>
-        </Edge>
-      </Graph>
-      <Morphism name="01a6_02b6_displayChosenItem">
-        <Mapping image="RightOf_01a6_02b6_displayChosenItem_N768" orig="LeftOf_01a6_02b6_displayChosenItem_N768"/>
-        <Mapping image="RightOf_01a6_02b6_displayChosenItem_N769" orig="LeftOf_01a6_02b6_displayChosenItem_N769"/>
-        <Mapping image="RightOf_01a6_02b6_displayChosenItem_N770" orig="LeftOf_01a6_02b6_displayChosenItem_N770"/>
-        <Mapping image="RightOf_01a6_02b6_displayChosenItem_E771" orig="LeftOf_01a6_02b6_displayChosenItem_E771"/>
-        <Mapping image="RightOf_01a6_02b6_displayChosenItem_E774" orig="LeftOf_01a6_02b6_displayChosenItem_E774"/>
-      </Morphism>
-      <ApplCondition/>
-    </Rule>
-  </GraphTransformationSystem>
+    <GraphTransformationSystem ID="I1" directed="true" name="GraGra" parallel="true">
+        <TaggedValue Tag="AttrHandler" TagValue="Java Expr">
+            <TaggedValue Tag="Package" TagValue="java.lang"/>
+            <TaggedValue Tag="Package" TagValue="java.util"/>
+            <TaggedValue Tag="Package" TagValue="automata_impl"/>
+            <TaggedValue Tag="Package" TagValue="automata"/>
+            <TaggedValue Tag="Package" TagValue="automata.impl"/>
+            <TaggedValue Tag="Package" TagValue="org.eclipse.draw2d"/>
+            <TaggedValue Tag="Package" TagValue="org.eclipse.draw2d.geometry"/>
+            <TaggedValue Tag="Package" TagValue="org.eclipse.swt.graphics"/>
+        </TaggedValue>
+        <TaggedValue Tag="CSP" TagValue="true"/>
+        <TaggedValue Tag="dangling" TagValue="true"/>
+        <TaggedValue Tag="identification" TagValue="true"/>
+        <TaggedValue Tag="NACs" TagValue="true"/>
+        <TaggedValue Tag="PACs" TagValue="true"/>
+        <TaggedValue Tag="GACs" TagValue="true"/>
+        <TaggedValue Tag="breakAllLayer" TagValue="true"/>
+        <TaggedValue Tag="showGraphAfterStep" TagValue="true"/>
+        <TaggedValue Tag="nondeterministically" TagValue="true"/>
+        <TaggedValue Tag="TypeGraphLevel" TagValue="ENABLED"/>
+        <Types>
+            <NodeType ID="I2" abstract="false" name="System-768%:RECT:java.awt.Color[r=0,g=0,b=255]:FILLED:[NODE]:"/>
+            <NodeType ID="I3" abstract="false" name="GUI-769%:CIRCLE:java.awt.Color[r=255,g=0,b=0]:FILLED:[NODE]:"/>
+            <NodeType ID="I4" abstract="false" name="User-770%:CIRCLE:java.awt.Color[r=0,g=0,b=255]:[NODE]:"/>
+            <EdgeType ID="I5" abstract="false" name="session-771%:SOLID_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
+            <EdgeType ID="I6" abstract="false" name="Page_Main772%:DASH_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
+            <EdgeType ID="I7" abstract="false" name="out-Categories-773%:SOLID_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
+            <EdgeType ID="I8" abstract="false" name="u-uses-g-774%:DASH_LINE:java.awt.Color[r=0,g=0,b=255]:[EDGE]:"/>
+            <EdgeType ID="I9" abstract="false" name="in-clickChooseCategorie-2331%:DOT_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
+            <EdgeType ID="I10" abstract="false" name="Page_Category4751%:DASH_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
+            <EdgeType ID="I11" abstract="false" name="out-Products-4752%:SOLID_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
+            <EdgeType ID="I12" abstract="false" name="in-clickChooseProduct-7226%:DOT_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
+            <EdgeType ID="I13" abstract="false" name="Page_Product9787%:DASH_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
+            <EdgeType ID="I14" abstract="false" name="out-Items-9788%:SOLID_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
+            <EdgeType ID="I15" abstract="false" name="Page_Item15095%:DASH_LINE:java.awt.Color[r=255,g=0,b=0]:[EDGE]:"/>
+            <EdgeType ID="I16" abstract="false" name="out-addToChartLink-15096%:DOT_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
+            <EdgeType ID="I17" abstract="false" name="out-ItemDescription-15097%:DOT_LINE:java.awt.Color[r=0,g=153,b=51]:[EDGE]:"/>
+            <Graph ID="I18" kind="TG" name="TypeGraph">
+                <Node ID="I19" type="I2">
+                    <NodeLayout X="245" Y="280"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I20" type="I3">
+                    <NodeLayout X="247" Y="143"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I21" type="I4">
+                    <NodeLayout X="795" Y="138"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Edge ID="I22" source="I19" target="I20" type="I5">
+                    <EdgeLayout bendX="0" bendY="0"
+                        sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I23" source="I20" target="I20" type="I6">
+                    <EdgeLayout bendX="96" bendY="34" loopH="112"
+                        loopW="169" sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I24" source="I20" target="I21" type="I7">
+                    <EdgeLayout bendX="0" bendY="0"
+                        sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="-20" textOffsetY="-64"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I25" source="I21" target="I20" type="I8">
+                    <EdgeLayout bendX="537" bendY="167"
+                        sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="-21" textOffsetY="22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I26" source="I21" target="I20" type="I9">
+                    <EdgeLayout bendX="509" bendY="117"
+                        sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I27" source="I20" target="I20" type="I10">
+                    <EdgeLayout bendX="132" bendY="55" loopH="85"
+                        loopW="121" sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I28" source="I20" target="I21" type="I11">
+                    <EdgeLayout bendX="525" bendY="198"
+                        sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="-2" textOffsetY="-75"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I29" source="I21" target="I20" type="I12">
+                    <EdgeLayout bendX="532" bendY="237"
+                        sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I30" source="I20" target="I20" type="I13">
+                    <EdgeLayout bendX="183" bendY="91" loopH="36"
+                        loopW="52" sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I31" source="I20" target="I21" type="I14">
+                    <EdgeLayout bendX="495" bendY="65"
+                        sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I32" source="I20" target="I20" type="I15">
+                    <EdgeLayout bendX="161" bendY="70" loopH="64"
+                        loopW="82" sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I33" source="I20" target="I21" type="I16">
+                    <EdgeLayout bendX="503" bendY="13"
+                        sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I34" source="I20" target="I21" type="I17">
+                    <EdgeLayout bendX="530" bendY="281"
+                        sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+        </Types>
+        <Graph ID="I35" kind="HOST" name="Init">
+            <Node ID="I36" type="I2">
+                <NodeLayout X="297" Y="194"/>
+                <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+            </Node>
+            <Node ID="I37" type="I3">
+                <NodeLayout X="297" Y="69"/>
+                <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+            </Node>
+            <Node ID="I38" type="I4">
+                <NodeLayout X="62" Y="80"/>
+                <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+            </Node>
+            <Edge ID="I39" source="I36" target="I37" type="I5">
+                <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                <additionalLayout aktlength="200" force="10" preflength="200"/>
+            </Edge>
+            <Edge ID="I40" source="I37" target="I37" type="I6">
+                <EdgeLayout bendX="261" bendY="33" loopH="20" loopW="20"
+                    textOffsetX="0" textOffsetY="-22"/>
+                <additionalLayout aktlength="200" force="10" preflength="200"/>
+            </Edge>
+            <Edge ID="I41" source="I37" target="I38" type="I7">
+                <EdgeLayout bendX="176" bendY="106" textOffsetX="-44" textOffsetY="7"/>
+                <additionalLayout aktlength="200" force="10" preflength="200"/>
+            </Edge>
+            <Edge ID="I42" source="I38" target="I37" type="I8">
+                <EdgeLayout bendX="168" bendY="37" textOffsetX="-40" textOffsetY="-22"/>
+                <additionalLayout aktlength="200" force="10" preflength="200"/>
+            </Edge>
+        </Graph>
+        <Graph ID="I43" kind="HOST" name="final">
+            <Node ID="I44" type="I2">
+                <NodeLayout X="304" Y="210"/>
+                <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+            </Node>
+            <Node ID="I45" type="I3">
+                <NodeLayout X="306" Y="81"/>
+                <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+            </Node>
+            <Node ID="I46" type="I4">
+                <NodeLayout X="57" Y="85"/>
+                <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+            </Node>
+            <Edge ID="I47" source="I44" target="I45" type="I5">
+                <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                <additionalLayout aktlength="200" force="10" preflength="200"/>
+            </Edge>
+            <Edge ID="I48" source="I46" target="I45" type="I8">
+                <EdgeLayout bendX="187" bendY="83" textOffsetX="-46" textOffsetY="-18"/>
+                <additionalLayout aktlength="200" force="10" preflength="200"/>
+            </Edge>
+            <Edge ID="I49" source="I45" target="I45" type="I15">
+                <EdgeLayout bendX="270" bendY="45" loopH="20" loopW="20"
+                    textOffsetX="0" textOffsetY="-22"/>
+                <additionalLayout aktlength="200" force="10" preflength="200"/>
+            </Edge>
+            <Edge ID="I50" source="I45" target="I46" type="I16">
+                <EdgeLayout bendX="167" bendY="37" textOffsetX="-68" textOffsetY="-23"/>
+                <additionalLayout aktlength="200" force="10" preflength="200"/>
+            </Edge>
+            <Edge ID="I51" source="I45" target="I46" type="I17">
+                <EdgeLayout bendX="183" bendY="142" textOffsetX="-97" textOffsetY="15"/>
+                <additionalLayout aktlength="200" force="10" preflength="200"/>
+            </Edge>
+        </Graph>
+        <Rule ID="I52" formula="true" name="01a1_chooseCategory">
+            <Graph ID="I54" kind="LHS" name="LeftOf_01a1_chooseCategory">
+                <Node ID="I55" type="I2">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I56" type="I3">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I57" type="I4">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Edge ID="I58" source="I55" target="I56" type="I5">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I59" source="I56" target="I56" type="I6">
+                    <EdgeLayout bendX="9" bendY="9" loopH="20"
+                        loopW="20" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I60" source="I56" target="I57" type="I7">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I61" source="I57" target="I56" type="I8">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Graph ID="I62" kind="RHS" name="RightOf_01a1_chooseCategory">
+                <Node ID="I63" type="I2">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I64" type="I3">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I65" type="I4">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Edge ID="I66" source="I63" target="I64" type="I5">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I67" source="I64" target="I65" type="I7">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I68" source="I65" target="I64" type="I9">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I69" source="I64" target="I64" type="I6">
+                    <EdgeLayout bendX="9" bendY="9" loopH="20"
+                        loopW="20" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I70" source="I65" target="I64" type="I8">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Morphism comment="Formula: true" name="01a1_chooseCategory">
+                <Mapping image="I63" orig="I55"/>
+                <Mapping image="I64" orig="I56"/>
+                <Mapping image="I65" orig="I57"/>
+                <Mapping image="I69" orig="I59"/>
+                <Mapping image="I67" orig="I60"/>
+                <Mapping image="I66" orig="I58"/>
+                <Mapping image="I70" orig="I61"/>
+            </Morphism>
+            <TaggedValue Tag="layer" TagValue="0"/>
+            <TaggedValue Tag="priority" TagValue="0"/>
+        </Rule>
+        <Rule ID="I71" formula="true" name="01a2_displayProducts">
+            <Graph ID="I73" kind="LHS" name="LeftOf_01a2_displayProducts">
+                <Node ID="I74" type="I2">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I75" type="I3">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I76" type="I4">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Edge ID="I77" source="I74" target="I75" type="I5">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I78" source="I75" target="I76" type="I7">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I79" source="I76" target="I75" type="I9">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I80" source="I75" target="I75" type="I6">
+                    <EdgeLayout bendX="0" bendY="0" loopH="0" loopW="0"
+                        textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I81" source="I76" target="I75" type="I8">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Graph ID="I82" kind="RHS" name="RightOf_01a2_displayProducts">
+                <Node ID="I83" type="I2">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I84" type="I3">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I85" type="I4">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Edge ID="I86" source="I83" target="I84" type="I5">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I87" source="I84" target="I84" type="I10">
+                    <EdgeLayout bendX="0" bendY="0" loopH="0" loopW="0"
+                        textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I88" source="I84" target="I85" type="I11">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I89" source="I85" target="I84" type="I8">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Morphism comment="Formula: true" name="01a2_displayProducts">
+                <Mapping image="I83" orig="I74"/>
+                <Mapping image="I84" orig="I75"/>
+                <Mapping image="I85" orig="I76"/>
+                <Mapping image="I86" orig="I77"/>
+                <Mapping image="I89" orig="I81"/>
+            </Morphism>
+            <TaggedValue Tag="layer" TagValue="0"/>
+            <TaggedValue Tag="priority" TagValue="0"/>
+        </Rule>
+        <Rule ID="I90" formula="true" name="01a3_chooseProduct">
+            <Graph ID="I92" kind="LHS" name="LeftOf_01a3_chooseProduct">
+                <Node ID="I93" type="I2">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I94" type="I3">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I95" type="I4">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Edge ID="I96" source="I93" target="I94" type="I5">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I97" source="I94" target="I94" type="I10">
+                    <EdgeLayout bendX="0" bendY="0" loopH="0" loopW="0"
+                        textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I98" source="I94" target="I95" type="I11">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I99" source="I95" target="I94" type="I8">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Graph ID="I100" kind="RHS" name="RightOf_01a3_chooseProduct">
+                <Node ID="I101" type="I2">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I102" type="I3">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I103" type="I4">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Edge ID="I104" source="I101" target="I102" type="I5">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I105" source="I102" target="I102" type="I10">
+                    <EdgeLayout bendX="0" bendY="0" loopH="0" loopW="0"
+                        textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I106" source="I103" target="I102" type="I12">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I107" source="I102" target="I103" type="I11">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I108" source="I103" target="I102" type="I8">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Morphism comment="Formula: true" name="01a3_chooseProduct">
+                <Mapping image="I101" orig="I93"/>
+                <Mapping image="I102" orig="I94"/>
+                <Mapping image="I103" orig="I95"/>
+                <Mapping image="I108" orig="I99"/>
+                <Mapping image="I105" orig="I97"/>
+                <Mapping image="I104" orig="I96"/>
+                <Mapping image="I107" orig="I98"/>
+            </Morphism>
+            <TaggedValue Tag="layer" TagValue="0"/>
+            <TaggedValue Tag="priority" TagValue="0"/>
+        </Rule>
+        <Rule ID="I109" formula="true" name="01a4_displayItems">
+            <Graph ID="I111" kind="LHS" name="LeftOf_01a4_displayItems">
+                <Node ID="I112" type="I2">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I113" type="I3">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I114" type="I4">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Edge ID="I115" source="I112" target="I113" type="I5">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I116" source="I113" target="I113" type="I10">
+                    <EdgeLayout bendX="0" bendY="0" loopH="0" loopW="0"
+                        textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I117" source="I114" target="I113" type="I12">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I118" source="I113" target="I114" type="I11">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I119" source="I114" target="I113" type="I8">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Graph ID="I120" kind="RHS" name="RightOf_01a4_displayItems">
+                <Node ID="I121" type="I2">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I122" type="I3">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I123" type="I4">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Edge ID="I124" source="I121" target="I122" type="I5">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I125" source="I122" target="I122" type="I13">
+                    <EdgeLayout bendX="0" bendY="0" loopH="0" loopW="0"
+                        textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I126" source="I122" target="I123" type="I14">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I127" source="I123" target="I122" type="I8">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Morphism comment="Formula: true" name="01a4_displayItems">
+                <Mapping image="I121" orig="I112"/>
+                <Mapping image="I122" orig="I113"/>
+                <Mapping image="I123" orig="I114"/>
+                <Mapping image="I124" orig="I115"/>
+                <Mapping image="I127" orig="I119"/>
+            </Morphism>
+            <TaggedValue Tag="layer" TagValue="0"/>
+            <TaggedValue Tag="priority" TagValue="0"/>
+        </Rule>
+        <Rule ID="I128" formula="true" name="01a5_02b5_chooseItem">
+            <Graph ID="I130" kind="LHS" name="LeftOf_01a5_02b5_chooseItem">
+                <Node ID="I131" type="I2">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I132" type="I3">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I133" type="I4">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Edge ID="I134" source="I131" target="I132" type="I5">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I135" source="I132" target="I132" type="I13">
+                    <EdgeLayout bendX="0" bendY="0" loopH="0" loopW="0"
+                        textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I136" source="I132" target="I133" type="I14">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I137" source="I133" target="I132" type="I8">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Graph ID="I138" kind="RHS" name="RightOf_01a5_02b5_chooseItem">
+                <Node ID="I139" type="I2">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I140" type="I3">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I141" type="I4">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Edge ID="I142" source="I139" target="I140" type="I5">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I143" source="I140" target="I140" type="I13">
+                    <EdgeLayout bendX="0" bendY="0" loopH="0" loopW="0"
+                        textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I144" source="I140" target="I141" type="I14">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I145" source="I141" target="I140" type="I8">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Morphism comment="Formula: true" name="01a5_02b5_chooseItem">
+                <Mapping image="I139" orig="I131"/>
+                <Mapping image="I140" orig="I132"/>
+                <Mapping image="I141" orig="I133"/>
+                <Mapping image="I142" orig="I134"/>
+                <Mapping image="I145" orig="I137"/>
+                <Mapping image="I144" orig="I136"/>
+                <Mapping image="I143" orig="I135"/>
+            </Morphism>
+            <TaggedValue Tag="layer" TagValue="0"/>
+            <TaggedValue Tag="priority" TagValue="0"/>
+        </Rule>
+        <Rule ID="I146" formula="true" name="01a6_02b6_displayChosenItem">
+            <Graph ID="I148" kind="LHS" name="LeftOf_01a6_02b6_displayChosenItem">
+                <Node ID="I149" type="I2">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I150" type="I3">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I151" type="I4">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Edge ID="I152" source="I149" target="I150" type="I5">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I153" source="I150" target="I150" type="I13">
+                    <EdgeLayout bendX="0" bendY="0" loopH="0" loopW="0"
+                        textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I154" source="I150" target="I151" type="I14">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I155" source="I151" target="I150" type="I8">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Graph ID="I156" kind="RHS" name="RightOf_01a6_02b6_displayChosenItem">
+                <Node ID="I157" type="I2">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I158" type="I3">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Node ID="I159" type="I4">
+                    <NodeLayout X="50" Y="50"/>
+                    <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                </Node>
+                <Edge ID="I160" source="I157" target="I158" type="I5">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I161" source="I158" target="I158" type="I15">
+                    <EdgeLayout bendX="0" bendY="0" loopH="0" loopW="0"
+                        textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I162" source="I158" target="I159" type="I16">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I163" source="I158" target="I159" type="I17">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I164" source="I159" target="I158" type="I8">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Morphism comment="Formula: true" name="01a6_02b6_displayChosenItem">
+                <Mapping image="I157" orig="I149"/>
+                <Mapping image="I158" orig="I150"/>
+                <Mapping image="I159" orig="I151"/>
+                <Mapping image="I164" orig="I155"/>
+                <Mapping image="I160" orig="I152"/>
+            </Morphism>
+            <TaggedValue Tag="layer" TagValue="0"/>
+            <TaggedValue Tag="priority" TagValue="0"/>
+        </Rule>
+    </GraphTransformationSystem>
 </Document>
-
