@@ -50,14 +50,42 @@
 \subsection{successful accommodation without reservation}
 \subsection{failing accommodation without reservation}
 \subsection{successful accommodation with reservation}
-\subsection{cancelled accommodation}
+\subsection{aborted accommodation}
 
 \section{Reserving a table}
 
+\subsection{successful table reservation}
+\subsection{aborted reservation}
+
 \section{Cancel a reservation}
+
+\subsection{successful cancellation}
+$1-2-3-4-5-6-7-8$
+\subsection{failing due to unavailable tables}
+$1-2-2a1-2a2-2a3$
+
+\subsection{aborted cancellation}
+$1-2-3-3a1-3a2$
+
+\noindent$1-2-3-4-5-5a1-5b1$
 
 \section{Serve a table}
 
 \section{Close a table}
+
+\subsection{successful closing table}
+$1-2-3-4-5-6-7-8-9-10-11-12$
+
+\subsection{aborted closing table}
+
+$1-2-2a-2b$
+
+\subsection{aborted due to wrong table number}
+
+$1-2-3-3a-3b-3c$
+
+\subsection{aborted due to lack of payment confirmation}
+
+$1-2-3-4-5-6-7-8-9-9a-9b$
 
 \end{document}
