@@ -1,0 +1,9 @@
+Conflicts and Dependencies: {
+[Interaction {firstRule = "closeTable-success", secondRule = "serveTable-Success", interactionType = DeleteUse, nacInvolved = Nothing},Interaction {firstRule = "accommodateClient-noreserve-success", secondRule = "serveTable-Success", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "serveTable-Success", secondRule = "closeTable-success", interactionType = ProduceUse, nacInvolved = Nothing}]
+}
+Creation and Deletion Relation: {
+fromList [(Node 248,Rule "accommodateClient-noreserve-success"),(Node 251,Rule "accommodateClient-noreserve-success"),(Node 774,Rule "closeTable-success"),(Node 778,Rule "serveTable-Success"),(Node 2526,Rule "closeTable-success"),(Edge 256,Rule "accommodateClient-noreserve-success"),(Edge 258,Rule "accommodateClient-noreserve-success"),(Edge 260,Rule "accommodateClient-noreserve-success"),(Edge 798,Rule "closeTable-success"),(Edge 800,Rule "closeTable-success"),(Edge 801,Rule "closeTable-success"),(Edge 802,Rule "serveTable-Success"),(Edge 1386,Rule "serveTable-Success"),(Edge 2579,Rule "closeTable-success"),(Edge 3227,Rule "closeTable-success"),(Rule "accommodateClient-noreserve-success",Node 774),(Rule "accommodateClient-noreserve-success",Node 777),(Rule "accommodateClient-noreserve-success",Node 778),(Rule "accommodateClient-noreserve-success",Edge 798),(Rule "accommodateClient-noreserve-success",Edge 800),(Rule "accommodateClient-noreserve-success",Edge 801),(Rule "accommodateClient-noreserve-success",Edge 802),(Rule "closeTable-success",Node 4459),(Rule "closeTable-success",Node 4460),(Rule "closeTable-success",Node 4461),(Rule "closeTable-success",Edge 4539),(Rule "closeTable-success",Edge 4540),(Rule "closeTable-success",Edge 4541),(Rule "closeTable-success",Edge 4542),(Rule "serveTable-Success",Node 2526),(Rule "serveTable-Success",Edge 2579)]
+}
+Conflicts and dependencies induced by NACs: 
+{[]
+}

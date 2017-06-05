@@ -2984,6 +2984,48 @@
             </Sequence>
             <Sequence name="basicExecutionWithoutReservation">
                 <Graph id="I132"/>
+                <Subsequence iterations="1">
+                    <Item iterations="1" rule="accommodateClient-noreserve-success"/>
+                    <Item iterations="1" rule="serveTable-Success"/>
+                    <Item iterations="1" rule="closeTable-success"/>
+                </Subsequence>
+                <ObjectFlow enabled="true" index="1:2"
+                    input="serveTable-Success" output="accommodateClient-noreserve-success">
+                    <Mapping image="I566" orig="I263"/>
+                    <Mapping image="I585" orig="I281"/>
+                    <Mapping image="I574" orig="I271"/>
+                    <Mapping image="I573" orig="I269"/>
+                    <Mapping image="I580" orig="I278"/>
+                    <Mapping image="I581" orig="I279"/>
+                    <Mapping image="I572" orig="I268"/>
+                    <Mapping image="I582" orig="I277"/>
+                    <Mapping image="I584" orig="I280"/>
+                    <Mapping image="I571" orig="I270"/>
+                    <Mapping image="I575" orig="I272"/>
+                    <Mapping image="I570" orig="I266"/>
+                </ObjectFlow>
+                <ObjectFlow enabled="true" index="2:3"
+                    input="closeTable-success" output="serveTable-Success">
+                    <Mapping image="I643" orig="I605"/>
+                    <Mapping image="I640" orig="I599"/>
+                    <Mapping image="I632" orig="I591"/>
+                    <Mapping image="I630" orig="I588"/>
+                    <Mapping image="I637" orig="I593"/>
+                    <Mapping image="I646" orig="I602"/>
+                    <Mapping image="I634" orig="I596"/>
+                    <Mapping image="I639" orig="I597"/>
+                    <Mapping image="I641" orig="I600"/>
+                    <Mapping image="I642" orig="I604"/>
+                    <Mapping image="I635" orig="I594"/>
+                    <Mapping image="I636" orig="I592"/>
+                    <Mapping image="I633" orig="I595"/>
+                    <Mapping image="I628" orig="I589"/>
+                    <Mapping image="I638" orig="I598"/>
+                    <Mapping image="I645" orig="I601"/>
+                    <Mapping image="I631" orig="I590"/>
+                    <Mapping image="I629" orig="I587"/>
+                    <Mapping image="I644" orig="I603"/>
+                </ObjectFlow>
             </Sequence>
         </RuleSequences>
     </GraphTransformationSystem>
