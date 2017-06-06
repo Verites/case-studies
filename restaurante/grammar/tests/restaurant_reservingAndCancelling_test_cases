@@ -1,0 +1,23 @@
+Rules involved: {
+fromList [Rule "cancelReservation-fail",Rule "cancelReservation-success",Rule "reserveTable-successful"]
+}
+Concrete Rules Relation: {
+[(Rule "reserveTable-successful" < Rule "cancelReservation-success")]
+}
+Elements involved: {
+fromList [Node 410,Node 411,Node 412,Node 413,Node 414,Node 415,Node 416,Node 417,Node 418,Node 419,Node 1278,Node 2842,Node 2843,Node 4329,Edge 420,Edge 421,Edge 422,Edge 423,Edge 424,Edge 425,Edge 426,Edge 427,Edge 428,Edge 1302,Edge 1303,Edge 1825,Edge 2879,Edge 2880,Edge 3375,Edge 4385]
+}
+Elements Relation: {
+[(Node 415 < Node 4329),(Node 415 < Edge 4385),(Node 419 < Node 1278),(Node 419 < Node 4329),(Node 419 < Edge 1302),(Node 419 < Edge 1303),(Node 419 < Edge 4385),(Node 1278 < Node 4329),(Node 1278 < Edge 4385),(Edge 423 < Node 1278),(Edge 423 < Node 4329),(Edge 423 < Edge 1302),(Edge 423 < Edge 1303),(Edge 423 < Edge 4385),(Edge 424 < Node 1278),(Edge 424 < Node 4329),(Edge 424 < Edge 1302),(Edge 424 < Edge 1303),(Edge 424 < Edge 4385),(Edge 425 < Node 1278),(Edge 425 < Node 4329),(Edge 425 < Edge 1302),(Edge 425 < Edge 1303),(Edge 425 < Edge 4385),(Edge 428 < Node 1278),(Edge 428 < Node 4329),(Edge 428 < Edge 1302),(Edge 428 < Edge 1303),(Edge 428 < Edge 4385),(Edge 1302 < Node 4329),(Edge 1302 < Edge 4385),(Edge 1303 < Node 4329),(Edge 1303 < Edge 4385),(Edge 1825 < Node 2842),(Edge 1825 < Node 2843),(Edge 1825 < Edge 2879),(Edge 1825 < Edge 2880),(Edge 3375 < Node 4329),(Edge 3375 < Edge 4385)]
+}
+
+
+Rules Ordering: {Just [Rule "cancelReservation-fail",Rule "reserveTable-successful",Rule "cancelReservation-success"]
+}
+Element Ordering: {Just [Node 410,Node 411,Node 412,Node 413,Node 414,Node 415,Node 416,Node 417,Node 418,Node 419,Edge 420,Edge 421,Edge 422,Edge 423,Edge 424,Edge 425,Edge 426,Edge 427,Edge 428,Node 1278,Edge 1302,Edge 1303,Edge 1825,Node 2842,Node 2843,Edge 2879,Edge 2880,Edge 3375,Node 4329,Edge 4385]
+}
+
+Set of Category Restrictions: {
+[(AbstractProduceForbid: Rule "cancelReservation-fail" not in between [Rule "reserveTable-successful" < Rule "cancelReservation-success"]),
+(AbstractDeleteForbid: Rule "cancelReservation-fail" not in between [Rule "reserveTable-successful" < Rule "cancelReservation-success"])]
+}
