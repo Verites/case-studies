@@ -1,0 +1,22 @@
+Rules involved: {
+fromList [Rule "cancelReservation-abort",Rule "cancelReservation-success",Rule "reserveTable-successful"]
+}
+Concrete Rules Relation: {
+[(Rule "reserveTable-successful" < Rule "cancelReservation-success")]
+}
+Elements involved: {
+fromList [Node 410,Node 411,Node 412,Node 413,Node 414,Node 415,Node 416,Node 417,Node 418,Node 419,Node 1278,Node 4426,Edge 420,Edge 421,Edge 422,Edge 423,Edge 424,Edge 425,Edge 426,Edge 427,Edge 428,Edge 1302,Edge 1303,Edge 1858,Edge 3470,Edge 4480]
+}
+Elements Relation: {
+[(Node 415 < Node 4426),(Node 415 < Edge 4480),(Node 419 < Node 1278),(Node 419 < Node 4426),(Node 419 < Edge 1302),(Node 419 < Edge 1303),(Node 419 < Edge 4480),(Node 1278 < Node 4426),(Node 1278 < Edge 4480),(Edge 423 < Node 1278),(Edge 423 < Node 4426),(Edge 423 < Edge 1302),(Edge 423 < Edge 1303),(Edge 423 < Edge 4480),(Edge 424 < Node 1278),(Edge 424 < Node 4426),(Edge 424 < Edge 1302),(Edge 424 < Edge 1303),(Edge 424 < Edge 4480),(Edge 425 < Node 1278),(Edge 425 < Node 4426),(Edge 425 < Edge 1302),(Edge 425 < Edge 1303),(Edge 425 < Edge 4480),(Edge 428 < Node 1278),(Edge 428 < Node 4426),(Edge 428 < Edge 1302),(Edge 428 < Edge 1303),(Edge 428 < Edge 4480),(Edge 1302 < Node 4426),(Edge 1302 < Edge 4480),(Edge 1303 < Node 4426),(Edge 1303 < Edge 4480),(Edge 3470 < Node 4426),(Edge 3470 < Edge 4480)]
+}
+
+
+Rules Ordering: {Just [Rule "cancelReservation-abort",Rule "reserveTable-successful",Rule "cancelReservation-success"]
+}
+Element Ordering: {Just [Node 410,Node 411,Node 412,Node 413,Node 414,Node 415,Node 416,Node 417,Node 418,Node 419,Edge 420,Edge 421,Edge 422,Edge 423,Edge 424,Edge 425,Edge 426,Edge 427,Edge 428,Node 1278,Edge 1302,Edge 1303,Edge 1858,Edge 3470,Node 4426,Edge 4480]
+}
+
+Set of Category Restrictions: {
+[]
+}

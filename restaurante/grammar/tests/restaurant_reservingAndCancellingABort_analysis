@@ -1,0 +1,9 @@
+Conflicts and Dependencies: {
+[Interaction {firstRule = "reserveTable-successful", secondRule = "cancelReservation-success", interactionType = ProduceUse, nacInvolved = Nothing}]
+}
+Creation and Deletion Relation: {
+fromList [(Node 415,Rule "cancelReservation-success"),(Node 419,Rule "reserveTable-successful"),(Node 1278,Rule "cancelReservation-success"),(Edge 423,Rule "reserveTable-successful"),(Edge 424,Rule "reserveTable-successful"),(Edge 425,Rule "reserveTable-successful"),(Edge 428,Rule "reserveTable-successful"),(Edge 1302,Rule "cancelReservation-success"),(Edge 1303,Rule "cancelReservation-success"),(Edge 1858,Rule "cancelReservation-abort"),(Edge 3470,Rule "cancelReservation-success"),(Rule "cancelReservation-success",Node 4426),(Rule "cancelReservation-success",Edge 4480),(Rule "reserveTable-successful",Node 1278),(Rule "reserveTable-successful",Edge 1302),(Rule "reserveTable-successful",Edge 1303)]
+}
+Conflicts and dependencies induced by NACs: 
+{[]
+}

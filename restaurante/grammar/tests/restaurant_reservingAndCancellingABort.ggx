@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document version="1.0">
+  <GraphTransformationSystem name="GraGra" ID="I1" directed="true" parallel="true">
+    <TaggedValue Tag="AttrHandler" TagValue="Java Expr">
+      <TaggedValue Tag="Package" TagValue="java.lang"/>
+      <TaggedValue Tag="Package" TagValue="java.util"/>
+    </TaggedValue>
+    <TaggedValue Tag="CSP" TagValue="true"/>
+    <TaggedValue Tag="dangling" TagValue="true"/>
+    <TaggedValue Tag="identification" TagValue="true"/>
+    <TaggedValue Tag="NACs" TagValue="true"/>
+    <TaggedValue Tag="PACs" TagValue="true"/>
+    <TaggedValue Tag="GACs" TagValue="true"/>
+    <TaggedValue Tag="breakAllLayer" TagValue="true"/>
+    <TaggedValue Tag="showGraphAfterStep" TagValue="true"/>
+    <TaggedValue Tag="TypeGraphLevel" TagValue="ENABLED"/>
+    <Types>
+      <NodeType ID="N410" abstract="false" name="Employee-410%:RECT:java.awt.Color[r=0,g=0,b=0]:employee.gif:[NODE]:"/>
+      <NodeType ID="N411" abstract="false" name="System-411%:RECT:java.awt.Color[r=0,g=0,b=0]:system.gif:[NODE]:"/>
+      <NodeType ID="N412" abstract="false" name="Menu-412%:RECT:java.awt.Color[r=0,g=0,b=0]:menu.gif:[NODE]:"/>
+      <NodeType ID="N413" abstract="false" name="Receptionist-413%:RECT:java.awt.Color[r=0,g=0,b=0]:receptionist.gif:[NODE]:"/>
+      <NodeType ID="N414" abstract="false" name="Client-414%:RECT:java.awt.Color[r=0,g=0,b=0]:client.gif:[NODE]:"/>
+      <NodeType ID="N415" abstract="false" name="ReservationDate-415%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <NodeType ID="N416" abstract="false" name="NumberOfSeats-416%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <NodeType ID="N417" abstract="false" name="Table-417%:RECT:java.awt.Color[r=0,g=0,b=0]:table.gif:[NODE]:"/>
+      <NodeType ID="N418" abstract="false" name="Tag-418%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <NodeType ID="N419" abstract="false" name="T:Free-419%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <NodeType ID="N1278" abstract="false" name="T:Reserved-1278%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <NodeType ID="N4426" abstract="false" name="T:Free-4426%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <EdgeType ID="E420" abstract="false" name="logged-420%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E421" abstract="false" name="d-menu-421%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E422" abstract="false" name="is-receptionist-422%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E423" abstract="false" name="msg-reserve-423%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E424" abstract="false" name="wants-424%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E425" abstract="false" name="n-people-425%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E426" abstract="false" name="has-number-426%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E427" abstract="false" name="tagged-427%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E428" abstract="false" name="is-free-428%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E1302" abstract="false" name="is-reserved-1302%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E1303" abstract="false" name="on-1303%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E1858" abstract="false" name="msg-cancel-reserv-1858%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E3470" abstract="false" name="msg-cancel-reserv-3470%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E4480" abstract="false" name="is-free-4480%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <Graph ID="TypeGraph" kind="TG" name="TypeGraph">
+        <Node ID="TypeGraph_n410" type="N410">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n411" type="N411">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n412" type="N412">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n413" type="N413">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n414" type="N414">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n415" type="N415">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n416" type="N416">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n417" type="N417">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n418" type="N418">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n419" type="N419">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n1278" type="N1278">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n4426" type="N4426">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="TypeGraph_e420" source="TypeGraph_n410" target="TypeGraph_n411" type="E420">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e421" source="TypeGraph_n411" target="TypeGraph_n412" type="E421">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e422" source="TypeGraph_n410" target="TypeGraph_n413" type="E422">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e423" source="TypeGraph_n413" target="TypeGraph_n412" type="E423">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e424" source="TypeGraph_n414" target="TypeGraph_n415" type="E424">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e425" source="TypeGraph_n414" target="TypeGraph_n416" type="E425">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e426" source="TypeGraph_n417" target="TypeGraph_n416" type="E426">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e427" source="TypeGraph_n417" target="TypeGraph_n418" type="E427">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e428" source="TypeGraph_n418" target="TypeGraph_n419" type="E428">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e1302" source="TypeGraph_n418" target="TypeGraph_n1278" type="E1302">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e1303" source="TypeGraph_n1278" target="TypeGraph_n415" type="E1303">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e1858" source="TypeGraph_n413" target="TypeGraph_n412" type="E1858">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e3470" source="TypeGraph_n413" target="TypeGraph_n412" type="E3470">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e4480" source="TypeGraph_n418" target="TypeGraph_n4426" type="E4480">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+    </Types>
+    <Graph ID="graph_Init" kind="HOST" name="Init">
+      <Node ID="graph_Init_N410" type="N410">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N411" type="N411">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N412" type="N412">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N413" type="N413">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N414" type="N414">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N415" type="N415">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N416" type="N416">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N417" type="N417">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N418" type="N418">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N419" type="N419">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Edge ID="graph_Init_E420" source="graph_Init_N410" target="graph_Init_N411" type="E420">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E421" source="graph_Init_N411" target="graph_Init_N412" type="E421">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E422" source="graph_Init_N410" target="graph_Init_N413" type="E422">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E423" source="graph_Init_N413" target="graph_Init_N412" type="E423">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E424" source="graph_Init_N414" target="graph_Init_N415" type="E424">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E425" source="graph_Init_N414" target="graph_Init_N416" type="E425">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E426" source="graph_Init_N417" target="graph_Init_N416" type="E426">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E427" source="graph_Init_N417" target="graph_Init_N418" type="E427">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E428" source="graph_Init_N418" target="graph_Init_N419" type="E428">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E1858" source="graph_Init_N413" target="graph_Init_N412" type="E1858">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E3470" source="graph_Init_N413" target="graph_Init_N412" type="E3470">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+    </Graph>
+    <Graph ID="graph_final" kind="HOST" name="final">
+      <Node ID="graph_final_N410" type="N410">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N411" type="N411">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N412" type="N412">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N413" type="N413">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N414" type="N414">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N416" type="N416">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N417" type="N417">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N418" type="N418">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N4426" type="N4426">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Edge ID="graph_final_E420" source="graph_final_N410" target="graph_final_N411" type="E420">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_final_E421" source="graph_final_N411" target="graph_final_N412" type="E421">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_final_E422" source="graph_final_N410" target="graph_final_N413" type="E422">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_final_E426" source="graph_final_N417" target="graph_final_N416" type="E426">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_final_E427" source="graph_final_N417" target="graph_final_N418" type="E427">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_final_E4480" source="graph_final_N418" target="graph_final_N4426" type="E4480">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+    </Graph>
+    <Rule ID="reserveTable-successful" formula="true" name="reserveTable-successful">
+      <Graph ID="LeftOf_reserveTable-successful" kind="LHS" name="LeftOf_reserveTable-successful">
+        <Node ID="LeftOf_reserveTable-successful_N410" type="N410">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_reserveTable-successful_N411" type="N411">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_reserveTable-successful_N412" type="N412">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_reserveTable-successful_N413" type="N413">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_reserveTable-successful_N414" type="N414">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_reserveTable-successful_N415" type="N415">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_reserveTable-successful_N416" type="N416">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_reserveTable-successful_N417" type="N417">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_reserveTable-successful_N418" type="N418">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_reserveTable-successful_N419" type="N419">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="LeftOf_reserveTable-successful_E420" source="LeftOf_reserveTable-successful_N410" target="LeftOf_reserveTable-successful_N411" type="E420">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_reserveTable-successful_E421" source="LeftOf_reserveTable-successful_N411" target="LeftOf_reserveTable-successful_N412" type="E421">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_reserveTable-successful_E422" source="LeftOf_reserveTable-successful_N410" target="LeftOf_reserveTable-successful_N413" type="E422">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_reserveTable-successful_E423" source="LeftOf_reserveTable-successful_N413" target="LeftOf_reserveTable-successful_N412" type="E423">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_reserveTable-successful_E424" source="LeftOf_reserveTable-successful_N414" target="LeftOf_reserveTable-successful_N415" type="E424">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_reserveTable-successful_E425" source="LeftOf_reserveTable-successful_N414" target="LeftOf_reserveTable-successful_N416" type="E425">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_reserveTable-successful_E426" source="LeftOf_reserveTable-successful_N417" target="LeftOf_reserveTable-successful_N416" type="E426">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_reserveTable-successful_E427" source="LeftOf_reserveTable-successful_N417" target="LeftOf_reserveTable-successful_N418" type="E427">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_reserveTable-successful_E428" source="LeftOf_reserveTable-successful_N418" target="LeftOf_reserveTable-successful_N419" type="E428">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Graph ID="RightOf_reserveTable-successful" kind="RHS" name="RightOf_reserveTable-successful">
+        <Node ID="RightOf_reserveTable-successful_N410" type="N410">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_reserveTable-successful_N411" type="N411">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_reserveTable-successful_N412" type="N412">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_reserveTable-successful_N413" type="N413">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_reserveTable-successful_N414" type="N414">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_reserveTable-successful_N416" type="N416">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_reserveTable-successful_N417" type="N417">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_reserveTable-successful_N415" type="N415">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_reserveTable-successful_N418" type="N418">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_reserveTable-successful_N1278" type="N1278">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="RightOf_reserveTable-successful_E420" source="RightOf_reserveTable-successful_N410" target="RightOf_reserveTable-successful_N411" type="E420">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_reserveTable-successful_E421" source="RightOf_reserveTable-successful_N411" target="RightOf_reserveTable-successful_N412" type="E421">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_reserveTable-successful_E422" source="RightOf_reserveTable-successful_N410" target="RightOf_reserveTable-successful_N413" type="E422">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_reserveTable-successful_E426" source="RightOf_reserveTable-successful_N417" target="RightOf_reserveTable-successful_N416" type="E426">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_reserveTable-successful_E427" source="RightOf_reserveTable-successful_N417" target="RightOf_reserveTable-successful_N418" type="E427">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_reserveTable-successful_E1302" source="RightOf_reserveTable-successful_N418" target="RightOf_reserveTable-successful_N1278" type="E1302">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_reserveTable-successful_E1303" source="RightOf_reserveTable-successful_N1278" target="RightOf_reserveTable-successful_N415" type="E1303">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Morphism name="reserveTable-successful">
+        <Mapping image="RightOf_reserveTable-successful_N410" orig="LeftOf_reserveTable-successful_N410"/>
+        <Mapping image="RightOf_reserveTable-successful_N411" orig="LeftOf_reserveTable-successful_N411"/>
+        <Mapping image="RightOf_reserveTable-successful_N412" orig="LeftOf_reserveTable-successful_N412"/>
+        <Mapping image="RightOf_reserveTable-successful_N413" orig="LeftOf_reserveTable-successful_N413"/>
+        <Mapping image="RightOf_reserveTable-successful_N414" orig="LeftOf_reserveTable-successful_N414"/>
+        <Mapping image="RightOf_reserveTable-successful_N415" orig="LeftOf_reserveTable-successful_N415"/>
+        <Mapping image="RightOf_reserveTable-successful_N416" orig="LeftOf_reserveTable-successful_N416"/>
+        <Mapping image="RightOf_reserveTable-successful_N417" orig="LeftOf_reserveTable-successful_N417"/>
+        <Mapping image="RightOf_reserveTable-successful_N418" orig="LeftOf_reserveTable-successful_N418"/>
+        <Mapping image="RightOf_reserveTable-successful_E420" orig="LeftOf_reserveTable-successful_E420"/>
+        <Mapping image="RightOf_reserveTable-successful_E421" orig="LeftOf_reserveTable-successful_E421"/>
+        <Mapping image="RightOf_reserveTable-successful_E422" orig="LeftOf_reserveTable-successful_E422"/>
+        <Mapping image="RightOf_reserveTable-successful_E426" orig="LeftOf_reserveTable-successful_E426"/>
+        <Mapping image="RightOf_reserveTable-successful_E427" orig="LeftOf_reserveTable-successful_E427"/>
+      </Morphism>
+      <ApplCondition/>
+    </Rule>
+    <Rule ID="cancelReservation-abort" formula="true" name="cancelReservation-abort">
+      <Graph ID="LeftOf_cancelReservation-abort" kind="LHS" name="LeftOf_cancelReservation-abort">
+        <Node ID="LeftOf_cancelReservation-abort_N410" type="N410">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_cancelReservation-abort_N411" type="N411">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_cancelReservation-abort_N412" type="N412">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_cancelReservation-abort_N413" type="N413">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="LeftOf_cancelReservation-abort_E420" source="LeftOf_cancelReservation-abort_N410" target="LeftOf_cancelReservation-abort_N411" type="E420">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_cancelReservation-abort_E421" source="LeftOf_cancelReservation-abort_N411" target="LeftOf_cancelReservation-abort_N412" type="E421">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_cancelReservation-abort_E422" source="LeftOf_cancelReservation-abort_N410" target="LeftOf_cancelReservation-abort_N413" type="E422">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_cancelReservation-abort_E1858" source="LeftOf_cancelReservation-abort_N413" target="LeftOf_cancelReservation-abort_N412" type="E1858">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Graph ID="RightOf_cancelReservation-abort" kind="RHS" name="RightOf_cancelReservation-abort">
+        <Node ID="RightOf_cancelReservation-abort_N410" type="N410">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_cancelReservation-abort_N411" type="N411">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_cancelReservation-abort_N412" type="N412">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_cancelReservation-abort_N413" type="N413">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="RightOf_cancelReservation-abort_E420" source="RightOf_cancelReservation-abort_N410" target="RightOf_cancelReservation-abort_N411" type="E420">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_cancelReservation-abort_E421" source="RightOf_cancelReservation-abort_N411" target="RightOf_cancelReservation-abort_N412" type="E421">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_cancelReservation-abort_E422" source="RightOf_cancelReservation-abort_N410" target="RightOf_cancelReservation-abort_N413" type="E422">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Morphism name="cancelReservation-abort">
+        <Mapping image="RightOf_cancelReservation-abort_N410" orig="LeftOf_cancelReservation-abort_N410"/>
+        <Mapping image="RightOf_cancelReservation-abort_N411" orig="LeftOf_cancelReservation-abort_N411"/>
+        <Mapping image="RightOf_cancelReservation-abort_N412" orig="LeftOf_cancelReservation-abort_N412"/>
+        <Mapping image="RightOf_cancelReservation-abort_N413" orig="LeftOf_cancelReservation-abort_N413"/>
+        <Mapping image="RightOf_cancelReservation-abort_E420" orig="LeftOf_cancelReservation-abort_E420"/>
+        <Mapping image="RightOf_cancelReservation-abort_E421" orig="LeftOf_cancelReservation-abort_E421"/>
+        <Mapping image="RightOf_cancelReservation-abort_E422" orig="LeftOf_cancelReservation-abort_E422"/>
+      </Morphism>
+      <ApplCondition/>
+    </Rule>
+    <Rule ID="cancelReservation-success" formula="true" name="cancelReservation-success">
+      <Graph ID="LeftOf_cancelReservation-success" kind="LHS" name="LeftOf_cancelReservation-success">
+        <Node ID="LeftOf_cancelReservation-success_N410" type="N410">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_cancelReservation-success_N411" type="N411">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_cancelReservation-success_N412" type="N412">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_cancelReservation-success_N413" type="N413">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_cancelReservation-success_N417" type="N417">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_cancelReservation-success_N418" type="N418">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_cancelReservation-success_N1278" type="N1278">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_cancelReservation-success_N415" type="N415">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="LeftOf_cancelReservation-success_E420" source="LeftOf_cancelReservation-success_N410" target="LeftOf_cancelReservation-success_N411" type="E420">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_cancelReservation-success_E421" source="LeftOf_cancelReservation-success_N411" target="LeftOf_cancelReservation-success_N412" type="E421">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_cancelReservation-success_E422" source="LeftOf_cancelReservation-success_N410" target="LeftOf_cancelReservation-success_N413" type="E422">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_cancelReservation-success_E3470" source="LeftOf_cancelReservation-success_N413" target="LeftOf_cancelReservation-success_N412" type="E3470">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_cancelReservation-success_E427" source="LeftOf_cancelReservation-success_N417" target="LeftOf_cancelReservation-success_N418" type="E427">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_cancelReservation-success_E1302" source="LeftOf_cancelReservation-success_N418" target="LeftOf_cancelReservation-success_N1278" type="E1302">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_cancelReservation-success_E1303" source="LeftOf_cancelReservation-success_N1278" target="LeftOf_cancelReservation-success_N415" type="E1303">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Graph ID="RightOf_cancelReservation-success" kind="RHS" name="RightOf_cancelReservation-success">
+        <Node ID="RightOf_cancelReservation-success_N410" type="N410">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_cancelReservation-success_N411" type="N411">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_cancelReservation-success_N412" type="N412">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_cancelReservation-success_N413" type="N413">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_cancelReservation-success_N418" type="N418">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_cancelReservation-success_N417" type="N417">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_cancelReservation-success_N4426" type="N4426">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="RightOf_cancelReservation-success_E420" source="RightOf_cancelReservation-success_N410" target="RightOf_cancelReservation-success_N411" type="E420">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_cancelReservation-success_E421" source="RightOf_cancelReservation-success_N411" target="RightOf_cancelReservation-success_N412" type="E421">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_cancelReservation-success_E422" source="RightOf_cancelReservation-success_N410" target="RightOf_cancelReservation-success_N413" type="E422">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_cancelReservation-success_E427" source="RightOf_cancelReservation-success_N417" target="RightOf_cancelReservation-success_N418" type="E427">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_cancelReservation-success_E4480" source="RightOf_cancelReservation-success_N418" target="RightOf_cancelReservation-success_N4426" type="E4480">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Morphism name="cancelReservation-success">
+        <Mapping image="RightOf_cancelReservation-success_N410" orig="LeftOf_cancelReservation-success_N410"/>
+        <Mapping image="RightOf_cancelReservation-success_N411" orig="LeftOf_cancelReservation-success_N411"/>
+        <Mapping image="RightOf_cancelReservation-success_N412" orig="LeftOf_cancelReservation-success_N412"/>
+        <Mapping image="RightOf_cancelReservation-success_N413" orig="LeftOf_cancelReservation-success_N413"/>
+        <Mapping image="RightOf_cancelReservation-success_N417" orig="LeftOf_cancelReservation-success_N417"/>
+        <Mapping image="RightOf_cancelReservation-success_N418" orig="LeftOf_cancelReservation-success_N418"/>
+        <Mapping image="RightOf_cancelReservation-success_E420" orig="LeftOf_cancelReservation-success_E420"/>
+        <Mapping image="RightOf_cancelReservation-success_E421" orig="LeftOf_cancelReservation-success_E421"/>
+        <Mapping image="RightOf_cancelReservation-success_E422" orig="LeftOf_cancelReservation-success_E422"/>
+        <Mapping image="RightOf_cancelReservation-success_E427" orig="LeftOf_cancelReservation-success_E427"/>
+      </Morphism>
+      <ApplCondition/>
+    </Rule>
+  </GraphTransformationSystem>
+</Document>
+

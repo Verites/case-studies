@@ -3027,7 +3027,7 @@
                     <Mapping image="I638" orig="I598"/>
                 </ObjectFlow>
             </Sequence>
-            <Sequence name="reservingAndCancelling">
+            <Sequence name="reservingAndCancellingFail">
                 <Graph id="I132"/>
                 <Subsequence iterations="1">
                     <Item iterations="1" rule="reserveTable-successful"/>
@@ -3063,6 +3063,44 @@
                     <Mapping image="I484" orig="I524"/>
                     <Mapping image="I491" orig="I529"/>
                     <Mapping image="I483" orig="I523"/>
+                </ObjectFlow>
+            </Sequence>
+            <Sequence name="reservingAndCancellingABort">
+                <Graph id="I132"/>
+                <Subsequence iterations="1">
+                    <Item iterations="1" rule="reserveTable-successful"/>
+                    <Item iterations="1" rule="cancelReservation-abort"/>
+                    <Item iterations="1" rule="cancelReservation-success"/>
+                </Subsequence>
+                <ObjectFlow enabled="true" index="1:3"
+                    input="cancelReservation-success" output="reserveTable-successful">
+                    <Mapping image="I489" orig="I439"/>
+                    <Mapping image="I496" orig="I445"/>
+                    <Mapping image="I488" orig="I438"/>
+                    <Mapping image="I497" orig="I446"/>
+                    <Mapping image="I487" orig="I436"/>
+                    <Mapping image="I495" orig="I444"/>
+                    <Mapping image="I490" orig="I437"/>
+                </ObjectFlow>
+                <ObjectFlow enabled="true" index="1:2"
+                    input="cancelReservation-abort" output="reserveTable-successful">
+                    <Mapping image="I551" orig="I440"/>
+                    <Mapping image="I553" orig="I442"/>
+                    <Mapping image="I549" orig="I432"/>
+                    <Mapping image="I548" orig="I431"/>
+                    <Mapping image="I550" orig="I433"/>
+                    <Mapping image="I547" orig="I430"/>
+                    <Mapping image="I552" orig="I441"/>
+                </ObjectFlow>
+                <ObjectFlow enabled="true" index="2:3"
+                    input="cancelReservation-success" output="cancelReservation-abort">
+                    <Mapping image="I492" orig="I561"/>
+                    <Mapping image="I486" orig="I559"/>
+                    <Mapping image="I483" orig="I556"/>
+                    <Mapping image="I493" orig="I562"/>
+                    <Mapping image="I484" orig="I557"/>
+                    <Mapping image="I485" orig="I558"/>
+                    <Mapping image="I491" orig="I560"/>
                 </ObjectFlow>
             </Sequence>
         </RuleSequences>
