@@ -1,9 +1,0 @@
-Conflicts and Dependencies: {
-[Interaction {firstRule = "accommodateClient-Start", secondRule = "accommodateClient-Cancel", interactionType = ProduceUse, nacInvolved = Nothing}]
-}
-Creation and Deletion Relation: {
-fromList [(Node 570,Rule "accommodateClient-Cancel"),(Edge 190,Rule "accommodateClient-Start"),(Edge 581,Rule "accommodateClient-Cancel"),(Rule "accommodateClient-Start",Node 570),(Rule "accommodateClient-Start",Edge 581)]
-}
-Conflicts and dependencies induced by NACs: 
-{[]
-}
