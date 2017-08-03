@@ -1153,11 +1153,11 @@
                 <Mapping image="I267" orig="I249"/>
                 <Mapping image="I269" orig="I250"/>
                 <Mapping image="I270" orig="I252"/>
-                <Mapping image="I274" orig="I254"/>
+                <Mapping image="I273" orig="I253"/>
                 <Mapping image="I278" orig="I259"/>
                 <Mapping image="I276" orig="I257"/>
-                <Mapping image="I273" orig="I253"/>
                 <Mapping image="I275" orig="I255"/>
+                <Mapping image="I274" orig="I254"/>
             </Morphism>
             <ApplCondition>
                 <NAC>
@@ -1274,14 +1274,14 @@
                         <Mapping image="I290" orig="I250"/>
                         <Mapping image="I291" orig="I251"/>
                         <Mapping image="I292" orig="I252"/>
-                        <Mapping image="I295" orig="I254"/>
+                        <Mapping image="I294" orig="I253"/>
                         <Mapping image="I300" orig="I259"/>
                         <Mapping image="I298" orig="I257"/>
-                        <Mapping image="I294" orig="I253"/>
                         <Mapping image="I297" orig="I256"/>
                         <Mapping image="I299" orig="I258"/>
                         <Mapping image="I296" orig="I255"/>
                         <Mapping image="I301" orig="I260"/>
+                        <Mapping image="I295" orig="I254"/>
                     </Morphism>
                 </NAC>
             </ApplCondition>
@@ -1460,11 +1460,11 @@
                 <Mapping image="I332" orig="I315"/>
                 <Mapping image="I333" orig="I311"/>
                 <Mapping image="I334" orig="I314"/>
-                <Mapping image="I341" orig="I322"/>
-                <Mapping image="I340" orig="I320"/>
                 <Mapping image="I337" orig="I316"/>
                 <Mapping image="I338" orig="I317"/>
                 <Mapping image="I339" orig="I318"/>
+                <Mapping image="I341" orig="I322"/>
+                <Mapping image="I340" orig="I320"/>
                 <Mapping image="I342" orig="I323"/>
                 <Mapping image="I343" orig="I321"/>
             </Morphism>
@@ -1638,10 +1638,10 @@
                 <Mapping image="I375" orig="I355"/>
                 <Mapping image="I376" orig="I356"/>
                 <Mapping image="I379" orig="I359"/>
-                <Mapping image="I382" orig="I363"/>
-                <Mapping image="I384" orig="I364"/>
                 <Mapping image="I381" orig="I361"/>
+                <Mapping image="I382" orig="I363"/>
                 <Mapping image="I380" orig="I360"/>
+                <Mapping image="I384" orig="I364"/>
             </Morphism>
             <TaggedValue Tag="layer" TagValue="0"/>
             <TaggedValue Tag="priority" TagValue="0"/>
@@ -1716,8 +1716,8 @@
                 <Mapping image="I401" orig="I392"/>
                 <Mapping image="I402" orig="I393"/>
                 <Mapping image="I403" orig="I394"/>
-                <Mapping image="I404" orig="I395"/>
                 <Mapping image="I406" orig="I397"/>
+                <Mapping image="I404" orig="I395"/>
                 <Mapping image="I405" orig="I396"/>
             </Morphism>
             <TaggedValue Tag="layer" TagValue="0"/>
@@ -1726,47 +1726,47 @@
         <Rule ID="I407" formula="true" name="reserveTable-successful">
             <Graph ID="I409" kind="LHS" name="LeftOf_reserveTable-successful">
                 <Node ID="I410" type="I2">
-                    <NodeLayout X="348" Y="204"/>
+                    <NodeLayout X="205" Y="138"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I411" type="I5">
-                    <NodeLayout X="66" Y="208"/>
+                    <NodeLayout X="50" Y="138"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I412" type="I9">
-                    <NodeLayout X="69" Y="60"/>
+                    <NodeLayout X="52" Y="45"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I413" type="I4">
-                    <NodeLayout X="350" Y="65"/>
+                    <NodeLayout X="213" Y="49"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I414" type="I13">
-                    <NodeLayout X="427" Y="426"/>
+                    <NodeLayout X="362" Y="44"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I415" type="I22">
-                    <NodeLayout X="532" Y="281"/>
+                    <NodeLayout X="540" Y="53"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I416" type="I7">
-                    <NodeLayout X="284" Y="300"/>
+                    <NodeLayout X="328" Y="143"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I417" type="I6">
-                    <NodeLayout X="234" Y="462"/>
+                    <NodeLayout X="380" Y="218"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I418" type="I21">
-                    <NodeLayout X="77" Y="465"/>
+                    <NodeLayout X="507" Y="197"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I419" type="I12">
-                    <NodeLayout X="56" Y="376"/>
+                    <NodeLayout X="516" Y="117"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Edge ID="I420" source="I410" target="I411" type="I31">
-                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="-19" textOffsetY="-24"/>
                     <additionalLayout aktlength="200" force="10" preflength="200"/>
                 </Edge>
                 <Edge ID="I421" source="I411" target="I412" type="I33">
@@ -1782,19 +1782,19 @@
                     <additionalLayout aktlength="200" force="10" preflength="200"/>
                 </Edge>
                 <Edge ID="I424" source="I414" target="I415" type="I56">
-                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="-14" textOffsetY="-20"/>
                     <additionalLayout aktlength="200" force="10" preflength="200"/>
                 </Edge>
                 <Edge ID="I425" source="I414" target="I416" type="I50">
-                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="4" textOffsetY="-16"/>
                     <additionalLayout aktlength="200" force="10" preflength="200"/>
                 </Edge>
                 <Edge ID="I426" source="I417" target="I416" type="I32">
-                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="-84" textOffsetY="0"/>
                     <additionalLayout aktlength="200" force="10" preflength="200"/>
                 </Edge>
                 <Edge ID="I427" source="I417" target="I418" type="I53">
-                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="-23" textOffsetY="19"/>
                     <additionalLayout aktlength="200" force="10" preflength="200"/>
                 </Edge>
                 <Edge ID="I428" source="I418" target="I419" type="I39">
@@ -1804,43 +1804,43 @@
             </Graph>
             <Graph ID="I429" kind="RHS" name="RightOf_reserveTable-successful">
                 <Node ID="I430" type="I2">
-                    <NodeLayout X="270" Y="180"/>
+                    <NodeLayout X="197" Y="128"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I431" type="I5">
-                    <NodeLayout X="64" Y="180"/>
+                    <NodeLayout X="47" Y="125"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I432" type="I9">
-                    <NodeLayout X="61" Y="59"/>
+                    <NodeLayout X="44" Y="35"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I433" type="I4">
-                    <NodeLayout X="272" Y="61"/>
+                    <NodeLayout X="199" Y="33"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I434" type="I13">
-                    <NodeLayout X="478" Y="359"/>
+                    <NodeLayout X="386" Y="41"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I435" type="I7">
-                    <NodeLayout X="364" Y="268"/>
+                    <NodeLayout X="348" Y="123"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I436" type="I6">
-                    <NodeLayout X="291" Y="429"/>
+                    <NodeLayout X="347" Y="202"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I437" type="I22">
-                    <NodeLayout X="127" Y="268"/>
+                    <NodeLayout X="587" Y="43"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I438" type="I21">
-                    <NodeLayout X="60" Y="443"/>
+                    <NodeLayout X="460" Y="249"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Node ID="I439" type="I15">
-                    <NodeLayout X="200" Y="352"/>
+                    <NodeLayout X="588" Y="165"/>
                     <additionalLayout age="0" force="10" frozen="true" zone="50"/>
                 </Node>
                 <Edge ID="I440" source="I430" target="I431" type="I31">
@@ -1864,7 +1864,7 @@
                     <additionalLayout aktlength="200" force="10" preflength="200"/>
                 </Edge>
                 <Edge ID="I445" source="I438" target="I439" type="I43">
-                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="-10" textOffsetY="3"/>
                     <additionalLayout aktlength="200" force="10" preflength="200"/>
                 </Edge>
                 <Edge ID="I446" source="I439" target="I437" type="I55">
@@ -1882,11 +1882,11 @@
                 <Mapping image="I436" orig="I417"/>
                 <Mapping image="I437" orig="I415"/>
                 <Mapping image="I438" orig="I418"/>
-                <Mapping image="I440" orig="I420"/>
-                <Mapping image="I441" orig="I421"/>
+                <Mapping image="I444" orig="I427"/>
                 <Mapping image="I442" orig="I422"/>
                 <Mapping image="I443" orig="I426"/>
-                <Mapping image="I444" orig="I427"/>
+                <Mapping image="I441" orig="I421"/>
+                <Mapping image="I440" orig="I420"/>
             </Morphism>
             <TaggedValue Tag="layer" TagValue="0"/>
             <TaggedValue Tag="priority" TagValue="0"/>
@@ -2021,12 +2021,12 @@
                 <Mapping image="I471" orig="I455"/>
                 <Mapping image="I472" orig="I456"/>
                 <Mapping image="I473" orig="I457"/>
-                <Mapping image="I474" orig="I458"/>
-                <Mapping image="I477" orig="I462"/>
                 <Mapping image="I475" orig="I459"/>
+                <Mapping image="I474" orig="I458"/>
                 <Mapping image="I478" orig="I463"/>
-                <Mapping image="I476" orig="I460"/>
                 <Mapping image="I479" orig="I464"/>
+                <Mapping image="I476" orig="I460"/>
+                <Mapping image="I477" orig="I462"/>
             </Morphism>
             <TaggedValue Tag="layer" TagValue="0"/>
             <TaggedValue Tag="priority" TagValue="0"/>
@@ -2151,10 +2151,10 @@
                 <Mapping image="I502" orig="I486"/>
                 <Mapping image="I503" orig="I488"/>
                 <Mapping image="I504" orig="I487"/>
-                <Mapping image="I507" orig="I492"/>
                 <Mapping image="I509" orig="I495"/>
-                <Mapping image="I508" orig="I493"/>
                 <Mapping image="I506" orig="I491"/>
+                <Mapping image="I508" orig="I493"/>
+                <Mapping image="I507" orig="I492"/>
             </Morphism>
             <TaggedValue Tag="layer" TagValue="0"/>
             <TaggedValue Tag="priority" TagValue="0"/>
@@ -2245,9 +2245,9 @@
                 <Mapping image="I524" orig="I515"/>
                 <Mapping image="I525" orig="I516"/>
                 <Mapping image="I526" orig="I517"/>
-                <Mapping image="I530" orig="I519"/>
-                <Mapping image="I529" orig="I518"/>
                 <Mapping image="I531" orig="I520"/>
+                <Mapping image="I529" orig="I518"/>
+                <Mapping image="I530" orig="I519"/>
             </Morphism>
             <ApplCondition>
                 <NAC>
@@ -2303,10 +2303,10 @@
                         <Mapping image="I536" orig="I515"/>
                         <Mapping image="I537" orig="I516"/>
                         <Mapping image="I538" orig="I517"/>
-                        <Mapping image="I541" orig="I519"/>
-                        <Mapping image="I540" orig="I518"/>
-                        <Mapping image="I542" orig="I520"/>
                         <Mapping image="I543" orig="I521"/>
+                        <Mapping image="I542" orig="I520"/>
+                        <Mapping image="I540" orig="I518"/>
+                        <Mapping image="I541" orig="I519"/>
                     </Morphism>
                 </NAC>
             </ApplCondition>
@@ -2383,9 +2383,9 @@
                 <Mapping image="I557" orig="I548"/>
                 <Mapping image="I558" orig="I549"/>
                 <Mapping image="I559" orig="I550"/>
-                <Mapping image="I560" orig="I551"/>
-                <Mapping image="I561" orig="I552"/>
                 <Mapping image="I562" orig="I553"/>
+                <Mapping image="I561" orig="I552"/>
+                <Mapping image="I560" orig="I551"/>
             </Morphism>
             <TaggedValue Tag="layer" TagValue="0"/>
             <TaggedValue Tag="priority" TagValue="0"/>
@@ -2561,14 +2561,14 @@
                 <Mapping image="I593" orig="I572"/>
                 <Mapping image="I594" orig="I573"/>
                 <Mapping image="I595" orig="I574"/>
-                <Mapping image="I604" orig="I584"/>
-                <Mapping image="I603" orig="I582"/>
                 <Mapping image="I600" orig="I579"/>
-                <Mapping image="I597" orig="I576"/>
-                <Mapping image="I602" orig="I581"/>
-                <Mapping image="I598" orig="I577"/>
-                <Mapping image="I599" orig="I578"/>
                 <Mapping image="I601" orig="I580"/>
+                <Mapping image="I598" orig="I577"/>
+                <Mapping image="I597" orig="I576"/>
+                <Mapping image="I603" orig="I582"/>
+                <Mapping image="I604" orig="I584"/>
+                <Mapping image="I599" orig="I578"/>
+                <Mapping image="I602" orig="I581"/>
             </Morphism>
             <TaggedValue Tag="layer" TagValue="0"/>
             <TaggedValue Tag="priority" TagValue="0"/>
@@ -2644,8 +2644,8 @@
                 <Mapping image="I620" orig="I611"/>
                 <Mapping image="I621" orig="I612"/>
                 <Mapping image="I622" orig="I613"/>
-                <Mapping image="I623" orig="I614"/>
                 <Mapping image="I624" orig="I615"/>
+                <Mapping image="I623" orig="I614"/>
             </Morphism>
             <TaggedValue Tag="layer" TagValue="0"/>
             <TaggedValue Tag="priority" TagValue="0"/>
@@ -2824,11 +2824,11 @@
                 <Mapping image="I654" orig="I633"/>
                 <Mapping image="I655" orig="I635"/>
                 <Mapping image="I656" orig="I636"/>
-                <Mapping image="I664" orig="I645"/>
                 <Mapping image="I660" orig="I638"/>
-                <Mapping image="I663" orig="I641"/>
-                <Mapping image="I662" orig="I640"/>
                 <Mapping image="I661" orig="I639"/>
+                <Mapping image="I664" orig="I645"/>
+                <Mapping image="I662" orig="I640"/>
+                <Mapping image="I663" orig="I641"/>
             </Morphism>
             <TaggedValue Tag="layer" TagValue="0"/>
             <TaggedValue Tag="priority" TagValue="0"/>
@@ -2903,9 +2903,9 @@
                 <Mapping image="I682" orig="I673"/>
                 <Mapping image="I683" orig="I674"/>
                 <Mapping image="I684" orig="I675"/>
+                <Mapping image="I686" orig="I677"/>
                 <Mapping image="I685" orig="I676"/>
                 <Mapping image="I687" orig="I678"/>
-                <Mapping image="I686" orig="I677"/>
             </Morphism>
             <TaggedValue Tag="layer" TagValue="0"/>
             <TaggedValue Tag="priority" TagValue="0"/>
@@ -2921,66 +2921,66 @@
                 </Subsequence>
                 <ObjectFlow enabled="true" index="1:2"
                     input="accommodateClient-reserve-success" output="reserveTable-successful">
-                    <Mapping image="I363" orig="I443"/>
-                    <Mapping image="I349" orig="I430"/>
-                    <Mapping image="I360" orig="I441"/>
-                    <Mapping image="I358" orig="I437"/>
-                    <Mapping image="I366" orig="I446"/>
-                    <Mapping image="I357" orig="I439"/>
-                    <Mapping image="I350" orig="I431"/>
-                    <Mapping image="I359" orig="I440"/>
-                    <Mapping image="I365" orig="I445"/>
-                    <Mapping image="I352" orig="I433"/>
                     <Mapping image="I353" orig="I436"/>
-                    <Mapping image="I354" orig="I435"/>
-                    <Mapping image="I355" orig="I434"/>
-                    <Mapping image="I361" orig="I442"/>
+                    <Mapping image="I363" orig="I443"/>
                     <Mapping image="I351" orig="I432"/>
-                    <Mapping image="I356" orig="I438"/>
+                    <Mapping image="I359" orig="I440"/>
+                    <Mapping image="I361" orig="I442"/>
+                    <Mapping image="I360" orig="I441"/>
                     <Mapping image="I364" orig="I444"/>
+                    <Mapping image="I357" orig="I439"/>
+                    <Mapping image="I366" orig="I446"/>
+                    <Mapping image="I356" orig="I438"/>
+                    <Mapping image="I354" orig="I435"/>
+                    <Mapping image="I350" orig="I431"/>
+                    <Mapping image="I349" orig="I430"/>
+                    <Mapping image="I365" orig="I445"/>
+                    <Mapping image="I358" orig="I437"/>
+                    <Mapping image="I355" orig="I434"/>
+                    <Mapping image="I352" orig="I433"/>
                 </ObjectFlow>
                 <ObjectFlow enabled="true" index="3:4"
                     input="closeTable-success" output="serveTable-Success">
-                    <Mapping image="I636" orig="I592"/>
-                    <Mapping image="I635" orig="I594"/>
-                    <Mapping image="I640" orig="I599"/>
-                    <Mapping image="I634" orig="I596"/>
-                    <Mapping image="I646" orig="I602"/>
-                    <Mapping image="I628" orig="I589"/>
-                    <Mapping image="I632" orig="I591"/>
                     <Mapping image="I630" orig="I588"/>
-                    <Mapping image="I641" orig="I600"/>
-                    <Mapping image="I638" orig="I598"/>
-                    <Mapping image="I639" orig="I597"/>
-                    <Mapping image="I643" orig="I605"/>
-                    <Mapping image="I642" orig="I604"/>
-                    <Mapping image="I633" orig="I595"/>
-                    <Mapping image="I637" orig="I593"/>
-                    <Mapping image="I631" orig="I590"/>
-                    <Mapping image="I645" orig="I601"/>
                     <Mapping image="I644" orig="I603"/>
+                    <Mapping image="I635" orig="I594"/>
+                    <Mapping image="I639" orig="I597"/>
+                    <Mapping image="I638" orig="I598"/>
+                    <Mapping image="I642" orig="I604"/>
+                    <Mapping image="I634" orig="I596"/>
+                    <Mapping image="I628" orig="I589"/>
+                    <Mapping image="I646" orig="I602"/>
+                    <Mapping image="I631" orig="I590"/>
+                    <Mapping image="I633" orig="I595"/>
                     <Mapping image="I629" orig="I587"/>
+                    <Mapping image="I637" orig="I593"/>
+                    <Mapping image="I640" orig="I599"/>
+                    <Mapping image="I636" orig="I592"/>
+                    <Mapping image="I641" orig="I600"/>
+                    <Mapping image="I645" orig="I601"/>
+                    <Mapping image="I632" orig="I591"/>
+                    <Mapping image="I643" orig="I605"/>
                 </ObjectFlow>
                 <ObjectFlow enabled="true" index="2:4"
                     input="closeTable-success" output="accommodateClient-reserve-success">
-                    <Mapping image="I632" orig="I372"/>
                     <Mapping image="I629" orig="I369"/>
+                    <Mapping image="I632" orig="I372"/>
                     <Mapping image="I633" orig="I377"/>
                 </ObjectFlow>
                 <ObjectFlow enabled="true" index="2:3"
                     input="serveTable-Success" output="accommodateClient-reserve-success">
-                    <Mapping image="I575" orig="I378"/>
-                    <Mapping image="I571" orig="I376"/>
-                    <Mapping image="I572" orig="I374"/>
                     <Mapping image="I584" orig="I386"/>
-                    <Mapping image="I566" orig="I369"/>
+                    <Mapping image="I572" orig="I374"/>
                     <Mapping image="I580" orig="I384"/>
-                    <Mapping image="I581" orig="I385"/>
-                    <Mapping image="I573" orig="I375"/>
-                    <Mapping image="I582" orig="I383"/>
-                    <Mapping image="I585" orig="I387"/>
                     <Mapping image="I574" orig="I377"/>
+                    <Mapping image="I582" orig="I383"/>
+                    <Mapping image="I571" orig="I376"/>
+                    <Mapping image="I566" orig="I369"/>
                     <Mapping image="I570" orig="I372"/>
+                    <Mapping image="I575" orig="I378"/>
+                    <Mapping image="I573" orig="I375"/>
+                    <Mapping image="I581" orig="I385"/>
+                    <Mapping image="I585" orig="I387"/>
                 </ObjectFlow>
             </Sequence>
             <Sequence name="basicExecutionWithoutReservation">
@@ -2993,39 +2993,39 @@
                 <ObjectFlow enabled="true" index="1:2"
                     input="serveTable-Success" output="accommodateClient-noreserve-success">
                     <Mapping image="I581" orig="I279"/>
-                    <Mapping image="I584" orig="I280"/>
-                    <Mapping image="I572" orig="I268"/>
-                    <Mapping image="I575" orig="I272"/>
-                    <Mapping image="I582" orig="I277"/>
+                    <Mapping image="I580" orig="I278"/>
                     <Mapping image="I574" orig="I271"/>
                     <Mapping image="I570" orig="I266"/>
-                    <Mapping image="I580" orig="I278"/>
-                    <Mapping image="I571" orig="I270"/>
-                    <Mapping image="I566" orig="I263"/>
-                    <Mapping image="I573" orig="I269"/>
+                    <Mapping image="I584" orig="I280"/>
+                    <Mapping image="I575" orig="I272"/>
                     <Mapping image="I585" orig="I281"/>
+                    <Mapping image="I582" orig="I277"/>
+                    <Mapping image="I573" orig="I269"/>
+                    <Mapping image="I571" orig="I270"/>
+                    <Mapping image="I572" orig="I268"/>
+                    <Mapping image="I566" orig="I263"/>
                 </ObjectFlow>
                 <ObjectFlow enabled="true" index="2:3"
                     input="closeTable-success" output="serveTable-Success">
-                    <Mapping image="I636" orig="I592"/>
-                    <Mapping image="I635" orig="I594"/>
-                    <Mapping image="I640" orig="I599"/>
-                    <Mapping image="I634" orig="I596"/>
-                    <Mapping image="I646" orig="I602"/>
-                    <Mapping image="I628" orig="I589"/>
-                    <Mapping image="I632" orig="I591"/>
                     <Mapping image="I630" orig="I588"/>
-                    <Mapping image="I641" orig="I600"/>
-                    <Mapping image="I638" orig="I598"/>
-                    <Mapping image="I639" orig="I597"/>
-                    <Mapping image="I643" orig="I605"/>
-                    <Mapping image="I642" orig="I604"/>
-                    <Mapping image="I633" orig="I595"/>
-                    <Mapping image="I637" orig="I593"/>
-                    <Mapping image="I631" orig="I590"/>
-                    <Mapping image="I645" orig="I601"/>
                     <Mapping image="I644" orig="I603"/>
+                    <Mapping image="I635" orig="I594"/>
+                    <Mapping image="I639" orig="I597"/>
+                    <Mapping image="I638" orig="I598"/>
+                    <Mapping image="I642" orig="I604"/>
+                    <Mapping image="I634" orig="I596"/>
+                    <Mapping image="I628" orig="I589"/>
+                    <Mapping image="I646" orig="I602"/>
+                    <Mapping image="I631" orig="I590"/>
+                    <Mapping image="I633" orig="I595"/>
                     <Mapping image="I629" orig="I587"/>
+                    <Mapping image="I637" orig="I593"/>
+                    <Mapping image="I640" orig="I599"/>
+                    <Mapping image="I636" orig="I592"/>
+                    <Mapping image="I641" orig="I600"/>
+                    <Mapping image="I645" orig="I601"/>
+                    <Mapping image="I632" orig="I591"/>
+                    <Mapping image="I643" orig="I605"/>
                 </ObjectFlow>
             </Sequence>
             <Sequence name="reservingAndCancellingFail">
@@ -3037,33 +3037,33 @@
                 </Subsequence>
                 <ObjectFlow enabled="true" index="1:3"
                     input="cancelReservation-success" output="reserveTable-successful">
-                    <Mapping image="I487" orig="I436"/>
-                    <Mapping image="I497" orig="I446"/>
-                    <Mapping image="I495" orig="I444"/>
-                    <Mapping image="I489" orig="I439"/>
                     <Mapping image="I496" orig="I445"/>
-                    <Mapping image="I490" orig="I437"/>
+                    <Mapping image="I489" orig="I439"/>
                     <Mapping image="I488" orig="I438"/>
+                    <Mapping image="I495" orig="I444"/>
+                    <Mapping image="I490" orig="I437"/>
+                    <Mapping image="I497" orig="I446"/>
+                    <Mapping image="I487" orig="I436"/>
                 </ObjectFlow>
                 <ObjectFlow enabled="true" index="1:2"
                     input="cancelReservation-fail" output="reserveTable-successful">
+                    <Mapping image="I518" orig="I440"/>
+                    <Mapping image="I516" orig="I432"/>
+                    <Mapping image="I514" orig="I430"/>
                     <Mapping image="I515" orig="I431"/>
                     <Mapping image="I520" orig="I442"/>
-                    <Mapping image="I514" orig="I430"/>
-                    <Mapping image="I519" orig="I441"/>
                     <Mapping image="I517" orig="I433"/>
-                    <Mapping image="I516" orig="I432"/>
-                    <Mapping image="I518" orig="I440"/>
+                    <Mapping image="I519" orig="I441"/>
                 </ObjectFlow>
                 <ObjectFlow enabled="true" index="2:3"
                     input="cancelReservation-success" output="cancelReservation-fail">
+                    <Mapping image="I493" orig="I531"/>
                     <Mapping image="I485" orig="I525"/>
+                    <Mapping image="I484" orig="I524"/>
+                    <Mapping image="I486" orig="I526"/>
                     <Mapping image="I483" orig="I523"/>
                     <Mapping image="I491" orig="I529"/>
                     <Mapping image="I492" orig="I530"/>
-                    <Mapping image="I486" orig="I526"/>
-                    <Mapping image="I493" orig="I531"/>
-                    <Mapping image="I484" orig="I524"/>
                 </ObjectFlow>
             </Sequence>
             <Sequence name="reservingAndCancellingABort">
@@ -3075,33 +3075,33 @@
                 </Subsequence>
                 <ObjectFlow enabled="true" index="1:3"
                     input="cancelReservation-success" output="reserveTable-successful">
-                    <Mapping image="I487" orig="I436"/>
-                    <Mapping image="I497" orig="I446"/>
-                    <Mapping image="I495" orig="I444"/>
-                    <Mapping image="I489" orig="I439"/>
                     <Mapping image="I496" orig="I445"/>
-                    <Mapping image="I490" orig="I437"/>
+                    <Mapping image="I489" orig="I439"/>
                     <Mapping image="I488" orig="I438"/>
+                    <Mapping image="I495" orig="I444"/>
+                    <Mapping image="I490" orig="I437"/>
+                    <Mapping image="I497" orig="I446"/>
+                    <Mapping image="I487" orig="I436"/>
                 </ObjectFlow>
                 <ObjectFlow enabled="true" index="1:2"
                     input="cancelReservation-abort" output="reserveTable-successful">
+                    <Mapping image="I551" orig="I440"/>
+                    <Mapping image="I549" orig="I432"/>
+                    <Mapping image="I547" orig="I430"/>
                     <Mapping image="I548" orig="I431"/>
                     <Mapping image="I553" orig="I442"/>
-                    <Mapping image="I547" orig="I430"/>
-                    <Mapping image="I552" orig="I441"/>
                     <Mapping image="I550" orig="I433"/>
-                    <Mapping image="I549" orig="I432"/>
-                    <Mapping image="I551" orig="I440"/>
+                    <Mapping image="I552" orig="I441"/>
                 </ObjectFlow>
                 <ObjectFlow enabled="true" index="2:3"
                     input="cancelReservation-success" output="cancelReservation-abort">
                     <Mapping image="I486" orig="I559"/>
-                    <Mapping image="I492" orig="I561"/>
+                    <Mapping image="I493" orig="I562"/>
+                    <Mapping image="I484" orig="I557"/>
                     <Mapping image="I485" orig="I558"/>
                     <Mapping image="I491" orig="I560"/>
-                    <Mapping image="I484" orig="I557"/>
-                    <Mapping image="I493" orig="I562"/>
                     <Mapping image="I483" orig="I556"/>
+                    <Mapping image="I492" orig="I561"/>
                 </ObjectFlow>
             </Sequence>
         </RuleSequences>
