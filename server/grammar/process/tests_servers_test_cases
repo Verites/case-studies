@@ -1,0 +1,22 @@
+Rules involved: {
+fromList [Rule "deleteMsg",Rule "getData",Rule "receiveMsg",Rule "sendMsg"]
+}
+Concrete Rules Relation: {
+[(Rule "getData" < Rule "deleteMsg"),(Rule "getData" < Rule "receiveMsg"),(Rule "receiveMsg" < Rule "deleteMsg"),(Rule "sendMsg" < Rule "deleteMsg"),(Rule "sendMsg" < Rule "getData"),(Rule "sendMsg" < Rule "receiveMsg")]
+}
+Elements involved: {
+fromList [Node 1,Node 2,Node 3,Node 10,Node 19,Node 22,Edge 1,Edge 2,Edge 4,Edge 7,Edge 9,Edge 12,Edge 15]
+}
+Elements Relation: {
+[(Node 2 < Edge 15),(Edge 1 < Edge 2),(Edge 1 < Edge 7),(Edge 1 < Edge 12),(Edge 1 < Edge 15),(Edge 4 < Edge 7),(Edge 4 < Edge 12),(Edge 4 < Edge 15),(Edge 7 < Edge 15),(Edge 9 < Edge 12),(Edge 9 < Edge 15),(Edge 12 < Edge 15)]
+}
+
+
+Rules Ordering: {Just [Rule "sendMsg",Rule "getData",Rule "receiveMsg",Rule "deleteMsg"]
+}
+Element Ordering: {Just [Node 1,Node 2,Node 3,Node 10,Node 19,Node 22,Edge 1,Edge 2,Edge 4,Edge 7,Edge 9,Edge 12,Edge 15]
+}
+
+Set of Category Restrictions: {
+[]
+}
