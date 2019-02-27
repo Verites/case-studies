@@ -98,22 +98,22 @@
                 </Edge>
             </Graph>
         </Types>
-        <Graph ID="I25" kind="HOST" name="Graph" staticNodePosition="true">
+        <Graph ID="I25" kind="HOST" name="Graph">
             <Node ID="I26" type="I2">
                 <NodeLayout X="183" Y="155"/>
-                <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                <additionalLayout age="0" force="10" frozen="false" zone="50"/>
             </Node>
             <Node ID="I27" type="I3">
                 <NodeLayout X="299" Y="78"/>
-                <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                <additionalLayout age="0" force="10" frozen="false" zone="50"/>
             </Node>
             <Node ID="I28" type="I4">
                 <NodeLayout X="183" Y="73"/>
-                <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                <additionalLayout age="0" force="10" frozen="false" zone="50"/>
             </Node>
             <Node ID="I29" type="I5">
                 <NodeLayout X="294" Y="154"/>
-                <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+                <additionalLayout age="0" force="10" frozen="false" zone="50"/>
             </Node>
             <Edge ID="I30" source="I29" target="I26" type="I8">
                 <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
@@ -771,24 +771,24 @@
                     <Item iterations="1" rule="deleteMsg"/>
                 </Subsequence>
                 <ObjectFlow enabled="true" index="1:2" input="getData" output="sendMsg">
-                    <Mapping image="I144" orig="I130"/>
                     <Mapping image="I143" orig="I129"/>
+                    <Mapping image="I144" orig="I130"/>
                     <Mapping image="I145" orig="I131"/>
                 </ObjectFlow>
                 <ObjectFlow enabled="true" index="3:4" input="deleteMsg" output="receiveMsg">
                     <Mapping image="I175" orig="I167"/>
-                    <Mapping image="I176" orig="I168"/>
-                    <Mapping image="I172" orig="I163"/>
-                    <Mapping image="I174" orig="I165"/>
                     <Mapping image="I173" orig="I164"/>
+                    <Mapping image="I174" orig="I165"/>
+                    <Mapping image="I172" orig="I163"/>
+                    <Mapping image="I176" orig="I168"/>
                 </ObjectFlow>
                 <ObjectFlow enabled="true" index="2:3"
                     input="receiveMsg" output="getData">
-                    <Mapping image="I157" orig="I148"/>
-                    <Mapping image="I161" orig="I151"/>
                     <Mapping image="I159" orig="I150"/>
-                    <Mapping image="I160" orig="I152"/>
+                    <Mapping image="I161" orig="I151"/>
+                    <Mapping image="I157" orig="I148"/>
                     <Mapping image="I158" orig="I149"/>
+                    <Mapping image="I160" orig="I152"/>
                 </ObjectFlow>
             </Sequence>
             <Sequence name="servers">
@@ -800,22 +800,32 @@
                     <Item iterations="1" rule="deleteMsg"/>
                 </Subsequence>
                 <ObjectFlow enabled="true" index="1:2" input="getData" output="sendMsg">
-                    <Mapping image="I144" orig="I130"/>
                     <Mapping image="I143" orig="I129"/>
+                    <Mapping image="I144" orig="I130"/>
                     <Mapping image="I145" orig="I131"/>
                 </ObjectFlow>
                 <ObjectFlow enabled="true" index="3:4" input="deleteMsg" output="receiveMsg">
                     <Mapping image="I175" orig="I167"/>
-                    <Mapping image="I176" orig="I168"/>
-                    <Mapping image="I172" orig="I163"/>
-                    <Mapping image="I174" orig="I165"/>
                     <Mapping image="I173" orig="I164"/>
+                    <Mapping image="I174" orig="I165"/>
+                    <Mapping image="I172" orig="I163"/>
+                    <Mapping image="I176" orig="I168"/>
                 </ObjectFlow>
                 <ObjectFlow enabled="true" index="2:3"
                     input="receiveMsg" output="getData">
                     <Mapping image="I157" orig="I148"/>
-                    <Mapping image="I160" orig="I152"/>
                     <Mapping image="I158" orig="I149"/>
+                    <Mapping image="I160" orig="I152"/>
+                </ObjectFlow>
+            </Sequence>
+            <Sequence name="abstract">
+                <Graph id="I25"/>
+                <Subsequence iterations="1">
+                    <Item iterations="1" rule="deleteMsg"/>
+                    <Item iterations="1" rule="sendMsg"/>
+                </Subsequence>
+                <ObjectFlow enabled="true" index="1:2" input="sendMsg" output="deleteMsg">
+                    <Mapping image="I123" orig="I178"/>
                 </ObjectFlow>
             </Sequence>
         </RuleSequences>

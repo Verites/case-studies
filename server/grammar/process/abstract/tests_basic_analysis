@@ -1,0 +1,9 @@
+Conflicts and Dependencies: {
+[Interaction {firstRule = "receiveMsg", secondRule = "getData", interactionType = DeleteUse, nacInvolved = Nothing},Interaction {firstRule = "getData", secondRule = "sendMsg", interactionType = ProduceForbid, nacInvolved = Just 0},Interaction {firstRule = "sendMsg", secondRule = "getData", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "getData", secondRule = "receiveMsg", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "receiveMsg", secondRule = "deleteMsg", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "deleteMsg", secondRule = "sendMsg", interactionType = DeleteForbid, nacInvolved = Just 0}]
+}
+Creation and Deletion Relation: {
+fromList [(Node 2,Rule "deleteMsg"),(Edge 1,Rule "sendMsg"),(Edge 2,Rule "receiveMsg"),(Edge 4,Rule "getData"),(Edge 7,Rule "deleteMsg"),(Edge 12,Rule "deleteMsg"),(Rule "deleteMsg",Edge 15),(Rule "getData",Edge 7),(Rule "receiveMsg",Edge 12),(Rule "sendMsg",Edge 2)]
+}
+Conflicts and dependencies induced by NACs: 
+{[(Interaction {firstRule = "deleteMsg", secondRule = "sendMsg", interactionType = DeleteForbid, nacInvolved = Just 0},Edge 7),(Interaction {firstRule = "getData", secondRule = "sendMsg", interactionType = ProduceForbid, nacInvolved = Just 0},Edge 7)]
+}

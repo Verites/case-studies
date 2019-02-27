@@ -1,0 +1,9 @@
+Conflicts and Dependencies: {
+[Interaction {firstRule = "close", secondRule = "walk", interactionType = ProduceForbid, nacInvolved = Just 0},Interaction {firstRule = "close", secondRule = "open", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "open", secondRule = "walk", interactionType = DeleteForbid, nacInvolved = Just 0}]
+}
+Creation and Deletion Relation: {
+fromList [(Edge 1,Rule "open"),(Edge 4,Rule "walk"),(Rule "close",Edge 1),(Rule "walk",Edge 7)]
+}
+Conflicts and dependencies induced by NACs: 
+{[(Interaction {firstRule = "close", secondRule = "walk", interactionType = ProduceForbid, nacInvolved = Just 0},Edge 1),(Interaction {firstRule = "open", secondRule = "walk", interactionType = DeleteForbid, nacInvolved = Just 0},Edge 1)]
+}

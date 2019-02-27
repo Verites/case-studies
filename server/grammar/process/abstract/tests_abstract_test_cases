@@ -1,0 +1,22 @@
+Rules involved: {
+fromList [Rule "deleteMsg",Rule "sendMsg"]
+}
+Concrete Rules Relation: {
+[]
+}
+Elements involved: {
+fromList [Node 1,Node 2,Node 3,Node 9,Node 10,Edge 1,Edge 2,Edge 3,Edge 4,Edge 5]
+}
+Elements Relation: {
+[(Node 3 < Edge 3),(Edge 1 < Edge 3),(Edge 2 < Edge 3),(Edge 4 < Edge 5)]
+}
+
+
+Rules Ordering: {Just [Rule "deleteMsg",Rule "sendMsg"]
+}
+Element Ordering: {Just [Node 1,Node 2,Node 3,Node 9,Node 10,Edge 1,Edge 2,Edge 3,Edge 4,Edge 5]
+}
+
+Set of Category Restrictions: {
+[]
+}

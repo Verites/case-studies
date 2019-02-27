@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document version="1.0">
+    <GraphTransformationSystem ID="I1" directed="true" name="GraGra2" parallel="true">
+        <TaggedValue Tag="AttrHandler" TagValue="Java Expr">
+            <TaggedValue Tag="Package" TagValue="java.lang"/>
+            <TaggedValue Tag="Package" TagValue="java.util"/>
+        </TaggedValue>
+        <TaggedValue Tag="CSP" TagValue="true"/>
+        <TaggedValue Tag="injective" TagValue="true"/>
+        <TaggedValue Tag="dangling" TagValue="true"/>
+        <TaggedValue Tag="identification" TagValue="true"/>
+        <TaggedValue Tag="NACs" TagValue="true"/>
+        <TaggedValue Tag="PACs" TagValue="true"/>
+        <TaggedValue Tag="GACs" TagValue="true"/>
+        <TaggedValue Tag="ruleSequence" TagValue="true"/>
+        <TaggedValue Tag="breakAllLayer" TagValue="true"/>
+        <TaggedValue Tag="showGraphAfterStep" TagValue="true"/>
+        <TaggedValue Tag="TypeGraphLevel" TagValue="ENABLED"/>
+        <Types>
+            <NodeType ID="I2" abstract="false" name="square%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+            <NodeType ID="I3" abstract="false" name="circle%:CIRCLE:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+            <EdgeType ID="I4" abstract="false" name="squ-cir%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+            <EdgeType ID="I5" abstract="false" name="cir-cir%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+            <EdgeType ID="I6" abstract="false" name="squ-squ%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+            <Graph ID="I7" kind="TG" name="TypeGraph">
+                <Node ID="I8" type="I3">
+                    <NodeLayout X="550" Y="146"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Node ID="I9" type="I2">
+                    <NodeLayout X="336" Y="147"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Edge ID="I10" source="I8" target="I8" type="I5">
+                    <EdgeLayout bendX="516" bendY="112" loopH="20"
+                        loopW="20" sourceMultiplicityOffsetX="5"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I11" source="I9" target="I9" type="I6">
+                    <EdgeLayout bendX="293" bendY="122" loopH="20"
+                        loopW="20" sourceMultiplicityOffsetX="5"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I12" source="I9" target="I8" type="I4">
+                    <EdgeLayout bendX="0" bendY="0"
+                        sourceMultiplicityOffsetX="-6"
+                        sourceMultiplicityOffsetY="15"
+                        targetMultiplicityOffsetX="-6"
+                        targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+        </Types>
+        <Graph ID="I13" kind="HOST" name="Graph"/>
+        <Rule ID="I14" formula="true" name="hasNac">
+            <Graph ID="I16" kind="LHS" name="Left">
+                <Node ID="I17" type="I2">
+                    <NodeLayout X="177" Y="283"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Node ID="I18" type="I3">
+                    <NodeLayout X="173" Y="165"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Edge ID="I19" source="I17" target="I18" type="I4">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Graph ID="I20" kind="RHS" name="Right">
+                <Node ID="I21" type="I2">
+                    <NodeLayout X="182" Y="283"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Node ID="I22" type="I3">
+                    <NodeLayout X="183" Y="170"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Edge ID="I23" source="I21" target="I22" type="I4">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I24" source="I21" target="I21" type="I6">
+                    <EdgeLayout bendX="138" bendY="258" loopH="20"
+                        loopW="20" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Morphism name="hasNac">
+                <Mapping image="I21" orig="I17"/>
+                <Mapping image="I22" orig="I18"/>
+                <Mapping image="I23" orig="I19"/>
+            </Morphism>
+            <ApplCondition>
+                <NAC>
+                    <Graph ID="I25" kind="NAC" name="Nac">
+                        <Node ID="I26" type="I2">
+                            <NodeLayout X="177" Y="283"/>
+                            <additionalLayout age="0" force="10"
+                                frozen="false" zone="50"/>
+                        </Node>
+                        <Node ID="I27" type="I3">
+                            <NodeLayout X="202" Y="172"/>
+                            <additionalLayout age="0" force="10"
+                                frozen="false" zone="50"/>
+                        </Node>
+                        <Edge ID="I28" source="I26" target="I27" type="I4">
+                            <EdgeLayout bendX="0" bendY="0"
+                                textOffsetX="0" textOffsetY="-22"/>
+                            <additionalLayout aktlength="200" force="10" preflength="200"/>
+                        </Edge>
+                        <Edge ID="I29" source="I27" target="I27" type="I5">
+                            <EdgeLayout bendX="168" bendY="138"
+                                loopH="20" loopW="20" textOffsetX="0" textOffsetY="-22"/>
+                            <additionalLayout aktlength="200" force="10" preflength="200"/>
+                        </Edge>
+                    </Graph>
+                    <Morphism name="Nac">
+                        <Mapping image="I26" orig="I17"/>
+                        <Mapping image="I27" orig="I18"/>
+                        <Mapping image="I28" orig="I19"/>
+                    </Morphism>
+                </NAC>
+            </ApplCondition>
+            <TaggedValue Tag="layer" TagValue="0"/>
+            <TaggedValue Tag="priority" TagValue="0"/>
+        </Rule>
+        <Rule ID="I30" formula="true" name="triggerNac">
+            <Graph ID="I32" kind="LHS" name="Left">
+                <Node ID="I33" type="I2">
+                    <NodeLayout X="212" Y="289"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Node ID="I34" type="I3">
+                    <NodeLayout X="227" Y="197"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Edge ID="I35" source="I33" target="I34" type="I4">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Graph ID="I36" kind="RHS" name="Right">
+                <Node ID="I37" type="I3">
+                    <NodeLayout X="227" Y="197"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Node ID="I38" type="I2">
+                    <NodeLayout X="212" Y="289"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Node ID="I39" type="I3">
+                    <NodeLayout X="227" Y="197"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Edge ID="I40" source="I38" target="I39" type="I4">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I41" source="I39" target="I39" type="I5">
+                    <EdgeLayout bendX="193" bendY="163" loopH="20"
+                        loopW="20" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Morphism name="triggerNac">
+                <Mapping image="I38" orig="I33"/>
+                <Mapping image="I39" orig="I34"/>
+                <Mapping image="I40" orig="I35"/>
+            </Morphism>
+            <TaggedValue Tag="layer" TagValue="0"/>
+            <TaggedValue Tag="priority" TagValue="0"/>
+        </Rule>
+        <Rule ID="I42" formula="true" name="untriggerNac">
+            <Graph ID="I44" kind="LHS" name="Left">
+                <Node ID="I45" type="I2">
+                    <NodeLayout X="256" Y="315"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Node ID="I46" type="I3">
+                    <NodeLayout X="268" Y="141"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Edge ID="I47" source="I45" target="I46" type="I4">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+                <Edge ID="I48" source="I46" target="I46" type="I5">
+                    <EdgeLayout bendX="234" bendY="107" loopH="20"
+                        loopW="20" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Graph ID="I49" kind="RHS" name="Right">
+                <Node ID="I50" type="I2">
+                    <NodeLayout X="165" Y="300"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Node ID="I51" type="I3">
+                    <NodeLayout X="167" Y="142"/>
+                    <additionalLayout age="0" force="10" frozen="false" zone="50"/>
+                </Node>
+                <Edge ID="I52" source="I50" target="I51" type="I4">
+                    <EdgeLayout bendX="0" bendY="0" textOffsetX="0" textOffsetY="-22"/>
+                    <additionalLayout aktlength="200" force="10" preflength="200"/>
+                </Edge>
+            </Graph>
+            <Morphism name="untriggerNac">
+                <Mapping image="I50" orig="I45"/>
+                <Mapping image="I51" orig="I46"/>
+                <Mapping image="I52" orig="I47"/>
+            </Morphism>
+            <TaggedValue Tag="layer" TagValue="0"/>
+            <TaggedValue Tag="priority" TagValue="0"/>
+        </Rule>
+        <RuleSequences>
+            <Sequence name="execution">
+                <Graph id="I13"/>
+                <Subsequence iterations="1">
+                    <Item iterations="1" rule="hasNac"/>
+                    <Item iterations="1" rule="triggerNac"/>
+                    <Item iterations="1" rule="untriggerNac"/>
+                </Subsequence>
+                <ObjectFlow enabled="true" index="1:2"
+                    input="triggerNac" output="hasNac">
+                    <Mapping image="I33" orig="I21"/>
+                    <Mapping image="I35" orig="I23"/>
+                    <Mapping image="I34" orig="I22"/>
+                </ObjectFlow>
+                <ObjectFlow enabled="true" index="2:3"
+                    input="untriggerNac" output="triggerNac">
+                    <Mapping image="I48" orig="I41"/>
+                    <Mapping image="I45" orig="I38"/>
+                    <Mapping image="I47" orig="I40"/>
+                    <Mapping image="I46" orig="I39"/>
+                </ObjectFlow>
+            </Sequence>
+            <Sequence name="RuleSequence1">
+                <Graph id="I13"/>
+            </Sequence>
+        </RuleSequences>
+    </GraphTransformationSystem>
+</Document>

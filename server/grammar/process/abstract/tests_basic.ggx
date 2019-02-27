@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document version="1.0">
+  <GraphTransformationSystem name="GraGra" ID="I1" directed="true" parallel="true">
+    <TaggedValue Tag="AttrHandler" TagValue="Java Expr">
+      <TaggedValue Tag="Package" TagValue="java.lang"/>
+      <TaggedValue Tag="Package" TagValue="java.util"/>
+    </TaggedValue>
+    <TaggedValue Tag="CSP" TagValue="true"/>
+    <TaggedValue Tag="dangling" TagValue="true"/>
+    <TaggedValue Tag="identification" TagValue="true"/>
+    <TaggedValue Tag="NACs" TagValue="true"/>
+    <TaggedValue Tag="PACs" TagValue="true"/>
+    <TaggedValue Tag="GACs" TagValue="true"/>
+    <TaggedValue Tag="breakAllLayer" TagValue="true"/>
+    <TaggedValue Tag="showGraphAfterStep" TagValue="true"/>
+    <TaggedValue Tag="TypeGraphLevel" TagValue="ENABLED"/>
+    <Types>
+      <NodeType ID="N1" abstract="false" name="user-1%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <NodeType ID="N2" abstract="false" name="msg-2%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <NodeType ID="N3" abstract="false" name="server-3%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <NodeType ID="N10" abstract="false" name="data-10%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <NodeType ID="N19" abstract="false" name="user-19%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <EdgeType ID="E1" abstract="false" name="is-at-box-1%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E2" abstract="false" name="is-at-server-2%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E4" abstract="false" name="loaded-4%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E7" abstract="false" name="is-attached-7%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E12" abstract="false" name="is-at-box-12%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E15" abstract="false" name="downloaded-15%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <Graph ID="TypeGraph" kind="TG" name="TypeGraph">
+        <Node ID="TypeGraph_n1" type="N1">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n3" type="N3">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n10" type="N10">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n19" type="N19">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="TypeGraph_e1" source="TypeGraph_n2" target="TypeGraph_n1" type="E1">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e2" source="TypeGraph_n2" target="TypeGraph_n3" type="E2">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e4" source="TypeGraph_n10" target="TypeGraph_n3" type="E4">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e7" source="TypeGraph_n10" target="TypeGraph_n2" type="E7">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e12" source="TypeGraph_n2" target="TypeGraph_n19" type="E12">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e15" source="TypeGraph_n10" target="TypeGraph_n19" type="E15">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+    </Types>
+    <Graph ID="graph_Init" kind="HOST" name="Init">
+      <Node ID="graph_Init_N1" type="N1">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N2" type="N2">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N3" type="N3">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N10" type="N10">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N19" type="N19">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Edge ID="graph_Init_E1" source="graph_Init_N2" target="graph_Init_N1" type="E1">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_Init_E4" source="graph_Init_N10" target="graph_Init_N3" type="E4">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+    </Graph>
+    <Graph ID="graph_final" kind="HOST" name="final">
+      <Node ID="graph_final_N1" type="N1">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N3" type="N3">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N10" type="N10">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N19" type="N19">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Edge ID="graph_final_E15" source="graph_final_N10" target="graph_final_N19" type="E15">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+    </Graph>
+    <Rule ID="sendMsg" formula="true" name="sendMsg">
+      <Graph ID="LeftOf_sendMsg" kind="LHS" name="LeftOf_sendMsg">
+        <Node ID="LeftOf_sendMsg_N1" type="N1">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_sendMsg_N2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_sendMsg_N3" type="N3">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="LeftOf_sendMsg_E1" source="LeftOf_sendMsg_N2" target="LeftOf_sendMsg_N1" type="E1">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Graph ID="RightOf_sendMsg" kind="RHS" name="RightOf_sendMsg">
+        <Node ID="RightOf_sendMsg_N1" type="N1">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_sendMsg_N2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_sendMsg_N3" type="N3">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="RightOf_sendMsg_E2" source="RightOf_sendMsg_N2" target="RightOf_sendMsg_N3" type="E2">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Morphism name="sendMsg">
+        <Mapping image="RightOf_sendMsg_N1" orig="LeftOf_sendMsg_N1"/>
+        <Mapping image="RightOf_sendMsg_N2" orig="LeftOf_sendMsg_N2"/>
+        <Mapping image="RightOf_sendMsg_N3" orig="LeftOf_sendMsg_N3"/>
+      </Morphism>
+      <ApplCondition/>
+    </Rule>
+    <Rule ID="getData" formula="true" name="getData">
+      <Graph ID="LeftOf_getData" kind="LHS" name="LeftOf_getData">
+        <Node ID="LeftOf_getData_N10" type="N10">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_getData_N2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_getData_N3" type="N3">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="LeftOf_getData_E2" source="LeftOf_getData_N2" target="LeftOf_getData_N3" type="E2">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_getData_E4" source="LeftOf_getData_N10" target="LeftOf_getData_N3" type="E4">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Graph ID="RightOf_getData" kind="RHS" name="RightOf_getData">
+        <Node ID="RightOf_getData_N10" type="N10">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_getData_N2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_getData_N3" type="N3">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="RightOf_getData_E2" source="RightOf_getData_N2" target="RightOf_getData_N3" type="E2">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_getData_E7" source="RightOf_getData_N10" target="RightOf_getData_N2" type="E7">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Morphism name="getData">
+        <Mapping image="RightOf_getData_N10" orig="LeftOf_getData_N10"/>
+        <Mapping image="RightOf_getData_N2" orig="LeftOf_getData_N2"/>
+        <Mapping image="RightOf_getData_N3" orig="LeftOf_getData_N3"/>
+        <Mapping image="RightOf_getData_E2" orig="LeftOf_getData_E2"/>
+      </Morphism>
+      <ApplCondition/>
+    </Rule>
+    <Rule ID="receiveMsg" formula="true" name="receiveMsg">
+      <Graph ID="LeftOf_receiveMsg" kind="LHS" name="LeftOf_receiveMsg">
+        <Node ID="LeftOf_receiveMsg_N19" type="N19">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_receiveMsg_N10" type="N10">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_receiveMsg_N2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_receiveMsg_N3" type="N3">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="LeftOf_receiveMsg_E7" source="LeftOf_receiveMsg_N10" target="LeftOf_receiveMsg_N2" type="E7">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_receiveMsg_E2" source="LeftOf_receiveMsg_N2" target="LeftOf_receiveMsg_N3" type="E2">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Graph ID="RightOf_receiveMsg" kind="RHS" name="RightOf_receiveMsg">
+        <Node ID="RightOf_receiveMsg_N19" type="N19">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_receiveMsg_N10" type="N10">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_receiveMsg_N2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_receiveMsg_N3" type="N3">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="RightOf_receiveMsg_E7" source="RightOf_receiveMsg_N10" target="RightOf_receiveMsg_N2" type="E7">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_receiveMsg_E12" source="RightOf_receiveMsg_N2" target="RightOf_receiveMsg_N19" type="E12">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Morphism name="receiveMsg">
+        <Mapping image="RightOf_receiveMsg_N19" orig="LeftOf_receiveMsg_N19"/>
+        <Mapping image="RightOf_receiveMsg_N10" orig="LeftOf_receiveMsg_N10"/>
+        <Mapping image="RightOf_receiveMsg_N2" orig="LeftOf_receiveMsg_N2"/>
+        <Mapping image="RightOf_receiveMsg_N3" orig="LeftOf_receiveMsg_N3"/>
+        <Mapping image="RightOf_receiveMsg_E7" orig="LeftOf_receiveMsg_E7"/>
+      </Morphism>
+      <ApplCondition/>
+    </Rule>
+    <Rule ID="deleteMsg" formula="true" name="deleteMsg">
+      <Graph ID="LeftOf_deleteMsg" kind="LHS" name="LeftOf_deleteMsg">
+        <Node ID="LeftOf_deleteMsg_N19" type="N19">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_deleteMsg_N10" type="N10">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_deleteMsg_N2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="LeftOf_deleteMsg_E7" source="LeftOf_deleteMsg_N10" target="LeftOf_deleteMsg_N2" type="E7">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_deleteMsg_E12" source="LeftOf_deleteMsg_N2" target="LeftOf_deleteMsg_N19" type="E12">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Graph ID="RightOf_deleteMsg" kind="RHS" name="RightOf_deleteMsg">
+        <Node ID="RightOf_deleteMsg_N19" type="N19">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_deleteMsg_N10" type="N10">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="RightOf_deleteMsg_E15" source="RightOf_deleteMsg_N10" target="RightOf_deleteMsg_N19" type="E15">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Morphism name="deleteMsg">
+        <Mapping image="RightOf_deleteMsg_N19" orig="LeftOf_deleteMsg_N19"/>
+        <Mapping image="RightOf_deleteMsg_N10" orig="LeftOf_deleteMsg_N10"/>
+      </Morphism>
+      <ApplCondition/>
+    </Rule>
+  </GraphTransformationSystem>
+</Document>
+

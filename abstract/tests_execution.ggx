@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document version="1.0">
+  <GraphTransformationSystem name="GraGra2" ID="I1" directed="true" parallel="true">
+    <TaggedValue Tag="AttrHandler" TagValue="Java Expr">
+      <TaggedValue Tag="Package" TagValue="java.lang"/>
+      <TaggedValue Tag="Package" TagValue="java.util"/>
+    </TaggedValue>
+    <TaggedValue Tag="CSP" TagValue="true"/>
+    <TaggedValue Tag="dangling" TagValue="true"/>
+    <TaggedValue Tag="identification" TagValue="true"/>
+    <TaggedValue Tag="NACs" TagValue="true"/>
+    <TaggedValue Tag="PACs" TagValue="true"/>
+    <TaggedValue Tag="GACs" TagValue="true"/>
+    <TaggedValue Tag="breakAllLayer" TagValue="true"/>
+    <TaggedValue Tag="showGraphAfterStep" TagValue="true"/>
+    <TaggedValue Tag="TypeGraphLevel" TagValue="ENABLED"/>
+    <Types>
+      <NodeType ID="N1" abstract="false" name="square-1%:RECT:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <NodeType ID="N2" abstract="false" name="circle-2%:CIRCLE:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <NodeType ID="N11" abstract="false" name="circle-11%:CIRCLE:java.awt.Color[r=0,g=0,b=0]:[NODE]:"/>
+      <EdgeType ID="E1" abstract="false" name="squ-cir-1%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E4" abstract="false" name="squ-squ-4%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <EdgeType ID="E8" abstract="false" name="cir-cir-8%:SOLID_LINE:java.awt.Color[r=0,g=0,b=0]:[EDGE]:"/>
+      <Graph ID="TypeGraph" kind="TG" name="TypeGraph">
+        <Node ID="TypeGraph_n1" type="N1">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="TypeGraph_n11" type="N11">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="TypeGraph_e1" source="TypeGraph_n1" target="TypeGraph_n2" type="E1">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e4" source="TypeGraph_n1" target="TypeGraph_n1" type="E4">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="TypeGraph_e8" source="TypeGraph_n2" target="TypeGraph_n2" type="E8">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+    </Types>
+    <Graph ID="graph_Init" kind="HOST" name="Init">
+      <Node ID="graph_Init_N1" type="N1">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_Init_N2" type="N2">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Edge ID="graph_Init_E1" source="graph_Init_N1" target="graph_Init_N2" type="E1">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+    </Graph>
+    <Graph ID="graph_final" kind="HOST" name="final">
+      <Node ID="graph_final_N1" type="N1">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N2" type="N2">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Node ID="graph_final_N11" type="N11">
+        <NodeLayout X="50" Y="50"/>
+        <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+      </Node>
+      <Edge ID="graph_final_E1" source="graph_final_N1" target="graph_final_N2" type="E1">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+      <Edge ID="graph_final_E4" source="graph_final_N1" target="graph_final_N1" type="E4">
+        <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+        <additionalLayout aktlength="200" force="10" preflength="200"/>
+      </Edge>
+    </Graph>
+    <Rule ID="hasNac" formula="true" name="hasNac">
+      <Graph ID="LeftOf_hasNac" kind="LHS" name="LeftOf_hasNac">
+        <Node ID="LeftOf_hasNac_N1" type="N1">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_hasNac_N2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="LeftOf_hasNac_E1" source="LeftOf_hasNac_N1" target="LeftOf_hasNac_N2" type="E1">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Graph ID="RightOf_hasNac" kind="RHS" name="RightOf_hasNac">
+        <Node ID="RightOf_hasNac_N1" type="N1">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_hasNac_N2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="RightOf_hasNac_E1" source="RightOf_hasNac_N1" target="RightOf_hasNac_N2" type="E1">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_hasNac_E4" source="RightOf_hasNac_N1" target="RightOf_hasNac_N1" type="E4">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Morphism name="hasNac">
+        <Mapping image="RightOf_hasNac_N1" orig="LeftOf_hasNac_N1"/>
+        <Mapping image="RightOf_hasNac_N2" orig="LeftOf_hasNac_N2"/>
+        <Mapping image="RightOf_hasNac_E1" orig="LeftOf_hasNac_E1"/>
+      </Morphism>
+      <ApplCondition/>
+    </Rule>
+    <Rule ID="triggerNac" formula="true" name="triggerNac">
+      <Graph ID="LeftOf_triggerNac" kind="LHS" name="LeftOf_triggerNac">
+        <Node ID="LeftOf_triggerNac_N1" type="N1">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_triggerNac_N2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="LeftOf_triggerNac_E1" source="LeftOf_triggerNac_N1" target="LeftOf_triggerNac_N2" type="E1">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Graph ID="RightOf_triggerNac" kind="RHS" name="RightOf_triggerNac">
+        <Node ID="RightOf_triggerNac_N11" type="N11">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_triggerNac_N1" type="N1">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_triggerNac_N2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="RightOf_triggerNac_E1" source="RightOf_triggerNac_N1" target="RightOf_triggerNac_N2" type="E1">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="RightOf_triggerNac_E8" source="RightOf_triggerNac_N2" target="RightOf_triggerNac_N2" type="E8">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Morphism name="triggerNac">
+        <Mapping image="RightOf_triggerNac_N1" orig="LeftOf_triggerNac_N1"/>
+        <Mapping image="RightOf_triggerNac_N2" orig="LeftOf_triggerNac_N2"/>
+        <Mapping image="RightOf_triggerNac_E1" orig="LeftOf_triggerNac_E1"/>
+      </Morphism>
+      <ApplCondition/>
+    </Rule>
+    <Rule ID="untriggerNac" formula="true" name="untriggerNac">
+      <Graph ID="LeftOf_untriggerNac" kind="LHS" name="LeftOf_untriggerNac">
+        <Node ID="LeftOf_untriggerNac_N1" type="N1">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="LeftOf_untriggerNac_N2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="LeftOf_untriggerNac_E1" source="LeftOf_untriggerNac_N1" target="LeftOf_untriggerNac_N2" type="E1">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+        <Edge ID="LeftOf_untriggerNac_E8" source="LeftOf_untriggerNac_N2" target="LeftOf_untriggerNac_N2" type="E8">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Graph ID="RightOf_untriggerNac" kind="RHS" name="RightOf_untriggerNac">
+        <Node ID="RightOf_untriggerNac_N1" type="N1">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Node ID="RightOf_untriggerNac_N2" type="N2">
+          <NodeLayout X="50" Y="50"/>
+          <additionalLayout age="0" force="10" frozen="true" zone="50"/>
+        </Node>
+        <Edge ID="RightOf_untriggerNac_E1" source="RightOf_untriggerNac_N1" target="RightOf_untriggerNac_N2" type="E1">
+          <EdgeLayout bendX="0" bendY="0" sourceMultiplicityOffsetX="-6" sourceMultiplicityOffsetY="15" targetMultiplicityOffsetX="-6" targetMultiplicityOffsetY="7" textOffsetX="0" textOffsetY="-22"/>
+          <additionalLayout aktlength="200" force="10" preflength="200"/>
+        </Edge>
+      </Graph>
+      <Morphism name="untriggerNac">
+        <Mapping image="RightOf_untriggerNac_N1" orig="LeftOf_untriggerNac_N1"/>
+        <Mapping image="RightOf_untriggerNac_N2" orig="LeftOf_untriggerNac_N2"/>
+        <Mapping image="RightOf_untriggerNac_E1" orig="LeftOf_untriggerNac_E1"/>
+      </Morphism>
+      <ApplCondition/>
+    </Rule>
+  </GraphTransformationSystem>
+</Document>
+

@@ -1,0 +1,9 @@
+Conflicts and Dependencies: {
+[]
+}
+Creation and Deletion Relation: {
+fromList [(Node 3,Rule "deleteMsg"),(Edge 1,Rule "deleteMsg"),(Edge 2,Rule "deleteMsg"),(Edge 4,Rule "sendMsg"),(Rule "deleteMsg",Edge 3),(Rule "sendMsg",Edge 5)]
+}
+Conflicts and dependencies induced by NACs: 
+{[]
+}

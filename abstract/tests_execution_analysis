@@ -1,0 +1,9 @@
+Conflicts and Dependencies: {
+[Interaction {firstRule = "triggerNac", secondRule = "hasNac", interactionType = ProduceForbid, nacInvolved = Just 0},Interaction {firstRule = "triggerNac", secondRule = "untriggerNac", interactionType = ProduceUse, nacInvolved = Nothing},Interaction {firstRule = "untriggerNac", secondRule = "hasNac", interactionType = DeleteForbid, nacInvolved = Just 0}]
+}
+Creation and Deletion Relation: {
+fromList [(Edge 8,Rule "untriggerNac"),(Rule "hasNac",Edge 4),(Rule "triggerNac",Node 11),(Rule "triggerNac",Edge 8)]
+}
+Conflicts and dependencies induced by NACs: 
+{[(Interaction {firstRule = "triggerNac", secondRule = "hasNac", interactionType = ProduceForbid, nacInvolved = Just 0},Edge 8),(Interaction {firstRule = "untriggerNac", secondRule = "hasNac", interactionType = DeleteForbid, nacInvolved = Just 0},Edge 8)]
+}

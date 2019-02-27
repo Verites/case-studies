@@ -1,0 +1,23 @@
+Rules involved: {
+fromList [Rule "hasNac",Rule "triggerNac",Rule "untriggerNac"]
+}
+Concrete Rules Relation: {
+[(Rule "triggerNac" < Rule "untriggerNac")]
+}
+Elements involved: {
+fromList [Node 1,Node 2,Node 11,Edge 1,Edge 4,Edge 8]
+}
+Elements Relation: {
+[]
+}
+
+
+Rules Ordering: {Just [Rule "hasNac",Rule "triggerNac",Rule "untriggerNac"]
+}
+Element Ordering: {Just [Node 1,Node 2,Node 11,Edge 1,Edge 4,Edge 8]
+}
+
+Set of Category Restrictions: {
+[(AbstractProduceForbid: Rule "hasNac" not in between [Rule "triggerNac" < Rule "untriggerNac"]),
+(AbstractDeleteForbid: Rule "hasNac" not in between [Rule "triggerNac" < Rule "untriggerNac"])]
+}
